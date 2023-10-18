@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.WindowForSportClub">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Добавить">
+            <items>
+              <MenuItem fx:id="add_sport_club_btn" mnemonicParsing="false" text="Добавить " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Работа с таблицей">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Изменить" />
+              <MenuItem mnemonicParsing="false" text="Удалить" />
+                  <MenuItem fx:id="update_table" mnemonicParsing="false" text="Обновить таблицу" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="sport_club_table" layoutY="27.0" prefHeight="373.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="75.0" text="№" />
+          <TableColumn fx:id="name_col" prefWidth="524.0" text="Спортивные клубы" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

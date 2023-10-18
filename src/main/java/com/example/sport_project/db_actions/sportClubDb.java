@@ -1,0 +1,72 @@
+package com.example.sport_project.db_actions;
+
+import com.example.sport_project.classes_for_controllers.SportClub;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class sportClubDb {
+    public static void addSportCLub(String club){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        String query = "INSERT INTO sportclub(club) VALUES(?)";
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(url, login, password);
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, club);
+            preparedStatement.executeUpdate();
+
+        }catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
+    public static ObservableList<SportClub> getSportClub(){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        ObservableList<SportClub> data = FXCollections.observableArrayList();
+        try(Connection connection = DriverManager.getConnection(url, login, password)){
+            String query = "SELECT club_id, club FROM sportclub";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String club = resultSet.getString("club");
+                int id = resultSet.getInt("club_id");
+                data.add(new SportClub(id, club));
+            }
+            return data;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return data;
+    }
+
+    public static String getFirst(){
+
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        String data = "";
+        try(Connection connection = DriverManager.getConnection(url, login, password)){
+            String query = "SELECT club FROM sportclub";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                String club = resultSet.getString("club");
+                data = club;
+            }
+
+            return data;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return data;
+    }
+}
