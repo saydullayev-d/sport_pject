@@ -10,4 +10,5 @@ module com.example.sport_project {
     exports com.example.sport_project;
     exports com.example.sport_project.controllers;
     opens com.example.sport_project.controllers to javafx.fxml;
+    opens com.example.sport_project.classes_for_controllers to javafx.base;
 }

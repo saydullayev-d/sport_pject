@@ -100,15 +100,15 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        weight_col.setCellValueFactory(new PropertyValueFactory<>("weight"));
-        reg_col.setCellValueFactory(new PropertyValueFactory<>("reg_num"));
-        age_col.setCellValueFactory(new PropertyValueFactory<>("age_category"));
-        name_col.setCellValueFactory(new PropertyValueFactory<>("name"));
-        gender_col.setCellValueFactory(new PropertyValueFactory<>("gender"));
-        draw_col.setCellValueFactory(new PropertyValueFactory<>("draw_num"));
-        date_col.setCellValueFactory(new PropertyValueFactory<>("age"));
-        club_col.setCellValueFactory(new PropertyValueFactory<>("sport_club"));
-        act_col.setCellValueFactory(new PropertyValueFactory<>("act"));
+        weight_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("weight"));
+        reg_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, Integer>("reg_num"));
+        age_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("age_category"));
+        name_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("name"));
+        gender_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("gender"));
+        draw_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("draw_num"));
+        date_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("age"));
+        club_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("sport_club"));
+        act_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, Boolean>("act"));
 
         updateData();
 

@@ -16,22 +16,19 @@
                         <MenuItem fx:id="add_age_category_btn" mnemonicParsing="false" text="Добавить " />
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Удалить">
+                <Menu mnemonicParsing="false" text="Работа с таблицей">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Удалить" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Изменить">
-                    <items>
+                        <MenuItem fx:id="data_delete" mnemonicParsing="false" text="Удалить" />
                         <MenuItem mnemonicParsing="false" text="Изменить" />
+                        <MenuItem fx:id="update_table" mnemonicParsing="false" text="Обновить таблицу" />
                     </items>
                 </Menu>
             </menus>
         </MenuBar>
-        <TableView layoutY="27.0" prefHeight="373.0" prefWidth="600.0">
+        <TableView fx:id="age_table" layoutY="27.0" prefHeight="373.0" prefWidth="600.0">
             <columns>
-                <TableColumn prefWidth="75.0" text="№" />
-                <TableColumn prefWidth="524.0" text="Возрастные категории" />   
+                <TableColumn fx:id="id_col" prefWidth="75.0" text="№" />
+                <TableColumn fx:id="age_col" prefWidth="524.0" text="Возрастные категории" />
             </columns>
         </TableView>
     </children>
