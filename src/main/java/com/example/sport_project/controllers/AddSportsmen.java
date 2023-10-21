@@ -1,5 +1,6 @@
 package com.example.sport_project.controllers;
 import com.example.sport_project.HelloApplication;
+import com.example.sport_project.classes_for_controllers.AgeCategory;
 import com.example.sport_project.classes_for_controllers.SportClub;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
@@ -121,8 +122,10 @@ public class AddSportsmen implements Initializable {
 
         sportClub_choice.setItems(clubs);
         sportClub_choice.setValue(sportClubDb.getFirst());
-
-        age_choice.setItems(ageCategoryDb.getAge());
+        ObservableList<String> ages = ageCategoryDb.getAge().stream()
+                .map(AgeCategory::getAge) // Здесь предполагается, что у SportClub есть метод getName() для получения имени клуба.
+                .collect(Collectors.toCollection(FXCollections::observableArrayList));
+        age_choice.setItems(ages);
         age_choice.setValue(ageCategoryDb.getFirst());
 
 

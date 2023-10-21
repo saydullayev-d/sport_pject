@@ -25,6 +25,9 @@ import java.util.ResourceBundle;
 public class WindowForWeightCategory implements Initializable {
 
     @FXML
+    private MenuItem data_change;
+
+    @FXML
     private MenuItem data_delete;
 
     @FXML
@@ -46,7 +49,7 @@ public class WindowForWeightCategory implements Initializable {
     public void updateData(){
 
         weight_table.getItems().clear();
-        // weight_table.setItems(weightCategoryDb.getWeight());
+         weight_table.setItems(weightCategoryDb.getWeight());
         weight_table.refresh();
     }
 
@@ -57,6 +60,7 @@ public class WindowForWeightCategory implements Initializable {
 
         id_col.setCellValueFactory(new PropertyValueFactory<>("id"));
         weight_col.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        updateData();
 
         update_table.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -85,10 +89,39 @@ public class WindowForWeightCategory implements Initializable {
                     Alert alert = new Alert(Alert.AlertType.WARNING);
                     alert.setTitle("Уведомление");
                     alert.setHeaderText(null);
-                    alert.setContentText("Вы не выбрали ни одного спорстмена!\nВыберете спорсмена нажав в таблице.");
+                    alert.setContentText("Вы не выбрали ни одну весовую категорию!\nВыберете весовую категорию нажав в таблице.");
                     alert.showAndWait();
                 }
 
+            }
+        });
+
+
+        data_change.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/weightCategoryView.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    WeightCategoryViews addWeight_controller = loader.getController();
+                    if(!selectionModel.isEmpty()){
+                        addWeight_controller.update_data(selectionModel.getSelectedItem());
+                        newstage.setScene(newscene);
+                        newstage.setTitle("Добавить весовую категорию");
+                        newstage.showAndWait();}
+                    else{
+                        Alert alert = new Alert(Alert.AlertType.WARNING);
+                        alert.setTitle("Уведомление");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Вы не выбрали ни одну весовую категорию!\nВыберете весовую категорию нажав в таблице.");
+                        alert.showAndWait();
+                    }
+
+
+                }catch (Exception e){
+                    System.out.println(e);
+                }
             }
         });
 

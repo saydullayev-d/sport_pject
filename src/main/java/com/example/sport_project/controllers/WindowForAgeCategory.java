@@ -24,6 +24,9 @@ import java.util.ResourceBundle;
 
 public class WindowForAgeCategory implements Initializable {
 
+    @FXML
+    private MenuItem data_change;
+
 
     @FXML
     private MenuItem data_delete;
@@ -46,7 +49,7 @@ public class WindowForAgeCategory implements Initializable {
 
     public void updateData(){
         age_table.getItems().clear();
-        //age_table.setItems();
+        age_table.setItems(ageCategoryDb.getAge());
         age_table.refresh();
     }
 
@@ -54,7 +57,8 @@ public class WindowForAgeCategory implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         id_col.setCellValueFactory(new PropertyValueFactory<>("id"));
-        age_col.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        age_col.setCellValueFactory(new PropertyValueFactory<>("age"));
+        updateData();
 
         update_table.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -82,10 +86,38 @@ public class WindowForAgeCategory implements Initializable {
                     Alert alert = new Alert(Alert.AlertType.WARNING);
                     alert.setTitle("Уведомление");
                     alert.setHeaderText(null);
-                    alert.setContentText("Вы не выбрали ни одного спорстмена!\nВыберете спорсмена нажав в таблице.");
+                    alert.setContentText("Вы не выбрали ни одну возрастную категорию!\nВыберете возрастную категорию нажав в таблице.");
                     alert.showAndWait();
                 }
 
+            }
+        });
+
+        data_change.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/ageCategoryView.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    ageCategoryView addAge_controller = loader.getController();
+                    if(!selectionModel.isEmpty()){
+                        addAge_controller.update_SportClub(selectionModel.getSelectedItem());
+                        newstage.setScene(newscene);
+                        newstage.setTitle("Добавить весовую категорию");
+                        newstage.showAndWait();}
+                    else{
+                        Alert alert = new Alert(Alert.AlertType.WARNING);
+                        alert.setTitle("Уведомление");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Вы не выбрали ни одну весовую категорию!\nВыберете весовую категорию нажав в таблице.");
+                        alert.showAndWait();
+                    }
+
+
+                }catch (Exception e){
+                    System.out.println(e);
+                }
             }
         });
 

@@ -26,6 +26,9 @@ import java.util.ResourceBundle;
 public class WindowForSportClub implements Initializable {
 
     @FXML
+    private MenuItem data_change;
+
+    @FXML
     private MenuItem data_delete;
 
     @FXML
@@ -87,10 +90,39 @@ public class WindowForSportClub implements Initializable {
                     Alert alert = new Alert(Alert.AlertType.WARNING);
                     alert.setTitle("Уведомление");
                     alert.setHeaderText(null);
-                    alert.setContentText("Вы не выбрали ни одного спорстмена!\nВыберете спорсмена нажав в таблице.");
+                    alert.setContentText("Вы не выбрали ни одоин спортивный клуб!\nВыберете спортивный клуб нажав в таблице.");
                     alert.showAndWait();
                 }
 
+            }
+        });
+
+
+        data_change.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/Add_SportClub.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    Add_SportClub addSportClub = loader.getController();
+                    if(!selectionModel.isEmpty()){
+                        addSportClub.update_SportClub(selectionModel.getSelectedItem());
+                        newstage.setScene(newscene);
+                        newstage.setTitle("Добавить Спортивный клуб");
+                        newstage.showAndWait();}
+                    else{
+                        Alert alert = new Alert(Alert.AlertType.WARNING);
+                        alert.setTitle("Уведомление");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Вы не выбрали ни один спортивный клуб!\nВыберете спортивный клуб нажав в таблице.");
+                        alert.showAndWait();
+                    }
+
+
+                }catch (Exception e){
+                    System.out.println(e);
+                }
             }
         });
 

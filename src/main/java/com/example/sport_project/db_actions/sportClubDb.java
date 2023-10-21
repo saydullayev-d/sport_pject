@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 
 public class sportClubDb {
     public static void addSportCLub(String club){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "INSERT INTO sportclub(club) VALUES(?)";
@@ -28,7 +28,7 @@ public class sportClubDb {
     }
 
     public static ObservableList<SportClub> getSportClub(){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         ObservableList<SportClub> data = FXCollections.observableArrayList();
@@ -50,7 +50,7 @@ public class sportClubDb {
 
 
     public static void deleteSportClub(String club) {
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "DELETE FROM sportclub WHERE club = ?";
@@ -67,9 +67,29 @@ public class sportClubDb {
         }
     }
 
+    public static void update_SportClub(String SportClub_old, String club){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        String query = "UPDATE  sportclub SET club = ? WHERE club = ?";
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(url, login, password);
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, club);
+            preparedStatement.setString(2, SportClub_old);
+            preparedStatement.executeUpdate();
+
+        } catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
+    }
+
     public static String getFirst(){
 
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String data = "";

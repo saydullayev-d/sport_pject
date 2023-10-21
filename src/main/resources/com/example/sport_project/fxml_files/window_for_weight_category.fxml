@@ -20,7 +20,7 @@
                     <items>
                         <MenuItem fx:id="data_delete" mnemonicParsing="false" text="Удалить" />
                         <MenuItem fx:id="update_table" mnemonicParsing="false" text="Обновить" />
-                        <MenuItem mnemonicParsing="false" text="Изменить" />
+                        <MenuItem fx:id="data_change" mnemonicParsing="false" text="Изменить" />
                     </items>
                 </Menu>
             </menus>

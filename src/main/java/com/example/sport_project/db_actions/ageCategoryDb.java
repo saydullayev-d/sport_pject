@@ -1,5 +1,6 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.classes_for_controllers.AgeCategory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -10,7 +11,7 @@ import java.sql.ResultSet;
 
 public class ageCategoryDb {
     public static void addAge(String club){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "INSERT INTO age_category(age) VALUES(?)";
@@ -27,18 +28,19 @@ public class ageCategoryDb {
         }
     }
 
-    public static ObservableList<String> getAge(){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+    public static ObservableList<AgeCategory> getAge(){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
-        ObservableList<String> data = FXCollections.observableArrayList();
+        ObservableList<AgeCategory> data = FXCollections.observableArrayList();
         try(Connection connection = DriverManager.getConnection(url, login, password)){
-            String query = "SELECT age FROM age_category";
+            String query = "SELECT id, age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 String age = resultSet.getString("age");
-                data.add(age);
+                int id = resultSet.getInt("id");
+                data.add(new AgeCategory(id, age));
             }
             return data;
         }catch (Exception e){
@@ -50,7 +52,7 @@ public class ageCategoryDb {
     }
 
     public static void deleteAgeCategory(String age) {
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "DELETE FROM age_category WHERE age = ?";
@@ -67,9 +69,29 @@ public class ageCategoryDb {
         }
     }
 
+    public static void update_ageCategory(String ageCategory_old, String club){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        String query = "UPDATE  age_category SET age = ? WHERE age = ?";
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(url, login, password);
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, club);
+            preparedStatement.setString(2, ageCategory_old);
+            preparedStatement.executeUpdate();
+
+        } catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
+    }
+
     public static String getFirst(){
 
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String data = "";

@@ -36,6 +36,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class HelloController implements Initializable {
 
     @FXML
+    private MenuItem tournament_bracket;
+
+    @FXML
     private MenuItem addSportClub;
     @FXML
     private MenuItem data_change;
@@ -249,38 +252,33 @@ public class HelloController implements Initializable {
                 fileChooser.setTitle("Выберите Excel файл");
                 FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Excel files (*.xlsx)", "*.xlsx");
                 fileChooser.getExtensionFilters().add(extFilter);
-
                 File selectedFile = fileChooser.showOpenDialog(new Stage());
+                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/file.fxml"));
+                try {
+                    Scene newscene = new Scene(loader.load());
+                    fileController fileController = loader.getController();
+                    fileController.insertData(selectedFile);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
 
-                if (selectedFile != null) {
 
-                    try (FileInputStream fileInputStream = new FileInputStream(selectedFile.getPath());
-                         Workbook workbook = new XSSFWorkbook(fileInputStream)) {
+            }
+        });
 
-                        // Получение листа (в данном примере работаем с первым листом)
-                        Sheet sheet = workbook.getSheetAt(0);
+        tournament_bracket.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/tournament_bracket.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    newstage.setScene(newscene);
+                    newstage.setTitle("Турнирная сетка");
+                    newstage.showAndWait();
 
-                        // Перебираем строки
-                        for (Row row : sheet) {
-                            // Перебираем ячейки в каждой строке
-                            for (Cell cell : row) {
-                                // В зависимости от типа ячейки (число, строка и т.д.), можно извлечь соответствующее значение
-                                switch (cell.getCellType()) {
-                                    case STRING:
-                                        System.out.print(cell.getStringCellValue() + "\t");
-                                        break;
-                                    case NUMERIC:
-                                        System.out.print(cell.getNumericCellValue() + "\t");
-                                        break;
-                                    // Другие типы данных можно обработать аналогичным образом
-                                }
-                            }
-                            System.out.println(); // Переход на новую строку после каждой строки
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
+                }catch (Exception e){
+                    System.out.println(e);
                 }
             }
         });

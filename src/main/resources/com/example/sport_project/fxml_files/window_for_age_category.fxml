@@ -19,7 +19,7 @@
                 <Menu mnemonicParsing="false" text="Работа с таблицей">
                     <items>
                         <MenuItem fx:id="data_delete" mnemonicParsing="false" text="Удалить" />
-                        <MenuItem mnemonicParsing="false" text="Изменить" />
+                        <MenuItem fx:id="data_change" mnemonicParsing="false" text="Изменить" />
                         <MenuItem fx:id="update_table" mnemonicParsing="false" text="Обновить таблицу" />
                     </items>
                 </Menu>

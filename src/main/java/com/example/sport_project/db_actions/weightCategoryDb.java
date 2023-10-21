@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 public class weightCategoryDb {
 
     public static void addWeight(String club){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "INSERT INTO weight_category(weight) VALUES(?)";
@@ -30,7 +30,7 @@ public class weightCategoryDb {
     }
 
     public static ObservableList<WeightCategory> getWeight(){
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         ObservableList<WeightCategory> data = FXCollections.observableArrayList();
@@ -50,8 +50,28 @@ public class weightCategoryDb {
         return data;
     }
 
+    public static void update_weight(String weight_old, String weight){
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
+        String login = "progers";
+        String password = "root";
+        String query = "UPDATE  weight_category SET weight = ? WHERE weight = ?";
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = DriverManager.getConnection(url, login, password);
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, weight);
+            preparedStatement.setString(2, weight_old);
+            preparedStatement.executeUpdate();
+
+        } catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
+    }
+
     public static void deleteWeightCategory(String weight) {
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String query = "DELETE FROM weight_category WHERE weight = ?";
@@ -70,7 +90,7 @@ public class weightCategoryDb {
 
     public static String getFirst(){
 
-        String url = "jdbc:postgresql://192.168.0.113:5432/SportProg";
+        String url = "jdbc:postgresql://localhost:5432/SportProg";
         String login = "progers";
         String password = "root";
         String data = "";

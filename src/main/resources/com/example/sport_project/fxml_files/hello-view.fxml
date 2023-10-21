@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.HelloController">
    <children>
       <MenuBar layoutX="-8.0" prefHeight="29.0" prefWidth="679.0" stylesheets="@../style/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -29,6 +29,11 @@
             <Menu mnemonicParsing="false" text="Открыть файл">
               <items>
                   <MenuItem fx:id="add_file_btn" mnemonicParsing="false" text="Открыть файл" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Турнирная сетка">
+              <items>
+                <MenuItem fx:id="tournament_bracket" mnemonicParsing="false" text="Турнирная сетка" />
               </items>
             </Menu>
         </menus>

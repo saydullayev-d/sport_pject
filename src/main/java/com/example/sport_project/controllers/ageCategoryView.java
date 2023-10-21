@@ -1,5 +1,7 @@
 package com.example.sport_project.controllers;
 
+import com.example.sport_project.classes_for_controllers.AgeCategory;
+import com.example.sport_project.classes_for_controllers.SportClub;
 import com.example.sport_project.db_actions.ageCategoryDb;
 import com.example.sport_project.db_actions.sportClubDb;
 import javafx.event.ActionEvent;
@@ -20,6 +22,20 @@ public class ageCategoryView implements Initializable {
 
     @FXML
     private TextField addAge;
+
+    public void update_SportClub(AgeCategory ageCategory){
+        addAge.setText(ageCategory.getAge());
+        add_age_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                ageCategoryDb.update_ageCategory(ageCategory.getAge(), addAge.getText());
+                Stage stage =  (Stage) add_age_btn.getScene().getWindow();
+                stage.close();
+
+            }
+        });
+
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources){
