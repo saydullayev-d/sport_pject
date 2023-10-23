@@ -48,6 +48,17 @@ public class TournamentBracket implements Initializable {
             public void handle(ActionEvent event) {
                 String weight = weight_info.getValue();
                 tournament_64Db.addDataLeft(sportsmenDb.getByWeight(weight));
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    newstage.setScene(newscene);
+                    newstage.setTitle("Турнирная сетка");
+                    newstage.showAndWait();
+
+                }catch (Exception e){
+                    System.out.println(e);
+                }
             }
         });
 

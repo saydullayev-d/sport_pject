@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-        <?import javafx.scene.control.Tab?>
-        <?import javafx.scene.control.TabPane?>
-        <?import javafx.scene.control.TableColumn?>
-        <?import javafx.scene.control.TableView?>
-        <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="982.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="982.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab text="первый этап">
             <content>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                     <children>
-                        <TableView prefHeight="621.0" prefWidth="201.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView fx:id="left_64" prefHeight="621.0" prefWidth="201.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <columns>
-                                <TableColumn prefWidth="31.333328247070312" text="No" />
-                                <TableColumn prefWidth="168.0" text="Спортсмен" />
+                                <TableColumn fx:id="fight_num" prefWidth="31.333328247070312" text="No" />
+                                <TableColumn fx:id="name" prefWidth="168.0" text="Спортсмен" />
                             </columns>
                         </TableView>
                         <TableView layoutX="782.0" layoutY="-2.0" prefHeight="624.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0">
