@@ -5,10 +5,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="416.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.fileController">
+<AnchorPane prefHeight="416.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.fileController">
     <children>
-        <TableView prefHeight="359.0" prefWidth="695.0">
+        <TableView fx:id="excel_table" prefHeight="359.0" prefWidth="695.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columns>
                 <TableColumn fx:id="reg_col" prefWidth="75.0" text="Код регистрации" />
                 <TableColumn fx:id="draw_col" prefWidth="75.0" text="Номер жеребьевки" />
@@ -20,8 +19,11 @@
                 <TableColumn fx:id="weight_col" prefWidth="75.0" text="Весовая категория" />
                 <TableColumn fx:id="age_col" prefWidth="94.0" text="Возрастная категория" />
             </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
         </TableView>
-        <Button layoutX="518.0" layoutY="365.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Отмена" textFill="WHITE" />
-        <Button layoutX="120.0" layoutY="365.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Подтведить" textFill="WHITE" />
+        <Button fx:id="cancel_btn" layoutX="510.0" layoutY="365.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Отмена" textFill="WHITE" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="104.0" />
+        <Button fx:id="confirm_btn" layoutX="99.0" layoutY="365.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Подтведить" textFill="WHITE" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="99.0" />
     </children>
 </AnchorPane>

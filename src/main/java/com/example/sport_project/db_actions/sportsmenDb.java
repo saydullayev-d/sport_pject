@@ -12,14 +12,12 @@ public class sportsmenDb {
 
     public static void write(String name, int cod_draw, String age, String club, String gender, boolean action, String weight, String age_category){
         ObservableList<Sportsmen> data = FXCollections.observableArrayList();
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
-        String query = "INSERT INTO sportsmens(name, cod_draw, age, club, gender, action, weight, age_category) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+
+        String query = "INSERT INTO sportsmen(name, cod_draw, age, club, gender, action, weight, age_category) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, cod_draw);
@@ -43,14 +41,11 @@ public class sportsmenDb {
 
     public static void updateSportsmen(String name_first, String name, int cod_draw, String age, String club, String gender, boolean action, String weight, String age_category){
 
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
-        String query = "UPDATE sportsmens SET name=?, cod_draw=?, age=?, club=?, gender=?, action=?, weight=?, age_category=? WHERE name = ?";
+        String query = "UPDATE sportsmen SET name=?, cod_draw=?, age=?, club=?, gender=?, action=?, weight=?, age_category=? WHERE name = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, cod_draw);
@@ -73,12 +68,10 @@ public class sportsmenDb {
 
     }
     public static ObservableList<Sportsmen> getData(){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         ObservableList<Sportsmen> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
-            String query = "SELECT name, cod_reg, cod_draw, age, club, gender, action, weight, age_category FROM sportsmens";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT name, cod_reg, cod_draw, age, club, gender, action, weight, age_category FROM sportsmen";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -104,12 +97,10 @@ public class sportsmenDb {
     }
 
     public static ArrayList<String> getNames() {
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         ArrayList<String> data = new ArrayList<>();
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
-            String query = "SELECT name FROM sportsmens";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+            String query = "SELECT name FROM sportsmen";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -126,14 +117,12 @@ public class sportsmenDb {
     }
 
     public static void deleteSportsmen(String name) {
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
-        String query = "DELETE FROM sportsmens WHERE name = ?";
+
+        String query = "DELETE FROM sportsmen WHERE name = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.executeUpdate();

@@ -27,6 +27,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
@@ -257,7 +258,24 @@ public class HelloController implements Initializable {
                 try {
                     Scene newscene = new Scene(loader.load());
                     fileController fileController = loader.getController();
-                    fileController.insertData(selectedFile);
+                    if(selectedFile!=null){
+                        XSSFWorkbook workbook = new XSSFWorkbook(selectedFile.getPath());
+                        XSSFSheet sheet = workbook.getSheetAt(0);
+                        if(sheet.getPhysicalNumberOfRows()>0){
+                            fileController.insertData(selectedFile);
+                            Stage newsatge = new Stage();
+                            newsatge.setScene(newscene);
+                            newsatge.showAndWait();
+                        }else {
+                            Alert alert = new Alert(Alert.AlertType.WARNING);
+                            alert.setTitle("Ошибка");
+                            alert.setHeaderText(null);
+                            alert.setContentText("Выбранный вами файл пуст!");
+                            alert.showAndWait();
+                        }
+
+                    }
+
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

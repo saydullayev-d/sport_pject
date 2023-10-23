@@ -10,14 +10,12 @@ import java.sql.ResultSet;
 
 public class sportClubDb {
     public static void addSportCLub(String club){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         String query = "INSERT INTO sportclub(club) VALUES(?)";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -28,11 +26,9 @@ public class sportClubDb {
     }
 
     public static ObservableList<SportClub> getSportClub(){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         ObservableList<SportClub> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
             String query = "SELECT club_id, club FROM sportclub";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -50,14 +46,12 @@ public class sportClubDb {
 
 
     public static void deleteSportClub(String club) {
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         String query = "DELETE FROM sportclub WHERE club = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -68,14 +62,12 @@ public class sportClubDb {
     }
 
     public static void update_SportClub(String SportClub_old, String club){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         String query = "UPDATE  sportclub SET club = ? WHERE club = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.setString(2, SportClub_old);
@@ -89,11 +81,9 @@ public class sportClubDb {
 
     public static String getFirst(){
 
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
         String data = "";
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
+
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
             String query = "SELECT club FROM sportclub";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();

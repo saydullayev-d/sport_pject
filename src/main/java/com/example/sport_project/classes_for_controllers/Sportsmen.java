@@ -46,6 +46,9 @@ public class Sportsmen {
         return act;
     }
 
+    public Sportsmen() {
+    }
+
     public int getDraw_num() {
         return draw_num;
     }

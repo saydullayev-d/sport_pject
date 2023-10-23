@@ -11,14 +11,12 @@ import java.sql.ResultSet;
 
 public class ageCategoryDb {
     public static void addAge(String club){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
+
         String query = "INSERT INTO age_category(age) VALUES(?)";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -29,11 +27,8 @@ public class ageCategoryDb {
     }
 
     public static ObservableList<AgeCategory> getAge(){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
         ObservableList<AgeCategory> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
             String query = "SELECT id, age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -52,14 +47,11 @@ public class ageCategoryDb {
     }
 
     public static void deleteAgeCategory(String age) {
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
         String query = "DELETE FROM age_category WHERE age = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, age);
             preparedStatement.executeUpdate();
@@ -70,14 +62,11 @@ public class ageCategoryDb {
     }
 
     public static void update_ageCategory(String ageCategory_old, String club){
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
         String query = "UPDATE  age_category SET age = ? WHERE age = ?";
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(url, login, password);
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.setString(2, ageCategory_old);
@@ -91,11 +80,9 @@ public class ageCategoryDb {
 
     public static String getFirst(){
 
-        String url = "jdbc:postgresql://localhost:5432/SportProg";
-        String login = "progers";
-        String password = "root";
         String data = "";
-        try(Connection connection = DriverManager.getConnection(url, login, password)){
+
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
             String query = "SELECT age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();

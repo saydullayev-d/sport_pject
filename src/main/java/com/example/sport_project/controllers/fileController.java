@@ -1,60 +1,163 @@
 package com.example.sport_project.controllers;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.DateUtil;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
+import com.example.sport_project.classes_for_controllers.Sportsmen;
+import com.example.sport_project.db_actions.sportsmenDb;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
+import javafx.fxml.FXML;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.ResourceBundle;
 
-public class fileController {
 
+
+public class fileController implements Initializable {
+
+    @FXML
+    private TableView<Sportsmen> excel_table;
+
+    @FXML
+    private TableColumn<Sportsmen, String> age_col;
+
+    @FXML
+    private TableColumn<Sportsmen, Boolean> act_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> club_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> date_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> draw_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> gender_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> name_col;
+
+    @FXML
+    private TableColumn<Sportsmen, Integer> reg_col;
+
+    @FXML
+    private TableColumn<Sportsmen, String> weight_col;
+    @FXML
+    private Button confirm_btn;
+    @FXML
+    private Button cancel_btn;
+
+    ObservableList<Sportsmen> data = FXCollections.observableArrayList();
     public void insertData(File selectedFile){
-        if (selectedFile != null) {
-            try {
-                XSSFWorkbook workbook = new XSSFWorkbook(selectedFile);
-                XSSFSheet sheet = workbook.getSheetAt(0);
-                for (int rowNum = 1; rowNum <= sheet.getLastRowNum(); rowNum++) {
-                    XSSFRow row = sheet.getRow(rowNum);
-                    if (row != null) {
-                        System.out.println("Строка: " + rowNum);
-                        for (int cellNum = 0; cellNum <= row.getLastCellNum(); cellNum++) {
-                            XSSFCell cell = row.getCell(cellNum);
-                            if (cell != null) {
-                                switch (cell.getCellType()){
-                                    case STRING:
-                                        String StringcellValue = cell.getStringCellValue();
-                                        System.out.println("Значение ячейки: " + StringcellValue);
-                                        break;
-                                    case NUMERIC:
-                                        if (DateUtil.isCellDateFormatted(cell)) {
-                                            Date dateValue = cell.getDateCellValue();
-                                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); // Формат даты
-                                            String formattedDate = dateFormat.format(dateValue);
-                                            System.out.println("Значение ячейки: " + formattedDate);
-                                        }
-                                        else{
-                                            double NumericellValue = cell.getNumericCellValue();
-                                            System.out.println("Значение ячейки: " + NumericellValue);
-                                        }
-                                        break;
-                                }
-                            }
-                        }
-                    }
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-
-            } catch (InvalidFormatException e) {
-                throw new RuntimeException(e);
+        try {
+            XSSFWorkbook workbook = new XSSFWorkbook(selectedFile.getPath());
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+                Sportsmen sportsmen = new Sportsmen();
+                int reg_num = (int) sheet.getRow(i).getCell(0).getNumericCellValue();
+                int draw_num = (int) sheet.getRow(i).getCell(1).getNumericCellValue();
+                String name = sheet.getRow(i).getCell(2).getStringCellValue();
+                String action = sheet.getRow(i).getCell(3).getStringCellValue();
+                Date dateValue = sheet.getRow(i).getCell(4).getDateCellValue();
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String birthDate = dateFormat.format(dateValue);
+                String gender = sheet.getRow(i).getCell(5).getStringCellValue();
+                String sport_club = sheet.getRow(i).getCell(6).getStringCellValue();
+                String weight_category = sheet.getRow(i).getCell(7).getStringCellValue();
+                String age_category = sheet.getRow(i).getCell(8).getStringCellValue();
+                sportsmen.setReg_num(reg_num);
+                sportsmen.setDraw_num(draw_num);
+                sportsmen.setName(name);
+                sportsmen.setAct(action);
+                sportsmen.setAge(birthDate);
+                sportsmen.setGender(gender);
+                sportsmen.setSport_club(sport_club);
+                sportsmen.setWeight(weight_category);
+                sportsmen.setAge_category(age_category);
+                data.add(sportsmen);
             }
 
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+        excel_table.setItems(data);
+
+
+
+
+
+    }
+
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        weight_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("weight"));
+        reg_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, Integer>("reg_num"));
+        age_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("age_category"));
+        name_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("name"));
+        gender_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("gender"));
+        draw_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("draw_num"));
+        date_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("age"));
+        club_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, String>("sport_club"));
+        act_col.setCellValueFactory(new PropertyValueFactory<Sportsmen, Boolean>("act"));
+
+
+
+        confirm_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                if(!data.isEmpty()){
+                    for(Sportsmen sportsmen : data){
+                        if(sportsmen.getAct().equals("ДА")){
+                            sportsmenDb.write(sportsmen.getName(),sportsmen.getDraw_num(),sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), true, sportsmen.getWeight(), sportsmen.getAge_category());
+                        } else if (sportsmen.getAct().equals("НЕТ")) {
+                            sportsmenDb.write(sportsmen.getName(),sportsmen.getDraw_num(),sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), false, sportsmen.getWeight(), sportsmen.getAge_category());
+                        }
+                    }
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setTitle("Успешно");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Спортсмены успешно добавлены!");
+                    alert.showAndWait();
+                    data.clear();
+                    excel_table.getItems().clear();
+                    Stage stage = (Stage) confirm_btn.getScene().getWindow();
+                    stage.close();
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.WARNING);
+                    alert.setTitle("Ошибка");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Таблица пуста!");
+                    alert.showAndWait();
+                }
+
+            }
+        });
+        cancel_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                data.clear();
+                excel_table.getItems().clear();
+                Stage stage = (Stage) cancel_btn.getScene().getWindow();
+                stage.close();
+            }
+        });
+
+
     }
 }
