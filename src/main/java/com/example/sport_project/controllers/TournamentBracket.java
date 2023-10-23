@@ -2,6 +2,8 @@ package com.example.sport_project.controllers;
 
 import com.example.sport_project.HelloApplication;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
+import com.example.sport_project.db_actions.sportsmenDb;
+import com.example.sport_project.db_actions.tournament_64Db;
 import com.example.sport_project.db_actions.weightCategoryDb;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -44,19 +46,8 @@ public class TournamentBracket implements Initializable {
         generate_btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                Platform.runLater(() -> {
-                    try {
-                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/generate_tournament_bracket.fxml"));
-                        Scene newscene = new Scene(loader.load());
-                        Stage newstage = new Stage();
-                        newstage.setScene(newscene);
-                        newstage.setTitle("Добавить возрастную категорию");
-                        newstage.showAndWait();
-
-                    }catch (Exception e){
-                        System.out.println(e);
-                    }
-                });
+                String weight = weight_info.getValue();
+                tournament_64Db.addDataLeft(sportsmenDb.getByWeight(weight));
             }
         });
 

@@ -39,7 +39,24 @@ public class sportsmenDb {
 
     }
 
-    public static void updateSportsmen(String name_first, String name, int cod_draw, String age, String club, String gender, boolean action, String weight, String age_category){
+    public static ArrayList<String> getByWeight(String weight){
+        ArrayList<String> sportsmens = new ArrayList<>();
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT name FROM sportsmen WHERE weight=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, weight);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String name = resultSet.getString("name");
+                sportsmens.add(name);
+            }
+    } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return sportsmens;
+    }
+
+        public static void updateSportsmen(String name_first, String name, int cod_draw, String age, String club, String gender, boolean action, String weight, String age_category){
 
         String query = "UPDATE sportsmen SET name=?, cod_draw=?, age=?, club=?, gender=?, action=?, weight=?, age_category=? WHERE name = ?";
 
@@ -68,13 +85,11 @@ public class sportsmenDb {
 
     }
     public static ObservableList<Sportsmen> getData(){
-
         ObservableList<Sportsmen> data = FXCollections.observableArrayList();
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
             String query = "SELECT name, cod_reg, cod_draw, age, club, gender, action, weight, age_category FROM sportsmen";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
-
             while (resultSet.next()){
                 String name = resultSet.getString("name");
                 int cod_reg = resultSet.getInt("cod_reg");
@@ -87,7 +102,6 @@ public class sportsmenDb {
                 String age_category = resultSet.getString("age_category");
                 data.add(new Sportsmen(name, club, gender, weight, age_category, age.toString(), cod_draw, cod_reg, action));
             }
-
             return data;
 
         }catch (Exception e){
