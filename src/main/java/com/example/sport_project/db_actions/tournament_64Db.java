@@ -1,6 +1,5 @@
 package com.example.sport_project.db_actions;
 
-import com.example.sport_project.classes_for_controllers.Sportsmen;
 import com.example.sport_project.classes_for_controllers.Tournament_64;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,7 +17,9 @@ public class tournament_64Db {
             while (resultSet.next()){
                 String name = resultSet.getString("name");
                 int fight_num = resultSet.getInt("fight_num");
-                data.add(new Tournament_64(name, fight_num));
+                if(fight_num%2!=0) {
+                    data.add(new Tournament_64(name, fight_num));
+                }
             }
             return data;
 
@@ -41,6 +42,19 @@ public class tournament_64Db {
                 preparedStatement.executeBatch();
 
             }
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void clearTable(){
+        String query = "DELETE FROM tournament_64";
+        try {
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.executeUpdate();
 
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);

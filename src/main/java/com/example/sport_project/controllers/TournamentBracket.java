@@ -55,6 +55,8 @@ public class TournamentBracket implements Initializable {
                     newstage.setScene(newscene);
                     newstage.setTitle("Турнирная сетка");
                     newstage.showAndWait();
+                    Stage btn_stage = (Stage) generate_btn.getScene().getWindow();
+                    btn_stage.close();
 
                 }catch (Exception e){
                     System.out.println(e);
