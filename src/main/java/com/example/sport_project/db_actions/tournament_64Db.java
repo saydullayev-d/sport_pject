@@ -11,15 +11,13 @@ public class tournament_64Db {
     public static ObservableList<Tournament_64> getDataLeft(){
         ObservableList<Tournament_64> data = FXCollections.observableArrayList();
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT fight_num, name FROM tournament_64";
+            String query = "SELECT fight_num, name FROM tournament_64 WHERE id % 2 = 1";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 String name = resultSet.getString("name");
-                int fight_num = resultSet.getInt("fight_num");
-                if(fight_num%2!=0) {
-                    data.add(new Tournament_64(name, fight_num));
-                }
+                String fight_num = resultSet.getString("fight_num");
+                data.add(new Tournament_64(name, fight_num));
             }
             return data;
 
@@ -36,7 +34,8 @@ public class tournament_64Db {
             Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             for (String sportsmen: sportsmens) {
-                preparedStatement.setInt(1, sportsmens.indexOf(sportsmen)+1);
+                int index = sportsmens.indexOf(sportsmen)+1;
+                preparedStatement.setString(1, "_64_"+index);
                 preparedStatement.setString(2, sportsmen);
                 preparedStatement.addBatch();
                 preparedStatement.executeBatch();

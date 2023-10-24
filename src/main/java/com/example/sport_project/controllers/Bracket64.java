@@ -1,27 +1,44 @@
 package com.example.sport_project.controllers;
 
-import com.example.sport_project.classes_for_controllers.Tournament_64;
 import com.example.sport_project.db_actions.tournament_64Db;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Bracket64 implements Initializable {
+
+
     @FXML
-    private TableView<Tournament_64> left_64;
+    private Text _64_1;
+
     @FXML
-    private TableColumn<String, Tournament_64> name;
+    private Text _64_3;
+
     @FXML
-    private TableColumn<Integer, Tournament_64> fight_num;
+    private Text _64_5;
+
+    List<Text> textList = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        name.setCellValueFactory(new PropertyValueFactory<>("name"));
-        fight_num.setCellValueFactory(new PropertyValueFactory<>("fight_num"));
-        left_64.setItems(tournament_64Db.getDataLeft());
+        textList.add(_64_1);
+        textList.add(_64_3);
+        textList.add(_64_5);
+        for(Text text: textList){
+            String name = tournament_64Db.getDataLeft().get(textList.indexOf(text)).getName();
+            String fight_num = tournament_64Db.getDataLeft().get(textList.indexOf(text)).getFight_num();
+            System.out.print(name);
+            System.out.print(" "+fight_num);
+            System.out.println();
+            if(text.getId().equals(fight_num)){
+                text.setText(name);
+            }
+        }
+        tournament_64Db.clearTable();
     }
 }
