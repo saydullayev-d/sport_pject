@@ -1,17 +1,22 @@
 package com.example.sport_project.controllers;
 
+import com.example.sport_project.HelloApplication;
 import com.example.sport_project.classes_for_controllers.Tournament_64;
 import com.example.sport_project.db_actions.tournament_64Db;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -78,22 +83,40 @@ public class Bracket64 implements Initializable {
             }
         }
 
-        fight_left_64_1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                int id = extractLastDigit(fight_left_64_1.getId());
-                String name1 = textList.get(id-1).getText();
-                String name2 = textList.get(id+1).getText();
 
-            }
-        });
-
-        VBox btn_parent = (VBox) fight_left_64_1.getParent();
+        AnchorPane btn_parent = (AnchorPane) fight_left_64_1.getParent();
         List<Button> btnList = new ArrayList<>();
-        for (int i = 1; i <=64 ; i++) {
+        for (int i = 1; i <=32 ; i++) {
             Node element = btn_parent.lookup("#fight_left_64_"+i);
             btnList.add((Button) element);
 
+        }
+        for(Button btn:btnList){
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+//                    int id = extractLastDigit(btn.getId());
+//                    int t_id = sportsmens.get(id-1).getId();
+//                    int t_id2 = sportsmens.get(id+1).getId();
+//                    if(id==t_id|t_id==t_id2){
+//                        String name1 = sportsmens.get(t_id).getName();
+//                        String name2 = sportsmens.get(t_id2).getName();
+//                        System.out.println(name1);
+//                        System.out.println(name2);
+                    try {
+                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFight.fxml"));
+                        Scene newscene = new Scene(loader.load());
+                        Stage newstage = new Stage();
+                        newstage.setScene(newscene);
+                        newstage.setTitle("Результат");
+                        newstage.showAndWait();
+
+                    }catch (Exception e){
+                        System.out.println(e);
+                    }
+
+                }
+            });
         }
 
     }
