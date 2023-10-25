@@ -11,7 +11,7 @@ public class tournament_64Db {
     public static ObservableList<Tournament_64> getDataLeft(){
         ObservableList<Tournament_64> data = FXCollections.observableArrayList();
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT fight_num, name FROM tournament_64 WHERE id % 2 = 1";
+            String query = "SELECT fight_num, name FROM tournament_64";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
@@ -20,6 +20,24 @@ public class tournament_64Db {
                 data.add(new Tournament_64(name, fight_num));
             }
             return data;
+
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return data;
+    }
+    public static String getById(int id){
+        String data = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT name FROM tournament_64 WHERE id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                preparedStatement.setInt(1, id);
+                data = resultSet.getString("name");
+                return data;
+            }
+
 
         }catch (Exception e){
             System.out.println(e);
@@ -35,10 +53,12 @@ public class tournament_64Db {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             for (String sportsmen: sportsmens) {
                 int index = sportsmens.indexOf(sportsmen)+1;
-                preparedStatement.setString(1, "_64_"+index);
-                preparedStatement.setString(2, sportsmen);
-                preparedStatement.addBatch();
-                preparedStatement.executeBatch();
+                    preparedStatement.setString(1, "_64_"+index);
+                    preparedStatement.setString(2, sportsmen);
+                    preparedStatement.addBatch();
+                    preparedStatement.executeBatch();
+
+
 
             }
 

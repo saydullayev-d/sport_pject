@@ -19,7 +19,10 @@ import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class TournamentBracket implements Initializable {
@@ -29,6 +32,10 @@ public class TournamentBracket implements Initializable {
 
     @FXML
     private Button generate_btn;
+
+
+
+
 
 
     @Override
@@ -47,7 +54,8 @@ public class TournamentBracket implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 String weight = weight_info.getValue();
-                tournament_64Db.addDataLeft(sportsmenDb.getByWeight(weight));
+                ArrayList<String> sportsmens = sportsmenDb.getByWeight(weight);
+                tournament_64Db.addDataLeft(sportsmens);
                 try {
                     FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                     Scene newscene = new Scene(loader.load());
@@ -59,7 +67,7 @@ public class TournamentBracket implements Initializable {
                     btn_stage.close();
 
                 }catch (Exception e){
-                    System.out.println(e);
+                    e.printStackTrace();
                 }
             }
         });
