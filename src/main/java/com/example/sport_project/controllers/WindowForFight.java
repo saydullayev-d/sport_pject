@@ -24,9 +24,6 @@ public class WindowForFight {
         win_sportsmen_2.setText(Sportsmen2);
 
 
-
-
-
     }
 
 }
