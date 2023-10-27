@@ -86,9 +86,10 @@ public class Bracket64 implements Initializable {
                 textList.get(i).setText(name);
             }
         }
-        for (int i = 0; i < sportsmens.size(); i++) {
-                if (i % 2 == 0) {
-                    fight_64_leftDb.addFight(sportsmens.get(i).getName(), i);
+        for (int i = 1; i <= sportsmens.size(); i+=4) {
+                if (i % 2 == 1) {
+                    System.out.println(i);
+                        fight_64_leftDb.addFight(i);
                 }
         }
 
@@ -104,26 +105,12 @@ public class Bracket64 implements Initializable {
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    int id = extractLastDigit(btn.getId())+1;
-                    String f_id = sportsmens.get(id-1).getFight_num();
-                    String f_id2 = sportsmens.get(id+1).getFight_num();
-                    System.out.println(f_id);
-                    System.out.println(f_id2);
-                    String t_id = "_64_"+id;
-
-                    if(t_id.equals(f_id)){
-                        String name1 = fight_64_leftDb.getSportsmens(id+1);
-                        String name2 = fight_64_leftDb.getSportsmens(id-1);
-//                        String name2 = sportsmens.get(id-2).getName();
-//                        System.out.println(name1);
-//                        System.out.println(name2);
-
-                    }
+                    int id = extractLastDigit(btn.getId());
                     try {
                         FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFight.fxml"));
                         Scene newscene = new Scene(loader.load());
                         WindowForFight windowForFight = loader.getController();
-                        windowForFight.name_winner(_64_1.getText(), _64_2.getText());
+                        windowForFight.name_winner(fight_64_leftDb.getSportsmen1(id), fight_64_leftDb.getSportsmen2(id));
                         Stage newstage = new Stage();
                         newstage.setScene(newscene);
                         newstage.setTitle("Результат");
