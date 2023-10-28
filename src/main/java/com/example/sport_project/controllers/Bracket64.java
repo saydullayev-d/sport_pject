@@ -2,6 +2,7 @@ package com.example.sport_project.controllers;
 
 import com.example.sport_project.HelloApplication;
 import com.example.sport_project.classes_for_controllers.Tournament_64;
+import com.example.sport_project.db_actions.sportsmenDb;
 import com.example.sport_project.db_actions.tournament_64Db;
 import com.example.sport_project.db_actions.fight_64_leftDb;
 import javafx.collections.ObservableList;
@@ -51,47 +52,38 @@ public class Bracket64 implements Initializable {
     List<Text> textList = new ArrayList<>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
-
         VBox parent = (VBox) _64_1.getParent();
         VBox parent2 = (VBox) _64_2.getParent();
         for (int i = 1; i <=128 ; i+=2) {
             Node element = parent.lookup("#_64_"+i);
             textList.add((Text) element);
-
         }
         for(int i = 2; i<=128; i+=2){
             Node element = parent2.lookup("#_64_"+i);
             textList.add((Text) element);
         }
+
         ObservableList<Tournament_64> sportsmens = tournament_64Db.getDataLeft();
         Pattern pattern = Pattern.compile("_64_(\\d+)");
         Comparator<Text> textComparator = (text1, text2) -> {
-            Matcher matcher1 = pattern.matcher(text1.getId());
-            Matcher matcher2 = pattern.matcher(text2.getId());
-            if (matcher1.find() && matcher2.find()) {
-                int id1 = Integer.parseInt(matcher1.group(1));
-                int id2 = Integer.parseInt(matcher2.group(1));
-                return Integer.compare(id1, id2);
-            } else {
-                return 0;
-            }
+        Matcher matcher1 = pattern.matcher(text1.getId());
+        Matcher matcher2 = pattern.matcher(text2.getId());
+        if (matcher1.find() && matcher2.find()) {
+            int id1 = Integer.parseInt(matcher1.group(1));
+            int id2 = Integer.parseInt(matcher2.group(1));
+            return Integer.compare(id1, id2);
+        } else {
+            return 0;
+        }
         };
         textList.sort(textComparator);
-        for(int i = 0; i < sportsmens.size(); i++){
-            String name = sportsmens.get(i).getName();
-            String fight_num = sportsmens.get(i).getFight_num();
-            if(textList.get(i).getId().equals(fight_num)) {
-                textList.get(i).setText(name);
-            }
+
+        for(Text text: textList){
+            String name = sportsmenDb.getByDrawNum(extractLastDigit(text.getId()));
+            text.setText(name);
         }
-        for (int i = 1; i <= sportsmens.size(); i+=4) {
-                if (i % 2 == 1) {
-                    System.out.println(i);
-                        fight_64_leftDb.addFight(i);
-                }
-        }
+
+        tournament_64Db.clearTable();
 
 
         AnchorPane btn_parent = (AnchorPane) fight_left_64_1.getParent();

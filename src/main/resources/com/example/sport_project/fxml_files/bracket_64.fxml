@@ -10,11 +10,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1823.0" prefWidth="1001.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="990.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab text="первый этап">
          <content>
-            <ScrollPane fitToWidth="true" prefHeight="743.0" prefWidth="1001.0">
+            <ScrollPane fitToWidth="true" prefHeight="896.0" prefWidth="1005.0">
                <content>
                   <AnchorPane prefHeight="2148.0" prefWidth="2021.0" style="-fx-background-color: white;">
                      <children>

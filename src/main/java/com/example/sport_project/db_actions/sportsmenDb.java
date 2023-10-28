@@ -56,6 +56,24 @@ public class sportsmenDb {
         return sportsmens;
     }
 
+
+    public static String getByDrawNum(int draw_num){
+        String sportsmen = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT name FROM sportsmen WHERE cod_draw=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1, draw_num);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                sportsmen = resultSet.getString("name");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return sportsmen;
+    }
+
+
         public static void updateSportsmen(String name_first, String name, int cod_draw, String age, String club, String gender, boolean action, String weight, String age_category){
 
         String query = "UPDATE sportsmen SET name=?, cod_draw=?, age=?, club=?, gender=?, action=?, weight=?, age_category=? WHERE name = ?";
