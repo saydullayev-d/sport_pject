@@ -1,5 +1,6 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.classes_for_controllers.Fighter;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -39,16 +40,17 @@ public class sportsmenDb {
 
     }
 
-    public static ArrayList<String> getByWeight(String weight){
-        ArrayList<String> sportsmens = new ArrayList<>();
+    public static ArrayList<Fighter> getByWeight(String weight){
+        ArrayList<Fighter> sportsmens = new ArrayList<>();
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT name FROM sportsmen WHERE weight=?";
+            String query = "SELECT name, cod_draw FROM sportsmen WHERE weight=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, weight);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 String name = resultSet.getString("name");
-                sportsmens.add(name);
+                int draw_num = resultSet.getInt("cod_draw");
+                sportsmens.add(new Fighter(name, draw_num));
             }
     } catch (SQLException e) {
             throw new RuntimeException(e);

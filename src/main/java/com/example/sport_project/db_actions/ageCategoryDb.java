@@ -11,9 +11,7 @@ import java.sql.ResultSet;
 
 public class ageCategoryDb {
     public static void addAge(String club){
-
         String query = "INSERT INTO age_category(age) VALUES(?)";
-
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
@@ -79,9 +77,7 @@ public class ageCategoryDb {
     }
 
     public static String getFirst(){
-
         String data = "";
-
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
             String query = "SELECT age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);

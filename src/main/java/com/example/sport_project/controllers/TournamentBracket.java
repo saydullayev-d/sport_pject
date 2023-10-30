@@ -1,6 +1,8 @@
 package com.example.sport_project.controllers;
 
 import com.example.sport_project.HelloApplication;
+import com.example.sport_project.classes_for_controllers.Fight;
+import com.example.sport_project.classes_for_controllers.Fighter;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
 import com.example.sport_project.db_actions.sportsmenDb;
 import com.example.sport_project.db_actions.tournament_64Db;
@@ -54,7 +56,7 @@ public class TournamentBracket implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 String weight = weight_info.getValue();
-                ArrayList<String> sportsmens = sportsmenDb.getByWeight(weight);
+                ArrayList<Fighter> sportsmens = sportsmenDb.getByWeight(weight);
                 tournament_64Db.addDataLeft(sportsmens);
                 try {
                     FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
