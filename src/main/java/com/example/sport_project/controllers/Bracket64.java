@@ -1,29 +1,20 @@
+
 package com.example.sport_project.controllers;
 
 import com.example.sport_project.HelloApplication;
-import com.example.sport_project.classes_for_controllers.Tournament_64;
-import com.example.sport_project.db_actions.sportsmenDb;
-import com.example.sport_project.db_actions.tournament_64Db;
-import com.example.sport_project.db_actions.fight_64_leftDb;
-import com.example.sport_project.db_actions.winner_64_leftDb;
-import javafx.collections.ObservableList;
+import com.example.sport_project.db_actions.*;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.print.PageLayout;
-import javafx.print.PrinterJob;
-import javafx.scene.Group;
 import javafx.scene.Node;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -99,6 +90,7 @@ public class Bracket64 implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         VBox parent = (VBox) _64_1.getParent();
         VBox parent2 = (VBox) _64_2.getParent();
         for (int i = 1; i <= 128; i += 2) {
@@ -143,13 +135,34 @@ public class Bracket64 implements Initializable {
 
         }
 
-//        AnchorPane right_btn_parent = (AnchorPane) fight_right_64_1.getParent();
-//        List<Button> RightbtnList = new ArrayList<>();
-//        for (int i = 1; i <=32 ; i++) {
-//            Node element = right_btn_parent.lookup("#fight_left_64_"+i);
-//            RightbtnList.add((Button) element);
-//
-//        }
+        AnchorPane right_btn_parent = (AnchorPane) fight_right_64_1.getParent();
+        List<Button> rightBtnList = new ArrayList<>();
+        for (int i = 1; i <=32 ; i++) {
+            Node element = right_btn_parent.lookup("#fight_right_64_"+i);
+            rightBtnList.add((Button) element);
+        }
+        for(Button btn : rightBtnList){
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    int id = extractLastDigit(btn.getId());
+                    try {
+                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightLeft.fxml"));
+                        Scene newscene = new Scene(loader.load());
+                        WindowForFightLeft windowForFightLeft = loader.getController();
+                        windowForFightLeft.name_winner(tournament_64Db.getByDrawNum(fight_64_rightDb.getSportsmen1(id)), tournament_64Db.getByDrawNum(fight_64_rightDb.getSportsmen2(id)), fight_64_rightDb.getSportsmen1(id), fight_64_rightDb.getSportsmen2(id));
+                        Stage newstage = new Stage();
+                        newstage.setScene(newscene);
+                        newstage.setTitle("Результат");
+                        newstage.showAndWait();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            });
+        }
 
         for (Button btn : btnList) {
             btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -157,10 +170,11 @@ public class Bracket64 implements Initializable {
                 public void handle(ActionEvent actionEvent) {
                     int id = extractLastDigit(btn.getId());
                     try {
-                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFight.fxml"));
+                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightLeft.fxml"));
                         Scene newscene = new Scene(loader.load());
-                        WindowForFight windowForFight = loader.getController();
-                        windowForFight.name_winner(sportsmenDb.getByDrawNum(fight_64_leftDb.getSportsmen1(id)), sportsmenDb.getByDrawNum(fight_64_leftDb.getSportsmen2(id)), fight_64_leftDb.getSportsmen1(id), fight_64_leftDb.getSportsmen2(id));
+                        WindowForFightLeft windowForFightLeft = loader.getController();
+                        System.out.println(tournament_64Db.getByDrawNum(fight_64_leftDb.getSportsmen1(id)));
+                        windowForFightLeft.name_winner(tournament_64Db.getByDrawNum(fight_64_leftDb.getSportsmen1(id)), tournament_64Db.getByDrawNum(fight_64_leftDb.getSportsmen2(id)), fight_64_leftDb.getSportsmen1(id), fight_64_leftDb.getSportsmen2(id));
                         Stage newstage = new Stage();
                         newstage.setScene(newscene);
                         newstage.setTitle("Результат");
@@ -173,7 +187,7 @@ public class Bracket64 implements Initializable {
                 }
             });
         }
-        tournament_64Db.clearTable();
+
         bracket_pane.getSelectionModel().selectedItemProperty().addListener((observable, oldTab, newTab) -> {
             if (newTab == etap_32) {
                 VBox parent32 = (VBox) _32_1.getParent();
@@ -185,7 +199,13 @@ public class Bracket64 implements Initializable {
                 }
 
             }
+
         });
+
+
+
+
+
 
     }
 
@@ -253,6 +273,3 @@ public class Bracket64 implements Initializable {
         }
     }
 }
-
-
-

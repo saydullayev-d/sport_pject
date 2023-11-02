@@ -1,8 +1,10 @@
+
 package com.example.sport_project.controllers;
 
 import com.example.sport_project.HelloApplication;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
 import com.example.sport_project.db_actions.sportsmenDb;
+import com.example.sport_project.db_actions.tournament_64Db;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -26,6 +28,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.stage.WindowEvent;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -89,9 +93,9 @@ public class HelloController implements Initializable {
 
 
     public void updateData(){
-            sportTable.getItems().clear();
-            sportTable.setItems(sportsmenDb.getData());
-            sportTable.refresh();
+        sportTable.getItems().clear();
+        sportTable.setItems(sportsmenDb.getData());
+        sportTable.refresh();
     }
 
 
@@ -175,17 +179,17 @@ public class HelloController implements Initializable {
         addSportsmen.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                    try {
-                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/add_sportsmen.fxml"));
-                        Scene newscene = new Scene(loader.load());
-                        Stage newstage = new Stage();
-                        newstage.setScene(newscene);
-                        newstage.setTitle("Добавить спортсмена");
-                        newstage.showAndWait();
+                try {
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/add_sportsmen.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    newstage.setScene(newscene);
+                    newstage.setTitle("Добавить спортсмена");
+                    newstage.showAndWait();
 
-                    }catch (Exception e){
-                        System.out.println(e);
-                    }
+                }catch (Exception e){
+                    System.out.println(e);
+                }
             }
         });
         ageCategory.setOnAction(new EventHandler<ActionEvent>() {
@@ -206,7 +210,6 @@ public class HelloController implements Initializable {
                 });
             }
         });
-
 
         addSportClub.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -292,7 +295,9 @@ public class HelloController implements Initializable {
                     Scene newscene = new Scene(loader.load());
                     Stage newstage = new Stage();
                     newstage.setScene(newscene);
+
                     newstage.setTitle("Турнирная сетка");
+
                     newstage.showAndWait();
 
                 }catch (Exception e){

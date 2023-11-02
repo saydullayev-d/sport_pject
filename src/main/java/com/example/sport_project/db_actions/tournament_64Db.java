@@ -26,14 +26,16 @@ public class tournament_64Db {
         }
         return data;
     }
-    public static String getById(int id){
+    public static String getByDrawNum(int draw_num){
         String data = "";
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT name FROM tournament_64 WHERE id = ?";
+            String query = "SELECT name FROM tournament_64 WHERE draw_num = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
+            preparedStatement.setInt(1, draw_num);
+            preparedStatement.executeQuery();
             if (resultSet.next()){
-                preparedStatement.setInt(1, id);
+
                 data = resultSet.getString("name");
                 return data;
             }
@@ -53,11 +55,11 @@ public class tournament_64Db {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             for (Fighter sportsmen: sportsmens) {
                 int index = sportsmens.indexOf(sportsmen)+1;
-                    preparedStatement.setString(1, "_64_"+index);
-                    preparedStatement.setString(2, sportsmen.getName());
-                    preparedStatement.setInt(3, sportsmen.getDraw_num());
-                    preparedStatement.addBatch();
-                    preparedStatement.executeBatch();
+                preparedStatement.setString(1, "_64_"+index);
+                preparedStatement.setString(2, sportsmen.getName());
+                preparedStatement.setInt(3, sportsmen.getDraw_num());
+                preparedStatement.addBatch();
+                preparedStatement.executeBatch();
 
 
 

@@ -1,11 +1,7 @@
 package com.example.sport_project.db_actions;
 
-import com.example.sport_project.classes_for_controllers.Fight;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 import java.sql.*;
-import java.util.ArrayList;
+
 
 public class fight_64_leftDb {
 
