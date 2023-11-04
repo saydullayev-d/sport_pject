@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2000.0" prefWidth="990.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="первый этап">
          <content>
@@ -1277,162 +1277,162 @@
                         <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="794.0" startX="-100.0" />
                         <VBox layoutX="867.0" layoutY="-6.0" prefHeight="893.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_32_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_6" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_3" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_8" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_10" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_5" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_12" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_6" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_14" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_7" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_16" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_8" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_18" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_9" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_20" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_10" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_22" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_11" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_24" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_12" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_26" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_13" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_28" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_14" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_30" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_15" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_32" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_16" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_34" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_17" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_36" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_18" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_38" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_19" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_40" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_20" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_42" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_21" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_44" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_22" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_46" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_23" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_48" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_24" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_50" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_25" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_52" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_26" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_54" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_27" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_56" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_28" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_58" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_29" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_60" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_30" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_62" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_31" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_32_64" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_32_32" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>

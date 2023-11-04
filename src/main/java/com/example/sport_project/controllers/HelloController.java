@@ -295,10 +295,9 @@ public class HelloController implements Initializable {
                     Scene newscene = new Scene(loader.load());
                     Stage newstage = new Stage();
                     newstage.setScene(newscene);
-
                     newstage.setTitle("Турнирная сетка");
-
                     newstage.showAndWait();
+
 
                 }catch (Exception e){
                     System.out.println(e);

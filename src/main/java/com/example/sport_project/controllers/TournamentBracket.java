@@ -19,6 +19,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -64,9 +65,19 @@ public class TournamentBracket implements Initializable {
                     Stage newstage = new Stage();
                     newstage.setScene(newscene);
                     newstage.setTitle("Турнирная сетка");
+                    newstage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                        @Override
+                        public void handle(WindowEvent windowEvent) {
+                            tournament_64Db.clearTable();
+                            newstage.close();
+                        }
+                    });
                     newstage.showAndWait();
+
                     Stage btn_stage = (Stage) generate_btn.getScene().getWindow();
                     btn_stage.close();
+
+
 
                 }catch (Exception e){
                     e.printStackTrace();

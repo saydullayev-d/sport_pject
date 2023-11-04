@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class winner_64_leftDb {
+public class winner_32_leftDb {
     public static void addWinner(int id, int winner, String name){
-        String query = "INSERT INTO winner_64_left(id,draw_num, name) VALUES(?,?,?)";
+        String query = "INSERT INTO winner_32_left(id,draw_num, name) VALUES(?,?,?)";
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
@@ -25,7 +25,7 @@ public class winner_64_leftDb {
     public static String getByDrawNum(int draw_num){
         String data = "";
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT name FROM winner_64_left WHERE draw_num = ?";
+            String query = "SELECT name FROM winner_32_left WHERE draw_num = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1,draw_num);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -42,7 +42,7 @@ public class winner_64_leftDb {
     public static int getSportsmen(int id){
         int data = 0;
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT draw_num FROM winner_64_left WHERE id = ?";
+            String query = "SELECT draw_num FROM winner_32_left WHERE id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1,id);
             ResultSet resultSet = preparedStatement.executeQuery();
