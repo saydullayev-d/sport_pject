@@ -1,9 +1,6 @@
 package com.example.sport_project.db_actions;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class winner_64_rightDb {
     public static void addWinner(int id, int winner, String name){
@@ -54,5 +51,35 @@ public class winner_64_rightDb {
             e.printStackTrace();
         }
         return data;
+    }
+
+    public static String getName(int id){
+        String  data = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT name FROM winner_64_right WHERE id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                data = resultSet.getString("name");
+            }
+            return data;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    public static void clearTable(){
+        String query = "DELETE FROM winner_64_right";
+        try {
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

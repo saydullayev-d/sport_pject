@@ -5,7 +5,7 @@ import com.example.sport_project.classes_for_controllers.Fight;
 import com.example.sport_project.classes_for_controllers.Fighter;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
 import com.example.sport_project.db_actions.sportsmenDb;
-import com.example.sport_project.db_actions.tournament_64Db;
+import com.example.sport_project.db_actions.*;
 import com.example.sport_project.db_actions.weightCategoryDb;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -69,6 +69,15 @@ public class TournamentBracket implements Initializable {
                         @Override
                         public void handle(WindowEvent windowEvent) {
                             tournament_64Db.clearTable();
+                            fight_32_leftDb.clearTable();
+                            fight_32_rightDb.clearTable();
+                            winner_32_leftDb.clearTable();
+                            winner_32_rightDb.clearTable();
+                            winner_64_leftDb.clearTable();
+                            winner_64_rightDb.clearTable();
+                            fight_16_leftDb.clearTable();
+                            fight_16_rightDb.clearTable();
+
                             newstage.close();
                         }
                     });
