@@ -55,6 +55,8 @@ public class Bracket64 implements Initializable {
     @FXML
     private Text left_win_16_1;
     @FXML
+    private Text right_win_8_1;
+    @FXML
     private Tab etap_32;
     @FXML
     private Tab etap_16;
@@ -76,6 +78,8 @@ public class Bracket64 implements Initializable {
     private Button fight_right_32_1;
     @FXML
     private Button fight_left_16_1;
+    @FXML
+    private Button fight_left_8_1;
     @FXML
     private Text left_16_1;
     @FXML
@@ -132,6 +136,8 @@ public class Bracket64 implements Initializable {
     static List<Text> right_win_32 = new ArrayList<>();
     static List<Text> left_win_16 = new ArrayList<>();
     static List<Text> right_win_16 = new ArrayList<>();
+    static List<Text> right_win_8 = new ArrayList<>();
+    static List<Text> left_win_8 = new ArrayList<>();
 
     public static void addWinner(int id, int sportsmen) {
         for (Text text : left_win_64) {
@@ -179,6 +185,21 @@ public class Bracket64 implements Initializable {
         }
     }
 
+    public static void addWinner8Right(int id, int sportsmen){
+        for (Text text: right_win_8){
+            if (("right_win_8_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+    public static void addWinner8Left(int id, int sportsmen){
+        for (Text text: left_win_8){
+            if (("left_win_8_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+
     List<Text> textList = new ArrayList<>();
 
     @Override
@@ -219,6 +240,13 @@ public class Bracket64 implements Initializable {
             Text right_element = (Text) win16_parent.lookup("#right_win_16_"+i);
             left_win_16.add(left_element);
             right_win_16.add(right_element);
+        }
+        AnchorPane win8_parent = (AnchorPane) right_win_8_1.getParent();
+        for (int i = 1; i <=4; i++) {
+            Text right_element = (Text) win8_parent.lookup("#right_win_8_"+i);
+            Text left_element = (Text) win8_parent.lookup("#left_win_8_"+i);
+            left_win_8.add(left_element);
+            right_win_8.add(right_element);
         }
 
 
@@ -463,15 +491,68 @@ public class Bracket64 implements Initializable {
                     element_left.setText(name_left);
                     element_right.setText(name_right);
                 }
-                List<Button> button16Left = new ArrayList<>();
-                List<Button> button16Right = new ArrayList<>();
-                AnchorPane leftParent = (AnchorPane) fight_left_16_1.getParent();
-                for(int i = 1; i<=15; i+=2){
-                    Button btnLeft = (Button) leftParent.lookup("#fight_left_16_"+i);
-                    Button btnRight = (Button) leftParent.lookup("#fight_right_16_"+i);
-                    button16Left.add(btnLeft);
-                    button16Right.add(btnRight);
+                List<Button> button8Left = new ArrayList<>();
+                List<Button> button8Right = new ArrayList<>();
+                AnchorPane leftParent = (AnchorPane) fight_left_8_1.getParent();
+                for(int i = 1; i<=7; i+=2){
+                    Button btnLeft = (Button) leftParent.lookup("#fight_left_8_"+i);
+                    Button btnRight = (Button) leftParent.lookup("#fight_right_8_"+i);
+                    button8Left.add(btnLeft);
+                    button8Right.add(btnRight);
                 }
+
+                for (Button button: button8Right){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_16_rightDb.getSportsmen(id);
+                            int sportsmen2 = winner_16_rightDb.getSportsmen(id+1);
+                            fight_8_rightDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_16_rightDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_16_rightDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightRight.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightRight windowForFightRight = loader.getController();
+                                windowForFightRight.fight8Right(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+
+                for(Button button: button8Left){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_16_leftDb.getSportsmen(id);
+                            int sportsmen2 = winner_16_leftDb.getSportsmen(id+1);
+                            fight_8_leftDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_16_leftDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_16_leftDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightLeft.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightLeft windowForFightLeft = loader.getController();
+                                windowForFightLeft.fight8Left(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+
             }
 
         });
@@ -603,7 +684,7 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 36;  // Количество строк
+                int numRows = 34;  // Количество строк
                 int numCols = 26;  // Количество столбцов
 
                 // Создайте список для хранения стилей
@@ -639,12 +720,12 @@ public class Bracket64 implements Initializable {
                 }
 
                 // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
+                String leftWin64_1Value = left_win_32_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -666,26 +747,31 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
+                }
+                List<Row> rowList = new ArrayList<>();
+                for (int i = 0; i < maxRows; i += 2) {
+                    Row row = sheet.getRow(i);
+                    rowList.add(row);
+                }
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(3);
+                    cell3.setCellValue(winner_32_leftDb.getSportsmen(i + 1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_32_rightDb.getSportsmen(i + 1));
                 }
 
-                // Сохранение и закрытие workbook в новый файл
+
+// Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-32_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
-// Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
+                // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
                 try {
                     Process process = Runtime.getRuntime().exec("cmd /c start excel " + outputFile);
                     process.waitFor();
@@ -697,7 +783,6 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
     }
 
@@ -749,12 +834,12 @@ public class Bracket64 implements Initializable {
                 }
 
                 // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
+                String leftWin64_1Value = left_win_16_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -768,6 +853,7 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
+
                     if (i < dataFromVBox2.size()) {
                         Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
@@ -776,14 +862,20 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
                 }
+                List<Row> rowList = new ArrayList<>();
+                for (int i = 0; i < maxRows; i += 2) {
+                    Row row = sheet.getRow(i);
+                    rowList.add(row);
+                }
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(3);
+                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                }
+
 
                 // Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-16_updated.xlsx";
@@ -792,7 +884,6 @@ public class Bracket64 implements Initializable {
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
                 // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
@@ -807,8 +898,8 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
+
     }
 
     @FXML
