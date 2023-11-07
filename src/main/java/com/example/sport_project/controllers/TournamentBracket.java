@@ -79,6 +79,20 @@ public class TournamentBracket implements Initializable {
                             fight_16_rightDb.clearTable();
                             winner_16_leftDb.clearTable();
                             winner_16_rightDb.clearTable();
+                            fight_8_leftDb.clearTable();
+                            fight_8_rightDb.clearTable();
+                            winner_8_leftDb.clearTable();
+                            winner_8_rightDb.clearTable();
+                            fight_4_leftDb.clearTable();
+                            fight_4_rightDb.clearTable();
+                            winner_4_leftDb.clearTable();
+                            winner_4_rightDb.clearTable();
+                            fight_2_leftDb.clearTable();
+                            fight_2_rightDb.clearTable();
+                            winner_2_leftDb.clearTable();
+                            winner_2_rightDb.clearTable();
+                            fight_1Db.clearTable();
+                            winner_1Db.clearTable();
 
                             newstage.close();
                         }

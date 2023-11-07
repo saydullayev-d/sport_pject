@@ -173,6 +173,97 @@ public class WindowForFightLeft implements Initializable {
         });
     }
 
+
+    public void fight4Left(String Sportsmen1, String Sportsmen2, int draw1, int draw2){
+        name_winner(Sportsmen1, Sportsmen2, draw1, draw2);
+        win_1_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                int winner_draw = Integer.parseInt(draw_num1.getText());
+                int looser_draw = Integer.parseInt(draw_num2.getText());
+                String name = win_sportsmen_1.getText();
+                int id = fight_4_leftDb.getId(winner_draw,looser_draw);
+
+                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
+                try {
+                    Scene newscene = new Scene(loader.load());
+                    Bracket64.addWinner4Left(id, winner_draw);
+                    winner_4_leftDb.addWinner(id, winner_draw, name);
+                    Stage btn_stage = (Stage) win_1_btn.getScene().getWindow();
+                    btn_stage.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        win_2_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                int winner_draw = Integer.parseInt(draw_num2.getText());
+                int looser_draw = Integer.parseInt(draw_num1.getText());
+                String name = win_sportsmen_2.getText();
+                int id = fight_4_leftDb.getId(looser_draw,winner_draw);
+                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
+                try {
+                    Scene newscene = new Scene(loader.load());
+                    Bracket64.addWinner4Left(id, winner_draw);
+                    winner_4_leftDb.addWinner(id, winner_draw, name);
+                    Stage btn_stage = (Stage) win_2_btn.getScene().getWindow();
+                    btn_stage.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+
+
+    public void fight2Left(String Sportsmen1, String Sportsmen2, int draw1, int draw2){
+        name_winner(Sportsmen1, Sportsmen2, draw1, draw2);
+        win_1_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                int winner_draw = Integer.parseInt(draw_num1.getText());
+                int looser_draw = Integer.parseInt(draw_num2.getText());
+                String name = win_sportsmen_1.getText();
+                int id = fight_2_leftDb.getId(winner_draw,looser_draw);
+
+                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
+                try {
+                    Scene newscene = new Scene(loader.load());
+                    Bracket64.addWinner2Left(id, winner_draw);
+                    winner_2_leftDb.addWinner(id, winner_draw, name);
+                    Stage btn_stage = (Stage) win_1_btn.getScene().getWindow();
+                    btn_stage.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        win_2_btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                int winner_draw = Integer.parseInt(draw_num2.getText());
+                int looser_draw = Integer.parseInt(draw_num1.getText());
+                String name = win_sportsmen_2.getText();
+                int id = fight_2_leftDb.getId(looser_draw,winner_draw);
+                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
+                try {
+                    Scene newscene = new Scene(loader.load());
+                    Bracket64.addWinner2Left(id, winner_draw);
+                    winner_2_leftDb.addWinner(id, winner_draw, name);
+                    Stage btn_stage = (Stage) win_2_btn.getScene().getWindow();
+                    btn_stage.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         win_1_btn.setOnAction(new EventHandler<ActionEvent>() {

@@ -81,6 +81,12 @@ public class Bracket64 implements Initializable {
     @FXML
     private Button fight_left_8_1;
     @FXML
+    private Button fight_left_4_1;
+    @FXML
+    private Button fight_left_2_1;
+    @FXML
+    private Button fight_1_1;
+    @FXML
     private Text left_16_1;
     @FXML
     private Text right_16_1;
@@ -88,6 +94,32 @@ public class Bracket64 implements Initializable {
     private Text left_8_1;
     @FXML
     private Text right_8_1;
+    @FXML
+    private Text left_4_1;
+    @FXML
+    private Text right_4_1;
+    @FXML
+    private Text left_win_4_1;
+    @FXML
+    private Text left_win_4_2;
+    @FXML
+    private Text right_win_4_1;
+    @FXML
+    private Text right_win_4_2;
+    @FXML
+    private Text left_2_1;
+    @FXML
+    private Text right_2_1;
+    @FXML
+    private Text left_win_2_1;
+    @FXML
+    private Text right_win_2_1;
+    @FXML
+    private Text left_1_1;
+    @FXML
+    private Text right_1_1;
+    @FXML
+    private Text champion;
 
     @FXML
     private VBox vbox1;
@@ -138,6 +170,12 @@ public class Bracket64 implements Initializable {
     static List<Text> right_win_16 = new ArrayList<>();
     static List<Text> right_win_8 = new ArrayList<>();
     static List<Text> left_win_8 = new ArrayList<>();
+    static List<Text> left_win_4 = new ArrayList<>();
+    static List<Text> right_win_4 = new ArrayList<>();
+    static List<Text> right_win_2 = new ArrayList<>();
+    static List<Text> left_win_2 = new ArrayList<>();
+    static List<Text> champion_text = new ArrayList<>();
+
 
     public static void addWinner(int id, int sportsmen) {
         for (Text text : left_win_64) {
@@ -199,11 +237,54 @@ public class Bracket64 implements Initializable {
             }
         }
     }
+    public static void addWinner4Right(int id, int sportsmen){
+        for (Text text: right_win_4){
+            if (("right_win_4_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+    public static void addWinner4Left(int id, int sportsmen){
+        for (Text text: left_win_4){
+            if (("left_win_4_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+    public static void addWinner2Left(int id, int sportsmen){
+        for (Text text: left_win_2){
+            if (("left_win_2_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+    public static void addWinner2Right(int id, int sportsmen){
+        for (Text text: right_win_2){
+            if (("right_win_2_"+id).equals(text.getId())){
+                text.setText(String.valueOf(sportsmen));
+            }
+        }
+    }
+    public static void addWinnerFinal(int sportsmen){
+        for (Text text: champion_text){
+            text.setText(String.valueOf(sportsmen));
+        }
+    }
 
     List<Text> textList = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        left_win_4.add(left_win_4_1);
+        left_win_4.add(left_win_4_2);
+        right_win_4.add(right_win_4_1);
+        right_win_4.add(right_win_4_2);
+
+        left_win_2.add(left_win_2_1);
+        right_win_2.add(right_win_2_1);
+
+        champion_text.add(champion);
 
         VBox parent = (VBox) _64_1.getParent();
         VBox parent2 = (VBox) _64_2.getParent();
@@ -554,6 +635,186 @@ public class Bracket64 implements Initializable {
                 }
 
             }
+            if (newTab == etap_4){
+                VBox parent_4_left = (VBox) left_4_1.getParent();
+                VBox parent_4_right = (VBox) right_4_1.getParent();
+                for (int i = 1; i<=4; i++){
+                    Text element_left = (Text) parent_4_left.lookup("#left_4_"+i);
+                    Text element_right = (Text) parent_4_right.lookup("#right_4_"+i);
+                    String name_left = winner_8_leftDb.getName(i);
+                    String name_right = winner_8_rightDb.getName(i);
+                    element_left.setText(name_left);
+                    element_right.setText(name_right);
+                }
+                List<Button> button4Left = new ArrayList<>();
+                List<Button> button4Right = new ArrayList<>();
+                AnchorPane leftParent = (AnchorPane) fight_left_4_1.getParent();
+                for(int i = 1; i<=3; i+=2){
+                    Button btnLeft = (Button) leftParent.lookup("#fight_left_4_"+i);
+                    Button btnRight = (Button) leftParent.lookup("#fight_right_4_"+i);
+                    button4Left.add(btnLeft);
+                    button4Right.add(btnRight);
+                }
+
+                for (Button button: button4Right){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_8_rightDb.getSportsmen(id);
+                            int sportsmen2 = winner_8_rightDb.getSportsmen(id+1);
+                            fight_4_rightDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_8_rightDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_8_rightDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightRight.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightRight windowForFightRight = loader.getController();
+                                windowForFightRight.fight4Right(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+
+                for(Button button: button4Left){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_8_leftDb.getSportsmen(id);
+                            int sportsmen2 = winner_8_leftDb.getSportsmen(id+1);
+                            fight_4_leftDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_8_leftDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_8_leftDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightLeft.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightLeft windowForFightLeft = loader.getController();
+                                windowForFightLeft.fight4Left(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+            }
+            if (newTab == etap_2){
+                VBox parent_2_left = (VBox) left_2_1.getParent();
+                VBox parent_2_right = (VBox) right_2_1.getParent();
+                for (int i = 1; i<=2; i++){
+                    Text element_left = (Text) parent_2_left.lookup("#left_2_"+i);
+                    Text element_right = (Text) parent_2_right.lookup("#right_2_"+i);
+                    String name_left = winner_4_leftDb.getName(i);
+                    String name_right = winner_4_rightDb.getName(i);
+                    element_left.setText(name_left);
+                    element_right.setText(name_right);
+                }
+                List<Button> button2Left = new ArrayList<>();
+                List<Button> button2Right = new ArrayList<>();
+                AnchorPane leftParent = (AnchorPane) fight_left_2_1.getParent();
+                Button btnLeft = (Button) leftParent.lookup("#fight_left_2_1");
+                Button btnRight = (Button) leftParent.lookup("#fight_right_2_1");
+                button2Left.add(btnLeft);
+                button2Right.add(btnRight);
+
+                for (Button button: button2Right){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_4_rightDb.getSportsmen(id);
+                            int sportsmen2 = winner_4_rightDb.getSportsmen(id+1);
+                            fight_2_rightDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_4_rightDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_4_rightDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightRight.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightRight windowForFightRight = loader.getController();
+                                windowForFightRight.fight2Right(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+
+                for(Button button: button2Left){
+                    button.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            int id = extractLastDigit(button.getId());
+                            int sportsmen1 = winner_4_leftDb.getSportsmen(id);
+                            int sportsmen2 = winner_4_leftDb.getSportsmen(id+1);
+                            fight_2_leftDb.addFight(sportsmen1, sportsmen2);
+                            String sportsmen1_name = winner_4_leftDb.getByDrawNum(sportsmen1);
+                            String sportsmen2_name = winner_4_leftDb.getByDrawNum(sportsmen2);
+                            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFightLeft.fxml"));
+                            try {
+                                Scene newscene = new Scene(loader.load());
+                                WindowForFightLeft windowForFightLeft = loader.getController();
+                                windowForFightLeft.fight2Left(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                                Stage newstage = new Stage();
+                                newstage.setScene(newscene);
+                                newstage.setTitle("Результат");
+                                newstage.showAndWait();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    });
+                }
+            }
+            if (newTab == etap_1){
+
+                String name_left = winner_4_leftDb.getName(1);
+                String name_right = winner_4_rightDb.getName(1);
+                left_1_1.setText(name_left);
+                right_1_1.setText(name_right);
+
+
+
+
+                fight_1_1.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        int id = 1;
+                        int sportsmen1 = winner_2_rightDb.getSportsmen(id);
+                        int sportsmen2 = winner_2_leftDb.getSportsmen(id);
+                        fight_1Db.addFight(sportsmen1, sportsmen2);
+                        String sportsmen1_name = winner_2_rightDb.getByDrawNum(sportsmen1);
+                        String sportsmen2_name = winner_2_leftDb.getByDrawNum(sportsmen2);
+                        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFinal.fxml"));
+                        try {
+                            Scene newscene = new Scene(loader.load());
+                            WindowForFinal windowForFinal = loader.getController();
+                            windowForFinal.name_winner(sportsmen1_name, sportsmen2_name, sportsmen1, sportsmen2);
+                            Stage newstage = new Stage();
+                            newstage.setScene(newscene);
+                            newstage.setTitle("Результат");
+                            newstage.showAndWait();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+                });
+
+
+            }
 
         });
     }
@@ -645,6 +906,8 @@ public class Bracket64 implements Initializable {
                 for(int i = 0; i<rowList.size(); i++){
                     Cell cell3 = rowList.get(i).createCell(3);
                     cell3.setCellValue(winner_64_leftDb.getSportsmen(i+1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_64_rightDb.getSportsmen(i + 1));
                 }
 
                 // Сохранение и закрытие workbook в новый файл

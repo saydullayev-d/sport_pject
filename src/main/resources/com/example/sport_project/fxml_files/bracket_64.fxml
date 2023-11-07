@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
@@ -2026,22 +2026,22 @@
                      <children>
                         <VBox fx:id="vbox9" layoutY="-2.0" prefHeight="119.0" prefWidth="100.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_3" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_4_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_5" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_4_3" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_7" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_4_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
@@ -2056,22 +2056,22 @@
                         <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="70.0" startX="-100.0" />
                         <VBox fx:id="vbox10" layoutX="878.0" layoutY="-2.0" prefHeight="123.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_4_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_4_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_6" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_4_3" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_4_8" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_4_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
@@ -2084,11 +2084,11 @@
                         <Line endX="28.207107543945312" endY="7.0" layoutX="785.0" layoutY="89.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="812.7071075439453" AnchorPane.rightAnchor="567.5" />
                         <Line endX="-100.0" endY="30.0" layoutX="911.0" layoutY="66.0" startX="-100.0" AnchorPane.leftAnchor="810.5" AnchorPane.rightAnchor="634.5" />
                         <Button fx:id="fight_left_4_1" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_4_2" layoutX="99.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_4_3" layoutX="99.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="24.0" startX="-38.0" startY="7.0" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="75.0" startX="-38.0" startY="7.0" />
                         <Button fx:id="fight_right_4_1" layoutX="833.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_4_2" layoutX="831.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_4_3" layoutX="831.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="785.0" layoutY="16.0" startX="-38.0" startY="7.0" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="781.0" layoutY="73.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
@@ -2112,12 +2112,12 @@
                      <children>
                         <VBox fx:id="vbox11" layoutY="-2.0" prefHeight="63.0" prefWidth="100.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_2_3" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_2_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
@@ -2129,12 +2129,12 @@
                         <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="19.0" startX="-100.0" />
                         <VBox fx:id="vbox12" layoutX="878.0" layoutY="-2.0" prefHeight="67.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_2_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Text fx:id="_2_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_2_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="10.0" />
                                  </VBox.margin>
@@ -2145,7 +2145,7 @@
                         <Line endX="-100.0" endY="30.0" layoutX="914.0" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="813.5" AnchorPane.rightAnchor="631.5" />
                         <Button fx:id="fight_left_2_1" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="24.0" startX="-38.0" startY="7.0" />
-                        <Button fx:id="fight_right_2_1" layoutX="833.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_2_1" layoutX="830.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="785.0" layoutY="16.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
                         <Text fx:id="right_win_2_1" layoutX="680.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
@@ -2166,7 +2166,7 @@
                      <children>
                         <VBox fx:id="vbox13" layoutY="-2.0" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="left_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="10.0" top="25.0" />
                                  </VBox.margin>
@@ -2178,7 +2178,7 @@
                         <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="19.0" startX="-100.0" />
                         <VBox fx:id="vbox14" layoutX="878.0" layoutY="-2.0" prefHeight="54.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
-                              <Text fx:id="_1_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+                              <Text fx:id="right_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
                                     <Insets left="30.0" top="20.0" />
                                  </VBox.margin>
@@ -2188,7 +2188,7 @@
                         <Line endX="110.79289245605469" endY="7.0" layoutX="768.2071075439453" layoutY="33.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="815.0857849121094" AnchorPane.rightAnchor="566.2928924560547" />
                         <Line endX="-100.0" endY="30.0" layoutX="914.0" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="813.5" AnchorPane.rightAnchor="631.5" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="24.0" startX="-38.0" startY="7.0" />
-                        <Button fx:id="final_fight" layoutX="464.0" layoutY="81.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_1_1" layoutX="464.0" layoutY="81.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Line endX="28.0" endY="7.000007629394531" layoutX="785.0" layoutY="16.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
                         <Text fx:id="champion" layoutX="457.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
