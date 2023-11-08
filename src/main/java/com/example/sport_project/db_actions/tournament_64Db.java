@@ -26,6 +26,25 @@ public class tournament_64Db {
         }
         return data;
     }
+
+    public static String getSportClub(int draw_num){
+        String data = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT club FROM tournament_64 WHERE draw_num = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1, draw_num);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                data = resultSet.getString("club");
+            }
+
+
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return data;
+    }
+
     public static String getByDrawNum(int draw_num){
         String data = "";
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
@@ -48,7 +67,7 @@ public class tournament_64Db {
     }
 
     public static void addDataLeft(ArrayList<Fighter> sportsmens){
-        String query = "INSERT INTO tournament_64(fight_num, name, draw_num) VALUES(?, ?, ?)";
+        String query = "INSERT INTO tournament_64(fight_num, name, draw_num, club) VALUES(?, ?, ?, ?)";
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
@@ -58,6 +77,7 @@ public class tournament_64Db {
                 preparedStatement.setString(1, "_64_"+index);
                 preparedStatement.setString(2, sportsmen.getName());
                 preparedStatement.setInt(3, sportsmen.getDraw_num());
+                preparedStatement.setString(4, sportsmen.getSport_club());
                 preparedStatement.addBatch();
                 preparedStatement.executeBatch();
 

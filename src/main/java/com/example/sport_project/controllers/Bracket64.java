@@ -43,6 +43,10 @@ public class Bracket64 implements Initializable {
     @FXML
     private Text _32_1;
     @FXML
+    private Text draw_64_1;
+    @FXML
+    private Text club_64_1;
+    @FXML
     private Text right_32_1;
     @FXML
     private Button fight_left_64_1;
@@ -272,6 +276,8 @@ public class Bracket64 implements Initializable {
     }
 
     List<Text> textList = new ArrayList<>();
+    List<Text> drawNumList = new ArrayList<>();
+    List<Text> clubList = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -280,10 +286,8 @@ public class Bracket64 implements Initializable {
         left_win_4.add(left_win_4_2);
         right_win_4.add(right_win_4_1);
         right_win_4.add(right_win_4_2);
-
         left_win_2.add(left_win_2_1);
         right_win_2.add(right_win_2_1);
-
         champion_text.add(champion);
 
         VBox parent = (VBox) _64_1.getParent();
@@ -296,6 +300,18 @@ public class Bracket64 implements Initializable {
             Node element = parent2.lookup("#_64_" + i);
             textList.add((Text) element);
         }
+
+        VBox drawParent = (VBox) draw_64_1.getParent();
+        for(int i = 1; i<=128; i++){
+            Node element = drawParent.lookup("#draw_64_"+i);
+            drawNumList.add((Text) element);
+        }
+        VBox clubParent = (VBox) club_64_1.getParent();
+        for(int i = 1; i<=128; i++){
+            Node element = clubParent.lookup("#club_64_"+i);
+            clubList.add((Text) element);
+        }
+
         AnchorPane win_parent = (AnchorPane) left_win_64_1.getParent();
         for (int i = 1; i <= 32; i++) {
             Node left_element = win_parent.lookup("#left_win_64_" + i);
@@ -349,6 +365,18 @@ public class Bracket64 implements Initializable {
         for (Text text : textList) {
             String name = tournament_64Db.getDataLeft(extractLastDigit(text.getId()));
             text.setText(name);
+        }
+
+        for(Text text : drawNumList){
+            if(text != null){
+                text.setText(String.valueOf(extractLastDigit(text.getId())));
+            }
+        }
+        for(Text text : clubList){
+            if(text != null) {
+                String club = tournament_64Db.getSportClub(extractLastDigit(text.getId()));
+                text.setText(club);
+            }
         }
 
         AnchorPane btn_parent = (AnchorPane) fight_left_64_1.getParent();

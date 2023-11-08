@@ -43,14 +43,15 @@ public class sportsmenDb {
     public static ArrayList<Fighter> getByWeight(String weight){
         ArrayList<Fighter> sportsmens = new ArrayList<>();
         try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
-            String query = "SELECT name, cod_draw FROM sportsmen WHERE weight=?";
+            String query = "SELECT name, cod_draw, club FROM sportsmen WHERE weight=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, weight);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 String name = resultSet.getString("name");
                 int draw_num = resultSet.getInt("cod_draw");
-                sportsmens.add(new Fighter(name, draw_num));
+                String sport_club = resultSet.getString("club");
+                sportsmens.add(new Fighter(name, draw_num,sport_club));
             }
     } catch (SQLException e) {
             throw new RuntimeException(e);
