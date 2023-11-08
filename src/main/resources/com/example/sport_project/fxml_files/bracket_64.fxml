@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1768.0" prefWidth="994.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
@@ -18,7 +18,7 @@
                <content>
                   <AnchorPane prefHeight="2148.0" prefWidth="2021.0" style="-fx-background-color: white;">
                      <children>
-                        <VBox fx:id="vbox1" prefHeight="1801.0" prefWidth="100.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox1" layoutY="2.0" prefHeight="1799.0" prefWidth="151.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="_64_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -342,102 +342,102 @@
                               </Text>
                            </children>
                         </VBox>
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="129.0" layoutY="12.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.0" layoutX="130.0" layoutY="41.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="19.0" startX="-100.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="129.0" layoutY="63.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0000152587890625" layoutX="130.0" layoutY="92.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="70.0" startX="-100.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="129.0" layoutY="115.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="6.999969482421875" layoutX="130.0" layoutY="144.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="122.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="166.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="195.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="173.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="217.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="246.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="224.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="269.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="6.999969482421875" layoutX="130.0" layoutY="298.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="276.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="321.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="350.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="328.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="372.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="401.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="379.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="424.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="453.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="431.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="475.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="504.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="482.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="526.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="555.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="533.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="578.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="130.0" layoutY="607.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="257.0" layoutY="585.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="633.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="662.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="640.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="684.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="129.0" layoutY="713.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="691.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="736.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.0" endY="7.000007629394531" layoutX="129.0" layoutY="765.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="743.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="787.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="816.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="794.0" startX="-100.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="128.0" layoutY="838.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="867.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="845.0" startX="-100.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="128.0" layoutY="890.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="919.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="897.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="942.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="971.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="949.0" startX="-100.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="128.0" layoutY="993.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1022.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1000.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1045.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="129.0" layoutY="1074.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1052.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1096.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1125.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1103.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1147.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.0" layoutX="129.0" layoutY="1176.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1154.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1199.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="129.0" layoutY="1228.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1206.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1257.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1286.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1264.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1309.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1338.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1316.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1361.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1390.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1368.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1412.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="129.0" layoutY="1441.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1419.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1464.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="1493.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1471.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1515.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="129.0" layoutY="1544.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1522.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1566.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.0" layoutX="129.0" layoutY="1595.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1573.0" startX="-100.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="1618.0" startX="-38.0" startY="7.0" />
-                        <Line endX="26.5" endY="7.000007629394531" layoutX="128.0" layoutY="1647.0" startX="-38.0" startY="7.0" />
-                        <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="1625.0" startX="-100.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="192.0" layoutY="12.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.0" layoutX="193.0" layoutY="41.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="19.0" startX="-100.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="192.0" layoutY="63.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0000152587890625" layoutX="193.0" layoutY="92.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="70.0" startX="-100.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="192.0" layoutY="115.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="6.999969482421875" layoutX="193.0" layoutY="144.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="122.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="166.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="195.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="173.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="217.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="246.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="224.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="269.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="6.999969482421875" layoutX="193.0" layoutY="298.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="276.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="321.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="350.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="328.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="372.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="401.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="379.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="424.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="453.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="431.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="475.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="504.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="482.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="526.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="555.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="533.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="578.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="193.0" layoutY="607.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="320.0" layoutY="585.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="633.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="662.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="640.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="684.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="192.0" layoutY="713.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="691.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="736.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.0" endY="7.000007629394531" layoutX="192.0" layoutY="765.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="743.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="787.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="816.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="794.0" startX="-100.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="191.0" layoutY="838.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="867.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="845.0" startX="-100.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="191.0" layoutY="890.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="919.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="897.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="942.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="971.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="949.0" startX="-100.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="191.0" layoutY="993.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1022.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1000.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1045.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="192.0" layoutY="1074.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1052.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1096.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1125.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1103.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1147.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.0" layoutX="192.0" layoutY="1176.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1154.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1199.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="192.0" layoutY="1228.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1206.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1257.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1286.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1264.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1309.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1338.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1316.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1361.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1390.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1368.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1412.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="192.0" layoutY="1441.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1419.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1464.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="192.0" layoutY="1493.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1471.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1515.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="192.0" layoutY="1544.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1522.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1566.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.0" layoutX="192.0" layoutY="1595.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1573.0" startX="-100.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="191.0" layoutY="1618.0" startX="-38.0" startY="7.0" />
+                        <Line endX="26.5" endY="7.000007629394531" layoutX="191.0" layoutY="1647.0" startX="-38.0" startY="7.0" />
+                        <Line endX="-100.0" endY="30.0" layoutX="319.0" layoutY="1625.0" startX="-100.0" />
                         <VBox fx:id="vbox2" layoutX="867.0" layoutY="-6.0" prefHeight="1801.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
@@ -857,70 +857,70 @@
                         <Line endX="25.207107543945312" endY="7.0" layoutX="842.7928924560547" layoutY="1605.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="1152.5" />
                         <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="1636.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="1153.2928924560547" />
                         <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="1613.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Button fx:id="fight_left_64_1" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_2" layoutX="99.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_3" layoutX="100.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_4" layoutX="99.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_5" layoutX="100.0" layoutY="226.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_6" layoutX="100.0" layoutY="278.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_7" layoutX="101.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_8" layoutX="100.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_9" layoutX="99.0" layoutY="433.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_10" layoutX="99.0" layoutY="484.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_11" layoutX="100.0" layoutY="535.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_12" layoutX="99.0" layoutY="587.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_13" layoutX="100.0" layoutY="642.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_14" layoutX="100.0" layoutY="693.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_15" layoutX="101.0" layoutY="745.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_16" layoutX="100.0" layoutY="796.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_17" layoutX="98.0" layoutY="847.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_18" layoutX="99.0" layoutY="899.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_19" layoutX="99.0" layoutY="951.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_20" layoutX="98.0" layoutY="1002.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_21" layoutX="99.0" layoutY="1054.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_22" layoutX="99.0" layoutY="1105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_23" layoutX="100.0" layoutY="1156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_24" layoutX="99.0" layoutY="1208.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_25" layoutX="98.0" layoutY="1266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_26" layoutX="98.0" layoutY="1318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_27" layoutX="99.0" layoutY="1370.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_28" layoutX="98.0" layoutY="1421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_29" layoutX="99.0" layoutY="1473.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_30" layoutX="102.0" layoutY="1524.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_31" layoutX="100.0" layoutY="1575.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_left_64_32" layoutX="99.0" layoutY="1627.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="24.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="196.0" layoutY="75.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="196.0" layoutY="127.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="178.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="229.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="281.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="333.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="384.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="198.0" layoutY="436.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="487.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="538.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="590.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="645.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="696.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="748.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="799.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="194.0" layoutY="853.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="194.0" layoutY="904.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="194.0" layoutY="956.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1007.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1058.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1110.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1162.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1213.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="196.0" layoutY="1271.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1324.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1375.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="194.0" layoutY="1427.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="193.0" layoutY="1476.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="193.0" layoutY="1528.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="193.0" layoutY="1579.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="193.0" layoutY="1630.0" startX="-38.0" startY="7.0" />
+                        <Button fx:id="fight_left_64_1" layoutX="161.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_2" layoutX="162.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_3" layoutX="163.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_4" layoutX="162.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_5" layoutX="163.0" layoutY="226.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_6" layoutX="163.0" layoutY="278.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_7" layoutX="164.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_8" layoutX="163.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_9" layoutX="162.0" layoutY="433.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_10" layoutX="162.0" layoutY="484.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_11" layoutX="163.0" layoutY="535.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_12" layoutX="162.0" layoutY="587.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_13" layoutX="163.0" layoutY="642.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_14" layoutX="163.0" layoutY="693.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_15" layoutX="164.0" layoutY="745.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_16" layoutX="163.0" layoutY="796.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_17" layoutX="161.0" layoutY="847.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_18" layoutX="162.0" layoutY="899.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_19" layoutX="162.0" layoutY="951.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_20" layoutX="161.0" layoutY="1002.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_21" layoutX="162.0" layoutY="1054.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_22" layoutX="162.0" layoutY="1105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_23" layoutX="163.0" layoutY="1156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_24" layoutX="162.0" layoutY="1208.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_25" layoutX="161.0" layoutY="1266.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_26" layoutX="161.0" layoutY="1318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_27" layoutX="162.0" layoutY="1370.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_28" layoutX="161.0" layoutY="1421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_29" layoutX="162.0" layoutY="1473.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_30" layoutX="165.0" layoutY="1524.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_31" layoutX="163.0" layoutY="1575.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_left_64_32" layoutX="162.0" layoutY="1627.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="259.0" layoutY="24.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="259.0" layoutY="75.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="259.0" layoutY="127.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="178.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="229.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="281.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="333.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="384.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="261.0" layoutY="436.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="487.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="538.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="590.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="258.0" layoutY="645.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="258.0" layoutY="696.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="258.0" layoutY="748.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="258.0" layoutY="799.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="257.0" layoutY="853.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="257.0" layoutY="904.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="257.0" layoutY="956.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1007.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1058.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1110.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1162.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1213.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="259.0" layoutY="1271.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1324.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1375.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="257.0" layoutY="1427.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="256.0" layoutY="1476.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="256.0" layoutY="1528.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="256.0" layoutY="1579.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="256.0" layoutY="1630.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="842.0" layoutY="4.0" startX="-38.5" startY="5.500030517578125" />
                         <Button fx:id="fight_right_64_1" layoutX="819.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_right_64_2" layoutX="818.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -1019,38 +1019,38 @@
                         <Text fx:id="right_win_64_30" layoutX="672.0" layoutY="1529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="right_win_64_31" layoutX="672.0" layoutY="1581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="right_win_64_32" layoutX="672.0" layoutY="1631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_1" layoutX="226.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_2" layoutX="226.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_3" layoutX="226.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_4" layoutX="226.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_5" layoutX="226.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_6" layoutX="226.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_7" layoutX="226.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_8" layoutX="226.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_9" layoutX="226.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_10" layoutX="226.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_11" layoutX="226.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_12" layoutX="226.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_13" layoutX="226.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_14" layoutX="226.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_15" layoutX="226.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_16" layoutX="226.0" layoutY="811.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_17" layoutX="226.0" layoutY="865.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_18" layoutX="226.0" layoutY="916.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_19" layoutX="226.0" layoutY="968.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_20" layoutX="226.0" layoutY="1019.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_21" layoutX="226.0" layoutY="1070.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_22" layoutX="226.0" layoutY="1122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_23" layoutX="226.0" layoutY="1175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_24" layoutX="226.0" layoutY="1226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_25" layoutX="226.0" layoutY="1283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_26" layoutX="226.0" layoutY="1336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_27" layoutX="226.0" layoutY="1386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_28" layoutX="226.0" layoutY="1438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_29" layoutX="226.0" layoutY="1487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_30" layoutX="226.0" layoutY="1539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_31" layoutX="226.0" layoutY="1591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="left_win_64_32" layoutX="226.0" layoutY="1641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_1" layoutX="289.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_2" layoutX="289.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_3" layoutX="289.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_4" layoutX="289.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_5" layoutX="289.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_6" layoutX="289.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_7" layoutX="289.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_8" layoutX="289.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_9" layoutX="289.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_10" layoutX="289.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_11" layoutX="289.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_12" layoutX="289.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_13" layoutX="289.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_14" layoutX="289.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_15" layoutX="289.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_16" layoutX="289.0" layoutY="811.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_17" layoutX="289.0" layoutY="865.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_18" layoutX="289.0" layoutY="916.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_19" layoutX="289.0" layoutY="968.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_20" layoutX="289.0" layoutY="1019.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_21" layoutX="289.0" layoutY="1070.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_22" layoutX="289.0" layoutY="1122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_23" layoutX="289.0" layoutY="1175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_24" layoutX="289.0" layoutY="1226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_25" layoutX="289.0" layoutY="1283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_26" layoutX="289.0" layoutY="1336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_27" layoutX="289.0" layoutY="1386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_28" layoutX="289.0" layoutY="1438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_29" layoutX="289.0" layoutY="1487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_30" layoutX="289.0" layoutY="1539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_31" layoutX="289.0" layoutY="1591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="left_win_64_32" layoutX="289.0" layoutY="1641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Button fx:id="print_btn_1" layoutX="461.0" layoutY="22.0" mnemonicParsing="false" onAction="#onPrintButtonClicked" text="Распечатать сетку" />
                      </children>
                   </AnchorPane>

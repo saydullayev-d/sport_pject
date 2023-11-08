@@ -22,7 +22,7 @@ public class sportsmenDb {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, cod_draw);
-            preparedStatement.setDate(3, java.sql.Date.valueOf(age));
+            preparedStatement.setString(3, age);
             preparedStatement.setString(4, club);
             preparedStatement.setString(5, gender);
             if(action==true){
@@ -35,7 +35,7 @@ public class sportsmenDb {
             preparedStatement.executeUpdate();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
@@ -100,7 +100,7 @@ public class sportsmenDb {
             preparedStatement.executeUpdate();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
@@ -114,7 +114,7 @@ public class sportsmenDb {
                 String name = resultSet.getString("name");
                 int cod_reg = resultSet.getInt("cod_reg");
                 int cod_draw = resultSet.getInt("cod_draw");
-                Date age = resultSet.getDate("age");
+                String age = resultSet.getString("age");
                 String club = resultSet.getString("club");
                 String gender = resultSet.getString("gender");
                 String action = resultSet.getString("action");
@@ -125,7 +125,7 @@ public class sportsmenDb {
             return data;
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }
@@ -145,7 +145,7 @@ public class sportsmenDb {
             return data;
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }

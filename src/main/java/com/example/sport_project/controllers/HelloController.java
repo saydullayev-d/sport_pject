@@ -147,7 +147,7 @@ public class HelloController implements Initializable {
 
 
                 }catch (Exception e){
-                    System.out.println(e);
+                    e.printStackTrace();
                 }
             }
         });
@@ -188,7 +188,7 @@ public class HelloController implements Initializable {
                     newstage.showAndWait();
 
                 }catch (Exception e){
-                    System.out.println(e);
+                    e.printStackTrace();
                 }
             }
         });
@@ -205,7 +205,7 @@ public class HelloController implements Initializable {
                         newstage.showAndWait();
 
                     }catch (Exception e){
-                        System.out.println(e);
+                        e.printStackTrace();
                     }
                 });
             }
@@ -224,7 +224,7 @@ public class HelloController implements Initializable {
                         newstage.showAndWait();
 
                     }catch (Exception e){
-                        System.out.println(e);
+                       e.printStackTrace();
                     }
                 });
             }
@@ -243,7 +243,7 @@ public class HelloController implements Initializable {
                         newstage.showAndWait();
 
                     }catch (Exception e){
-                        System.out.println(e);
+                        e.printStackTrace();
                     }
                 });
             }
@@ -300,7 +300,7 @@ public class HelloController implements Initializable {
 
 
                 }catch (Exception e){
-                    System.out.println(e);
+                    e.printStackTrace();
                 }
             }
         });
