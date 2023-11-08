@@ -859,17 +859,18 @@ public class Bracket64 implements Initializable {
                 for (Node node : vbox1.getChildren()) {
                     if (node instanceof Text) {
                         dataFromVBox1.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox1.add("");
                     }
                 }
 
                 for (Node node : vbox2.getChildren()) {
                     if (node instanceof Text) {
                         dataFromVBox2.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox2.add("");
                     }
                 }
-
-                // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
@@ -1212,13 +1213,11 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
-                // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1232,6 +1231,7 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
+
                     if (i < dataFromVBox2.size()) {
                         Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
@@ -1240,14 +1240,20 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
                 }
+                List<Row> rowList = new ArrayList<>();
+                for (int i = 0; i < maxRows; i += 2) {
+                    Row row = sheet.getRow(i);
+                    rowList.add(row);
+                }
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(3);
+                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                }
+
 
                 // Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-8_updated.xlsx";
@@ -1256,7 +1262,6 @@ public class Bracket64 implements Initializable {
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
                 // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
@@ -1271,8 +1276,8 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
+
     }
 
     @FXML
@@ -1322,13 +1327,11 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
-                // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1342,6 +1345,7 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
+
                     if (i < dataFromVBox2.size()) {
                         Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
@@ -1350,14 +1354,20 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
                 }
+                List<Row> rowList = new ArrayList<>();
+                for (int i = 0; i < maxRows; i += 2) {
+                    Row row = sheet.getRow(i);
+                    rowList.add(row);
+                }
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(3);
+                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                }
+
 
                 // Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-4_updated.xlsx";
@@ -1366,7 +1376,6 @@ public class Bracket64 implements Initializable {
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
                 // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
@@ -1381,8 +1390,8 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
+
     }
 
     @FXML
@@ -1400,7 +1409,7 @@ public class Bracket64 implements Initializable {
                 int numRows = 4;  // Количество строк
                 int numCols = 26;  // Количество столбцов
 
-// Создайте список для хранения стилей
+                // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
                 for (int rowIndex = 0; rowIndex < numRows; rowIndex++) {
                     List<CellStyle> rowStyles = new ArrayList<>();
@@ -1432,13 +1441,11 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
-                // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1452,6 +1459,7 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
+
                     if (i < dataFromVBox2.size()) {
                         Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
@@ -1460,14 +1468,20 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
                 }
+                List<Row> rowList = new ArrayList<>();
+                for (int i = 0; i < maxRows; i += 2) {
+                    Row row = sheet.getRow(i);
+                    rowList.add(row);
+                }
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(3);
+                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    Cell cell4 = rowList.get(i).createCell(22);
+                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                }
+
 
                 // Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-2_updated.xlsx";
@@ -1476,7 +1490,6 @@ public class Bracket64 implements Initializable {
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
                 // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
@@ -1491,8 +1504,8 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
+
     }
 
     @FXML
@@ -1542,13 +1555,11 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
-                // Получите значение left_win_64_1
-                String leftWin64_1Value = left_win_64_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i < maxRows; i++) {
+                for (int i = 0; i <= maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1562,6 +1573,7 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
+
                     if (i < dataFromVBox2.size()) {
                         Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
@@ -1570,25 +1582,27 @@ public class Bracket64 implements Initializable {
                         }
                     }
 
-                    if (i == 0) {
-                        // Добавьте значение left_win_64_1 в третий столбец (индекс 2)
-                        Cell cell3 = row.createCell(2);
-                        int sportsmenId = winner_64_leftDb.getSportsmen(i + 1);
-                        System.out.println("sportsmenId: " + sportsmenId); // Добавьте эту строку для отладки
-                        cell3.setCellValue(String.valueOf(sportsmenId));
 
-                        // Вы можете также применить стиль ячейки, если это необходимо.
-                    }
+                }
+                List<Row> rowList = new ArrayList<>();
+
+                Row row = sheet.getRow(1);
+                rowList.add(row);
+
+                for (int i = 0; i < rowList.size(); i++) {
+                    Cell cell3 = rowList.get(i).createCell(13);
+                    cell3.setCellValue(winner_1Db.getSportsmen(i + 1));
+
                 }
 
-// Сохранение и закрытие workbook в новый файл
+
+                // Сохранение и закрытие workbook в новый файл
                 String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/final_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
 
                 workbook.close();
-
                 System.out.println("Данные успешно записаны в новый Excel файл: " + outputFile);
 
                 // Откройте новый файл с использованием стандартных средств ОС (в данном случае, Microsoft Excel)
@@ -1603,8 +1617,8 @@ public class Bracket64 implements Initializable {
             }
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
-
         }
+
     }
 
 
