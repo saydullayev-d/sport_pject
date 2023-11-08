@@ -793,11 +793,11 @@ public class Bracket64 implements Initializable {
                     @Override
                     public void handle(ActionEvent actionEvent) {
                         int id = 1;
-                        int sportsmen1 = winner_2_rightDb.getSportsmen(id);
-                        int sportsmen2 = winner_2_leftDb.getSportsmen(id);
+                        int sportsmen2 = winner_2_rightDb.getSportsmen(id);
+                        int sportsmen1 = winner_2_leftDb.getSportsmen(id);
                         fight_1Db.addFight(sportsmen1, sportsmen2);
-                        String sportsmen1_name = winner_2_rightDb.getByDrawNum(sportsmen1);
-                        String sportsmen2_name = winner_2_leftDb.getByDrawNum(sportsmen2);
+                        String sportsmen2_name = winner_2_rightDb.getByDrawNum(sportsmen2);
+                        String sportsmen1_name = winner_2_leftDb.getByDrawNum(sportsmen1);
                         FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/windowForFinal.fxml"));
                         try {
                             Scene newscene = new Scene(loader.load());
@@ -906,9 +906,13 @@ public class Bracket64 implements Initializable {
                 }
                 for(int i = 0; i<rowList.size(); i++){
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_64_leftDb.getSportsmen(i+1));
+                    if(winner_64_leftDb.getSportsmen(i+1)!=0) {
+                        cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_64_rightDb.getSportsmen(i + 1));
+                    if(winner_64_rightDb.getSportsmen(i + 1)!=0) {
+                        cell4.setCellValue(winner_64_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
                 // Сохранение и закрытие workbook в новый файл
@@ -1020,9 +1024,13 @@ public class Bracket64 implements Initializable {
                 }
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_32_leftDb.getSportsmen(i + 1));
+                    if(winner_32_leftDb.getSportsmen(i + 1)!=0) {
+                        cell3.setCellValue(winner_32_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_32_rightDb.getSportsmen(i + 1));
+                    if(winner_32_rightDb.getSportsmen(i + 1)!=0) {
+                        cell4.setCellValue(winner_32_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
 
@@ -1135,9 +1143,13 @@ public class Bracket64 implements Initializable {
                 }
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    if(winner_16_leftDb.getSportsmen(i + 1)!=0) {
+                        cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                    if(winner_16_rightDb.getSportsmen(i + 1)!=0) {
+                        cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
 
@@ -1249,9 +1261,13 @@ public class Bracket64 implements Initializable {
                 }
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    if(winner_8_leftDb.getSportsmen(i + 1)!=0) {
+                        cell3.setCellValue(winner_8_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                    if(winner_8_rightDb.getSportsmen(i + 1)!=0){
+                        cell4.setCellValue(winner_8_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
 
@@ -1363,9 +1379,13 @@ public class Bracket64 implements Initializable {
                 }
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    if(winner_4_leftDb.getSportsmen(i + 1)!=0){
+                        cell3.setCellValue(winner_4_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                    if(winner_4_rightDb.getSportsmen(i + 1)!=0){
+                        cell4.setCellValue(winner_4_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
 
@@ -1477,9 +1497,13 @@ public class Bracket64 implements Initializable {
                 }
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(3);
-                    cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
+                    if(winner_2_leftDb.getSportsmen(i + 1)!=0) {
+                        cell3.setCellValue(winner_2_leftDb.getSportsmen(i + 1));
+                    }
                     Cell cell4 = rowList.get(i).createCell(22);
-                    cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
+                    if(winner_2_rightDb.getSportsmen(i + 1)!=0) {
+                        cell4.setCellValue(winner_2_rightDb.getSportsmen(i + 1));
+                    }
                 }
 
 
@@ -1591,8 +1615,9 @@ public class Bracket64 implements Initializable {
 
                 for (int i = 0; i < rowList.size(); i++) {
                     Cell cell3 = rowList.get(i).createCell(13);
-                    cell3.setCellValue(winner_1Db.getSportsmen(i + 1));
-
+                    if(winner_1Db.getSportsmen(i + 1)!=0) {
+                        cell3.setCellValue(winner_1Db.getSportsmen(i + 1));
+                    }
                 }
 
 
