@@ -10,15 +10,15 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" prefHeight="1792.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" prefHeight="1136.0" prefWidth="1644.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
-            <ScrollPane fitToWidth="true" prefHeight="1815.0" prefWidth="1552.0">
+            <ScrollPane fitToWidth="true" prefHeight="1715.0" prefWidth="2012.0">
                <content>
-                  <AnchorPane prefHeight="1629.0" prefWidth="2021.0" style="-fx-background-color: white;">
+                  <AnchorPane prefHeight="1722.0" prefWidth="2021.0" style="-fx-background-color: white;">
                      <children>
-                        <VBox fx:id="vbox1" layoutY="-3.0" prefHeight="1714.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox1" layoutX="36.0" layoutY="-3.0" prefHeight="1714.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="_64_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -342,7 +342,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="166.0" layoutY="-3.0" prefHeight="1713.0" prefWidth="36.0" style="-fx-background-color: #4F6C77;">
+                        <VBox layoutY="-3.0" prefHeight="1713.0" prefWidth="36.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="draw_64_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
                                  <VBox.margin>
@@ -1086,7 +1086,102 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="431.0" layoutY="1613.0" startX="-38.0" startY="7.0" />
                         <Line endX="26.5" endY="7.000007629394531" layoutX="433.0" layoutY="1644.0" startX="-38.0" startY="7.0" />
                         <Line endX="-100.0" endY="30.0" layoutX="559.0" layoutY="1620.0" startX="-100.0" />
-                        <VBox fx:id="vbox2" layoutX="1148.0" layoutY="-6.0" prefHeight="1701.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
+                        <Line endX="110.79289245605469" endY="7.0" layoutX="1512.2071075439453" layoutY="38.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1559.0857849121094" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="15.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1713.0" layoutY="63.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1559.493881225586" AnchorPane.rightAnchor="395.2928924560547" />
+                        <Line endX="28.207107543945312" endY="7.0" layoutX="1531.0" layoutY="94.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1558.7071075439453" AnchorPane.rightAnchor="396.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="71.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1598.0" layoutY="108.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1598.0" layoutY="139.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="116.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1598.0" layoutY="159.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="190.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="167.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="210.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="241.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="218.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1598.0" layoutY="264.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="295.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="272.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1598.0" layoutY="313.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.2928924560547" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="344.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="321.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="364.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="395.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="372.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="416.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="447.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="424.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="467.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="498.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="475.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="518.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="549.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="526.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="570.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="601.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="578.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="625.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="656.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="633.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="676.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="707.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="684.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="728.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="759.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="736.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="779.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="810.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="787.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="830.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="861.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="838.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="882.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="398.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="913.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="890.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="934.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="965.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="942.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="985.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1016.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="993.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1037.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1068.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1045.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="26.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1088.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="396.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1119.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1096.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1139.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1170.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1147.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1191.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1222.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1199.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1249.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1280.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1257.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1301.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1332.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1309.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1353.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1384.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1361.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1404.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1435.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1412.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1456.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="398.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1487.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1464.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1507.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1538.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1515.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1597.7928924560547" layoutY="1558.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1559.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1589.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1566.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1610.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="396.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1598.7928924560547" layoutY="1641.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1560.2928924560547" AnchorPane.rightAnchor="397.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1660.0" layoutY="1618.0" startX="-100.0" AnchorPane.leftAnchor="1559.5" AnchorPane.rightAnchor="460.5" />
+                        <VBox fx:id="vbox2" layoutX="1820.0" layoutY="-3.0" prefHeight="1701.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="33.0">
                            <children>
                               <Text fx:id="_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -1410,101 +1505,6 @@
                               </Text>
                            </children>
                         </VBox>
-                        <Line endX="110.79289245605469" endY="7.0" layoutX="1033.2071075439453" layoutY="33.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1080.0857849121094" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1234.0" layoutY="58.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1080.493881225586" AnchorPane.rightAnchor="874.2928924560547" />
-                        <Line endX="28.207107543945312" endY="7.0" layoutX="1052.0" layoutY="89.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1079.7071075439453" AnchorPane.rightAnchor="875.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="66.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1119.0" layoutY="103.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1119.0" layoutY="134.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="111.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1119.0" layoutY="154.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="185.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="162.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="205.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="236.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="213.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1119.0" layoutY="259.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="290.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="267.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1119.0" layoutY="308.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="339.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="316.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="359.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="390.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="367.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="411.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="442.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="419.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="462.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="493.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="470.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="513.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="544.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="521.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="565.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="596.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="573.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="620.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="651.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="628.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="671.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="702.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="679.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="723.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="754.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="731.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="774.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="805.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="782.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="825.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="856.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="833.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="877.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="877.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="908.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="885.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="929.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="960.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="937.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="980.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1011.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="988.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1032.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1063.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1040.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="26.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1083.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="875.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1114.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1091.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1134.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1165.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1142.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1186.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1217.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1194.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1244.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1275.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1252.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1296.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1327.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1304.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1348.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1379.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1356.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1399.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1430.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1407.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1451.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="877.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1482.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1459.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1502.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1533.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1510.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1118.7928924560547" layoutY="1553.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1080.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1584.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1561.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1605.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="875.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1119.7928924560547" layoutY="1636.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1081.2928924560547" AnchorPane.rightAnchor="876.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1181.0" layoutY="1613.0" startX="-100.0" AnchorPane.leftAnchor="1080.5" AnchorPane.rightAnchor="939.5" />
                         <Button fx:id="fight_left_64_1" layoutX="401.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_64_2" layoutX="402.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_64_3" layoutX="403.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -1568,105 +1568,105 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="496.0" layoutY="1471.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="496.0" layoutY="1523.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="496.0" layoutY="1574.0" startX="-38.0" startY="7.0" />
+                        <Line endX="25.0" endY="5.500030517578125" layoutX="1534.0" layoutY="23.0" startX="-38.5" startY="5.500030517578125" />
+                        <Button fx:id="fight_right_64_1" layoutX="1579.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_2" layoutX="1578.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_3" layoutX="1577.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_4" layoutX="1577.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_5" layoutX="1578.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_6" layoutX="1578.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_7" layoutX="1578.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_8" layoutX="1578.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_9" layoutX="1578.0" layoutY="426.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_10" layoutX="1577.0" layoutY="477.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_11" layoutX="1577.0" layoutY="528.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_12" layoutX="1577.0" layoutY="580.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_13" layoutX="1577.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_14" layoutX="1577.0" layoutY="686.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_15" layoutX="1577.0" layoutY="738.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_16" layoutX="1577.0" layoutY="789.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_17" layoutX="1579.0" layoutY="840.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_18" layoutX="1578.0" layoutY="892.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_19" layoutX="1577.0" layoutY="944.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_20" layoutX="1577.0" layoutY="995.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_21" layoutX="1578.0" layoutY="1047.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_22" layoutX="1578.0" layoutY="1098.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_23" layoutX="1578.0" layoutY="1149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_24" layoutX="1578.0" layoutY="1201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_25" layoutX="1578.0" layoutY="1259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_26" layoutX="1577.0" layoutY="1311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_27" layoutX="1577.0" layoutY="1363.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_28" layoutX="1577.0" layoutY="1414.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_29" layoutX="1577.0" layoutY="1466.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_30" layoutX="1577.0" layoutY="1517.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_31" layoutX="1577.0" layoutY="1568.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_64_32" layoutX="1577.0" layoutY="1621.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1598.0" layoutY="7.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1535.0" layoutY="78.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="1534.0" layoutY="125.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1534.0" layoutY="173.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="224.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="276.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="328.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="379.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1536.0" layoutY="431.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="482.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="533.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="585.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="640.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="691.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="743.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="794.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1535.0" layoutY="848.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1535.0" layoutY="899.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="1535.0" layoutY="951.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1002.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1536.0" layoutY="1053.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1536.0" layoutY="1105.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1157.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1208.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1266.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1536.0" layoutY="1319.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1370.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1422.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1471.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1523.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1574.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1535.0" layoutY="1625.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="498.0" layoutY="1626.0" startX="-38.0" startY="7.0" />
-                        <Line endX="25.0" endY="5.500030517578125" layoutX="1057.0" layoutY="18.0" startX="-38.5" startY="5.500030517578125" />
-                        <Button fx:id="fight_right_64_1" layoutX="1100.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_2" layoutX="1099.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_3" layoutX="1098.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_4" layoutX="1098.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_5" layoutX="1099.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_6" layoutX="1099.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_7" layoutX="1099.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_8" layoutX="1099.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_9" layoutX="1099.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_10" layoutX="1098.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_11" layoutX="1098.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_12" layoutX="1098.0" layoutY="575.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_13" layoutX="1098.0" layoutY="630.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_14" layoutX="1098.0" layoutY="681.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_15" layoutX="1098.0" layoutY="733.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_16" layoutX="1098.0" layoutY="784.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_17" layoutX="1100.0" layoutY="835.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_18" layoutX="1099.0" layoutY="887.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_19" layoutX="1098.0" layoutY="939.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_20" layoutX="1098.0" layoutY="990.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_21" layoutX="1099.0" layoutY="1042.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_22" layoutX="1099.0" layoutY="1093.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_23" layoutX="1099.0" layoutY="1144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_24" layoutX="1099.0" layoutY="1196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_25" layoutX="1099.0" layoutY="1254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_26" layoutX="1098.0" layoutY="1306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_27" layoutX="1098.0" layoutY="1358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_28" layoutX="1098.0" layoutY="1409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_29" layoutX="1098.0" layoutY="1461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_30" layoutX="1098.0" layoutY="1512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_31" layoutX="1098.0" layoutY="1563.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_64_32" layoutX="1098.0" layoutY="1616.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1118.0" layoutY="2.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1056.0" layoutY="73.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="1055.0" layoutY="120.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1055.0" layoutY="168.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="219.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="271.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="323.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="374.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1057.0" layoutY="426.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="477.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="528.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="580.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="635.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="686.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="738.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="789.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1056.0" layoutY="843.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1056.0" layoutY="894.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="1056.0" layoutY="946.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="997.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1057.0" layoutY="1048.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1057.0" layoutY="1100.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1152.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1203.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1261.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1057.0" layoutY="1314.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1365.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1417.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1466.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1518.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1569.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1056.0" layoutY="1620.0" startX="-38.0" startY="7.0" />
+                        <Text fx:id="right_win_64_1" layoutX="1432.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_2" layoutX="1432.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_3" layoutX="1432.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_4" layoutX="1432.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_5" layoutX="1432.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_6" layoutX="1432.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_7" layoutX="1432.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_8" layoutX="1432.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_9" layoutX="1432.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_10" layoutX="1432.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_11" layoutX="1432.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_12" layoutX="1432.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_13" layoutX="1432.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_14" layoutX="1432.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_15" layoutX="1432.0" layoutY="754.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_16" layoutX="1432.0" layoutY="806.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_17" layoutX="1432.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_18" layoutX="1432.0" layoutY="911.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_19" layoutX="1432.0" layoutY="963.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_20" layoutX="1432.0" layoutY="1015.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_21" layoutX="1432.0" layoutY="1066.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_22" layoutX="1432.0" layoutY="1117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_23" layoutX="1432.0" layoutY="1169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_24" layoutX="1432.0" layoutY="1220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_25" layoutX="1432.0" layoutY="1278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_26" layoutX="1432.0" layoutY="1331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_27" layoutX="1432.0" layoutY="1382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_28" layoutX="1432.0" layoutY="1434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_29" layoutX="1432.0" layoutY="1482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_30" layoutX="1432.0" layoutY="1534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_31" layoutX="1432.0" layoutY="1586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_64_32" layoutX="1432.0" layoutY="1636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                        <Text fx:id="right_win_64_1" layoutX="953.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_2" layoutX="953.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_3" layoutX="953.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_4" layoutX="953.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_5" layoutX="953.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_6" layoutX="953.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_7" layoutX="953.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_8" layoutX="953.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_9" layoutX="953.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_10" layoutX="953.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_11" layoutX="953.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_12" layoutX="953.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_13" layoutX="953.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_14" layoutX="953.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_15" layoutX="953.0" layoutY="749.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_16" layoutX="953.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_17" layoutX="953.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_18" layoutX="953.0" layoutY="906.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_19" layoutX="953.0" layoutY="958.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_20" layoutX="953.0" layoutY="1010.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_21" layoutX="953.0" layoutY="1061.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_22" layoutX="953.0" layoutY="1112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_23" layoutX="953.0" layoutY="1164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_24" layoutX="953.0" layoutY="1215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_25" layoutX="953.0" layoutY="1273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_26" layoutX="953.0" layoutY="1326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_27" layoutX="953.0" layoutY="1377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_28" layoutX="953.0" layoutY="1429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_29" layoutX="953.0" layoutY="1477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_30" layoutX="953.0" layoutY="1529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_31" layoutX="953.0" layoutY="1581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_64_32" layoutX="953.0" layoutY="1631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_1" layoutX="529.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_2" layoutX="529.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_3" layoutX="529.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
@@ -1699,7 +1699,655 @@
                         <Text fx:id="left_win_64_30" layoutX="529.0" layoutY="1534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_31" layoutX="529.0" layoutY="1586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_32" layoutX="529.0" layoutY="1636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Button fx:id="print_btn_1" layoutX="667.0" layoutY="23.0" mnemonicParsing="false" onAction="#onPrintButtonClicked" text="Распечатать сетку" />
+                        <Button fx:id="print_btn_1" layoutX="953.0" layoutY="28.0" mnemonicParsing="false" onAction="#onPrintButtonClicked" text="Распечатать сетку" />
+                        <VBox layoutX="1979.0" layoutY="-3.0" prefHeight="1702.0" prefWidth="35.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
+                           <children>
+                              <Text fx:id="draw_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_66" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_34" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_98" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_18" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_82" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_50" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_114" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_10" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_74" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_42" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_106" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_26" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_90" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_58" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_122" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_6" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_70" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_38" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_102" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_22" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_86" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_54" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_118" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_14" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_78" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_46" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_110" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_30" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_94" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_62" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_126" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_68" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_36" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_100" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_20" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_84" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_52" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_116" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_12" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_76" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_44" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_108" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_28" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_92" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_60" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_124" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_8" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_72" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_40" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_104" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_24" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_88" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_56" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_120" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_16" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_80" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_48" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_112" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_32" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_96" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_64" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="draw_64_128" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="1629.0" layoutY="-3.0" prefHeight="1702.0" prefWidth="191.0" style="-fx-background-color: #4F6C77;">
+                           <children>
+                              <Text fx:id="club_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_66" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_34" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_98" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_18" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_82" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_50" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_114" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_10" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_74" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_42" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_106" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_26" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_90" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_58" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_122" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_6" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_70" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_38" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_102" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_22" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_86" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_54" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_118" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_14" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_78" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_46" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_110" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_30" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_94" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_62" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_126" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_4" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_68" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_36" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_100" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_20" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_84" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_52" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_116" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_12" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_76" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_44" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_108" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_28" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_92" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_60" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_124" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_8" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_72" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_40" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_104" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_24" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_88" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_56" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_120" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_16" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_80" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_48" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_112" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_32" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_96" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_64" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="club_64_128" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                        </VBox>
                      </children>
                   </AnchorPane>
                </content>
@@ -1923,7 +2571,7 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="128.0" layoutY="787.0" startX="-38.0" startY="7.0" />
                         <Line endX="26.5" endY="7.000007629394531" layoutX="129.0" layoutY="816.0" startX="-38.0" startY="7.0" />
                         <Line endX="-100.0" endY="30.0" layoutX="256.0" layoutY="794.0" startX="-100.0" />
-                        <VBox fx:id="vbox4" layoutX="867.0" layoutY="-6.0" prefHeight="893.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox4" layoutX="1533.0" layoutY="-7.0" prefHeight="893.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="right_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -2087,53 +2735,53 @@
                               </Text>
                            </children>
                         </VBox>
-                        <Line endX="110.79289245605469" endY="7.0" layoutX="756.0" layoutY="33.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="803.0857849121094" AnchorPane.rightAnchor="135.12132263183594" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="177.5" />
-                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="957.0" layoutY="58.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="803.4938812255859" AnchorPane.rightAnchor="124.29289245605469" />
-                        <Line endX="28.207107543945312" endY="7.0" layoutX="775.0" layoutY="89.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="802.7071075439453" AnchorPane.rightAnchor="188.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="66.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="198.5" />
-                        <Line endX="25.0" endY="7.0000152587890625" layoutX="842.0" layoutY="103.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="172.2928924560547" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="842.0" layoutY="134.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="189.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="111.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="218.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="842.0" layoutY="154.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="206.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="185.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="223.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="162.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="218.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="205.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="240.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="236.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="257.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="213.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="218.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="842.0" layoutY="259.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="274.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="290.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="291.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="267.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="320.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="842.0" layoutY="308.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="308.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="339.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="324.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="316.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="359.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="341.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="390.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="358.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="367.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="411.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="375.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="442.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="392.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="419.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="462.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="409.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="493.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="425.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="470.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="513.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="442.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="544.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="458.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="521.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="565.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="475.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="596.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="491.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="573.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="620.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="508.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="651.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="524.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="628.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="671.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="541.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="702.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="558.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="679.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="723.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="575.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="843.0" layoutY="754.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="591.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="731.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.0" layoutY="774.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="803.2928924560547" AnchorPane.rightAnchor="608.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="842.7928924560547" layoutY="805.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="804.2928924560547" AnchorPane.rightAnchor="624.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="904.0" layoutY="782.0" startX="-100.0" AnchorPane.leftAnchor="803.5" AnchorPane.rightAnchor="354.5" />
+                        <Line endX="110.79289245605469" endY="7.0" layoutX="1413.2071075439453" layoutY="33.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1460.0857849121094" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1614.0" layoutY="58.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1460.493881225586" AnchorPane.rightAnchor="121.29289245605469" />
+                        <Line endX="28.207107543945312" endY="7.0" layoutX="1432.0" layoutY="89.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1459.7071075439453" AnchorPane.rightAnchor="122.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="66.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1499.0" layoutY="103.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1499.0" layoutY="134.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="111.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1499.0" layoutY="154.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="185.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="162.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="205.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="236.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="213.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1499.0" layoutY="259.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="290.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="267.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1499.0" layoutY="308.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.29289245605469" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="339.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="316.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="359.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="390.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="367.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="411.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="442.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="419.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="462.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="493.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="470.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="513.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="544.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="521.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="565.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="596.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="573.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="620.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="651.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="628.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="671.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="702.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="679.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="723.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="754.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="731.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1498.7928924560547" layoutY="774.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1460.2928924560547" AnchorPane.rightAnchor="123.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1499.7928924560547" layoutY="805.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1461.2928924560547" AnchorPane.rightAnchor="122.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1561.0" layoutY="782.0" startX="-100.0" AnchorPane.leftAnchor="1460.5" AnchorPane.rightAnchor="186.5" />
                         <Button fx:id="fight_left_32_1" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_32_3" layoutX="99.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_32_5" layoutX="100.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -2166,56 +2814,56 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="696.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="748.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="195.0" layoutY="799.0" startX="-38.0" startY="7.0" />
-                        <Line endX="25.0" endY="5.500030517578125" layoutX="842.0" layoutY="4.0" startX="-38.5" startY="5.500030517578125" />
-                        <Button fx:id="fight_right_32_1" layoutX="818.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_3" layoutX="818.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_5" layoutX="817.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_7" layoutX="817.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_9" layoutX="818.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_11" layoutX="818.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_13" layoutX="818.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_15" layoutX="818.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_17" layoutX="818.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_19" layoutX="817.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_21" layoutX="817.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_23" layoutX="817.0" layoutY="575.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_25" layoutX="817.0" layoutY="630.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_27" layoutX="817.0" layoutY="681.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_29" layoutX="817.0" layoutY="733.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_31" layoutX="817.0" layoutY="784.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="775.0" layoutY="16.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="775.0" layoutY="73.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="774.0" layoutY="120.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="774.0" layoutY="168.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="219.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="271.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="323.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="374.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="776.0" layoutY="426.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="477.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="528.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="580.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="635.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="686.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="738.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="775.0" layoutY="789.0" startX="-38.0" startY="7.0" />
+                        <Line endX="25.0" endY="5.500030517578125" layoutX="1499.0" layoutY="4.0" startX="-38.5" startY="5.500030517578125" />
+                        <Button fx:id="fight_right_32_1" layoutX="1475.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_3" layoutX="1475.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_5" layoutX="1474.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_7" layoutX="1474.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_9" layoutX="1475.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_11" layoutX="1475.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_13" layoutX="1475.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_15" layoutX="1475.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_17" layoutX="1475.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_19" layoutX="1474.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_21" layoutX="1474.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_23" layoutX="1474.0" layoutY="575.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_25" layoutX="1474.0" layoutY="630.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_27" layoutX="1474.0" layoutY="681.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_29" layoutX="1474.0" layoutY="733.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_31" layoutX="1474.0" layoutY="784.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1432.0" layoutY="16.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1432.0" layoutY="73.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="1431.0" layoutY="120.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1431.0" layoutY="168.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="219.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="271.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="323.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="374.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1433.0" layoutY="426.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="477.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="528.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="580.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="635.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="686.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="738.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1432.0" layoutY="789.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                        <Text fx:id="right_win_32_1" layoutX="672.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_2" layoutX="672.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_3" layoutX="672.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_4" layoutX="672.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_5" layoutX="672.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_6" layoutX="672.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_7" layoutX="672.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_8" layoutX="672.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_9" layoutX="672.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_10" layoutX="672.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_11" layoutX="672.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_12" layoutX="672.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_13" layoutX="672.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_14" layoutX="672.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_15" layoutX="672.0" layoutY="749.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_16" layoutX="672.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_1" layoutX="1329.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_2" layoutX="1329.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_3" layoutX="1329.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_4" layoutX="1329.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_5" layoutX="1329.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_6" layoutX="1329.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_7" layoutX="1329.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_8" layoutX="1329.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_9" layoutX="1329.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_10" layoutX="1329.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_11" layoutX="1329.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_12" layoutX="1329.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_13" layoutX="1329.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_14" layoutX="1329.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_15" layoutX="1329.0" layoutY="749.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_16" layoutX="1329.0" layoutY="801.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_1" layoutX="226.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_2" layoutX="226.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_3" layoutX="226.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />

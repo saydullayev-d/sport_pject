@@ -64,6 +64,7 @@ public class TournamentBracket implements Initializable {
                     Scene newscene = new Scene(loader.load());
                     Stage newstage = new Stage();
                     newstage.setScene(newscene);
+                    newstage.setMaximized(true);
                     newstage.setTitle("Турнирная сетка");
                     newstage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                         @Override

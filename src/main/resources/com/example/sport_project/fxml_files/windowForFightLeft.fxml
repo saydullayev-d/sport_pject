@@ -5,9 +5,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9AA8A8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.WindowForFightLeft">
+<AnchorPane prefHeight="400.0" prefWidth="760.0" style="-fx-background-color: #9AA8A8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.WindowForFightLeft">
     <children>
-        <Text fill="WHITE" layoutX="202.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кто победил?" wrappingWidth="196.13671875">
+        <Text fill="WHITE" layoutX="282.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кто победил?" wrappingWidth="196.13671875">
             <font>
                 <Font size="28.0" />
             </font>
@@ -17,7 +17,7 @@
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button fx:id="win_2_btn" layoutX="457.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Победил" textFill="WHITE">
+        <Button fx:id="win_2_btn" layoutX="565.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #132a13;" text="Победил" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
@@ -27,7 +27,7 @@
                 <Font size="25.0" />
             </font>
         </Text>
-        <Text fx:id="win_sportsmen_2" fill="WHITE" layoutX="440.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
+        <Text fx:id="win_sportsmen_2" fill="WHITE" layoutX="520.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
             <font>
                 <Font size="25.0" />
             </font>
@@ -37,7 +37,7 @@
                 <Font size="25.0" />
             </font>
         </Text>
-        <Text fx:id="draw_num2" fill="WHITE" layoutX="376.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="653" wrappingWidth="43.000011920928955">
+        <Text fx:id="draw_num2" fill="WHITE" layoutX="456.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="653" wrappingWidth="43.000011920928955">
             <font>
                 <Font size="25.0" />
             </font>

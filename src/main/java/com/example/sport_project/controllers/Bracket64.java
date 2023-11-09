@@ -45,7 +45,11 @@ public class Bracket64 implements Initializable {
     @FXML
     private Text draw_64_1;
     @FXML
+    private Text draw_64_2;
+    @FXML
     private Text club_64_1;
+    @FXML
+    private Text club_64_2;
     @FXML
     private Text right_32_1;
     @FXML
@@ -302,13 +306,23 @@ public class Bracket64 implements Initializable {
         }
 
         VBox drawParent = (VBox) draw_64_1.getParent();
-        for(int i = 1; i<=128; i++){
+        VBox drawParentRight = (VBox) draw_64_2.getParent();
+        for(int i = 1; i<=128; i+=2){
             Node element = drawParent.lookup("#draw_64_"+i);
             drawNumList.add((Text) element);
         }
+        for(int i = 2; i<=128; i+=2){
+            Node element = drawParentRight.lookup("#draw_64_"+i);
+            drawNumList.add((Text) element);
+        }
         VBox clubParent = (VBox) club_64_1.getParent();
-        for(int i = 1; i<=128; i++){
+        VBox clubParentRight = (VBox) club_64_2.getParent();
+        for(int i = 1; i<=128; i+=2){
             Node element = clubParent.lookup("#club_64_"+i);
+            clubList.add((Text) element);
+        }
+        for(int i = 2; i<=128; i+=2){
+            Node element = clubParentRight.lookup("#club_64_"+i);
             clubList.add((Text) element);
         }
 
