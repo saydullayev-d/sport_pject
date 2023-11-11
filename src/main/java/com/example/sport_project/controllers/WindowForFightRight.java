@@ -51,11 +51,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num2.getText());
                 String name = win_sportsmen_1.getText();
                 int id = fight_32_rightDb.getId(winner_draw,looser_draw);
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinner32Right(id, winner_draw);
-                    winner_32_rightDb.addWinner(id, winner_draw, name);
+                    winner_32_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_1_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {
@@ -71,11 +72,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num1.getText());
                 String name = win_sportsmen_2.getText();
                 int id = fight_32_rightDb.getId(looser_draw,winner_draw);
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinner32Right(id, winner_draw);
-                    winner_32_rightDb.addWinner(id, winner_draw, name);
+                    winner_32_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_2_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {
@@ -94,11 +96,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num2.getText());
                 String name = win_sportsmen_1.getText();
                 int id = fight_16_rightDb.getId(winner_draw,looser_draw);
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinner16Right(id, winner_draw);
-                    winner_16_rightDb.addWinner(id, winner_draw, name);
+                    winner_16_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_1_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {
@@ -114,11 +117,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num1.getText());
                 String name = win_sportsmen_2.getText();
                 int id = fight_16_rightDb.getId(looser_draw,winner_draw);
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinner16Right(id, winner_draw);
-                    winner_16_rightDb.addWinner(id, winner_draw, name);
+                    winner_16_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_2_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {
@@ -269,11 +273,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num2.getText());
                 int id = fight_64_rightDb.getId(winner_draw,looser_draw);
                 String name = win_sportsmen_1.getText();
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinnerRight(id, winner_draw);
-                    winner_64_rightDb.addWinner(id, winner_draw, name);
+                    winner_64_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_1_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {
@@ -288,11 +293,12 @@ public class WindowForFightRight implements Initializable {
                 int looser_draw = Integer.parseInt(draw_num1.getText());
                 int id = fight_64_rightDb.getId(looser_draw,winner_draw);
                 String name = win_sportsmen_2.getText();
+                String club = sportsmenDb.getClub(winner_draw, name);
                 FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/bracket_64.fxml"));
                 try {
                     Scene newscene = new Scene(loader.load());
                     Bracket64.addWinnerRight(id, winner_draw);
-                    winner_64_rightDb.addWinner(id, winner_draw, name);
+                    winner_64_rightDb.addWinner(id, winner_draw, name, club);
                     Stage btn_stage = (Stage) win_2_btn.getScene().getWindow();
                     btn_stage.close();
                 } catch (IOException e) {

@@ -47,11 +47,27 @@ public class Bracket64 implements Initializable {
     @FXML
     private Text draw_64_2;
     @FXML
+    private Text draw_32_1;
+    @FXML
     private Text club_64_1;
     @FXML
     private Text club_64_2;
     @FXML
     private Text right_32_1;
+    @FXML
+    private Text club_32_1;
+    @FXML
+    private Text draw_16_1;
+    @FXML
+    private Text left_club_16_1;
+    @FXML
+    private Text right_draw_16_1;
+    @FXML
+    private Text right_club_16_1;
+    @FXML
+    private Text right_club_32_1;
+    @FXML
+    private Text right_draw_32_1;
     @FXML
     private Button fight_left_64_1;
     @FXML
@@ -64,6 +80,22 @@ public class Bracket64 implements Initializable {
     private Text left_win_16_1;
     @FXML
     private Text right_win_8_1;
+    @FXML
+    private Text draw_8_1;
+    @FXML
+    private Text club_8_1;
+    @FXML
+    private Text draw_4_1;
+    @FXML
+    private Text club_4_1;
+    @FXML
+    private Text right_draw_4_1;
+    @FXML
+    private Text club_right_4_1;
+    @FXML
+    private Text right_draw_8_1;
+    @FXML
+    private Text club_right_8_1;
     @FXML
     private Tab etap_32;
     @FXML
@@ -455,13 +487,30 @@ public class Bracket64 implements Initializable {
             if (newTab == etap_32) {
                 VBox parent32 = (VBox) _32_1.getParent();
                 VBox parent32_right = (VBox) right_32_1.getParent();
+                VBox parent32_draw_left = (VBox) draw_32_1.getParent();
+                VBox parent32_club_left = (VBox) club_32_1.getParent();
+                VBox parent32_draw_right = (VBox) right_draw_32_1.getParent();
+                VBox parent_32_club_right = (VBox) right_club_32_1.getParent();
+
                 for (int i = 1; i <= 32; i++) {
                     Text element = (Text) parent32.lookup("#_32_" + i);
                     Text element_right = (Text) parent32_right.lookup("#right_32_" + i);
+                    Text draw = (Text) parent32_draw_left.lookup("#draw_32_"+i);
+                    Text club = (Text) parent32_club_left.lookup("#club_32_"+i);
+                    Text draw_r = (Text) parent32_draw_right.lookup("#right_draw_32_"+i);
+                    Text club_r = (Text) parent_32_club_right.lookup("#right_club_32_"+i);
                     String draw_num = winner_64_leftDb.getName(i);
                     String draw_num_rigth = winner_64_rightDb.getName(i);
+                    int draw_left = winner_64_leftDb.getSportsmen(i);
+                    int draw_right = winner_64_rightDb.getSportsmen(i);
+                    String club_right = winner_64_rightDb.getClub(i);
+                    String sportclub = winner_64_leftDb.getClub(i);
+                    draw.setText(String.valueOf(draw_left));
                     element.setText(draw_num);
                     element_right.setText(draw_num_rigth);
+                    club.setText(sportclub);
+                    draw_r.setText(String.valueOf(draw_right));
+                    club_r.setText(club_right);
                 }
                 List<Button> buttonList32 = new ArrayList<>();
                 List<Button> buttonList32right = new ArrayList<>();
@@ -533,13 +582,30 @@ public class Bracket64 implements Initializable {
             if (newTab == etap_16){
                 VBox parent_16_left = (VBox) left_16_1.getParent();
                 VBox parent_16_right = (VBox) right_16_1.getParent();
+                VBox parent16_draw_left = (VBox) draw_16_1.getParent();
+                VBox parent16_club_left = (VBox) left_club_16_1.getParent();
+                VBox parent16_club_right = (VBox) right_club_16_1.getParent();
+                VBox parent16_draw_right = (VBox) right_draw_16_1.getParent();
+
                 for (int i = 1; i<=16; i++){
                     Text element_left = (Text) parent_16_left.lookup("#left_16_"+i);
                     Text element_right = (Text) parent_16_right.lookup("#right_16_"+i);
+                    Text draw_left = (Text) parent16_draw_left.lookup("#draw_16_"+i);
+                    Text club_left = (Text) parent16_club_left.lookup("#left_club_16_"+i);
+                    Text club_right = (Text) parent16_club_right.lookup("#right_club_16_"+i);
+                    Text draw_right = (Text) parent16_draw_right.lookup("#right_draw_16_"+i);
+                    String club = winner_32_leftDb.getClub(i);
                     String name_left = winner_32_leftDb.getName(i);
                     String name_right = winner_32_rightDb.getName(i);
+                    int drawLeft = winner_32_leftDb.getSportsmen(i);
+                    int draw_r = winner_32_rightDb.getSportsmen(i);
+                    String club_r = winner_32_rightDb.getClub(i);
                     element_left.setText(name_left);
                     element_right.setText(name_right);
+                    draw_left.setText(String.valueOf(drawLeft));
+                    club_left.setText(club);
+                    club_right.setText(club_r);
+                    draw_right.setText(String.valueOf(draw_r));
                 }
                 List<Button> button16Left = new ArrayList<>();
                 List<Button> button16Right = new ArrayList<>();
@@ -606,11 +672,29 @@ public class Bracket64 implements Initializable {
             if (newTab == etap_8){
                 VBox parent_8_left = (VBox) left_8_1.getParent();
                 VBox parent_8_right = (VBox) right_8_1.getParent();
+                VBox parent8_draw_left = (VBox) draw_8_1.getParent();
+                VBox parent8_club_left = (VBox) club_8_1.getParent();
+                VBox parent8_draw_right = (VBox) right_draw_8_1.getParent();
+                VBox parent8_club_right = (VBox) club_right_8_1.getParent();
+
                 for (int i = 1; i<=8; i++){
                     Text element_left = (Text) parent_8_left.lookup("#left_8_"+i);
                     Text element_right = (Text) parent_8_right.lookup("#right_8_"+i);
+                    Text draw_left = (Text) parent8_draw_left.lookup("#draw_8_"+i);
+                    Text club_left = (Text) parent8_club_left.lookup("#club_8_"+i);
+                    Text draw_right = (Text) parent8_draw_right.lookup("#right_draw_8_"+i);
+                    Text club_right = (Text) parent8_club_right.lookup("#club_right_8_"+i);
+
                     String name_left = winner_16_leftDb.getName(i);
                     String name_right = winner_16_rightDb.getName(i);
+                    int draw_l = winner_16_leftDb.getSportsmen(i);
+                    String club_l = winner_16_leftDb.getClub(i);
+                    int draw_r = winner_16_rightDb.getSportsmen(i);
+                    String club_r = winner_16_rightDb.getClub(i);
+                    draw_left.setText(String.valueOf(draw_l));
+                    club_left.setText(club_l);
+                    draw_right.setText(String.valueOf(draw_r));
+                    club_right.setText(club_r);
                     element_left.setText(name_left);
                     element_right.setText(name_right);
                 }
@@ -680,11 +764,30 @@ public class Bracket64 implements Initializable {
             if (newTab == etap_4){
                 VBox parent_4_left = (VBox) left_4_1.getParent();
                 VBox parent_4_right = (VBox) right_4_1.getParent();
+                VBox parent4_draw_left = (VBox) draw_4_1.getParent();
+                VBox parent4_club_left = (VBox) club_4_1.getParent();
+                VBox parent4_draw_right = (VBox) right_draw_4_1.getParent();
+                VBox parent4_club_right = (VBox) club_right_4_1.getParent();
+
                 for (int i = 1; i<=4; i++){
                     Text element_left = (Text) parent_4_left.lookup("#left_4_"+i);
                     Text element_right = (Text) parent_4_right.lookup("#right_4_"+i);
+                    Text draw_right = (Text) parent4_draw_right.lookup("#right_draw_4_"+i);
+                    Text draw_left = (Text) parent4_draw_left.lookup("#draw_4_"+i);
+                    Text club_left = (Text) parent4_club_left.lookup("#club_4_"+i);
+                    Text club_right = (Text) parent4_club_right.lookup("#club_right_4_"+i);
                     String name_left = winner_8_leftDb.getName(i);
                     String name_right = winner_8_rightDb.getName(i);
+                    int draw_r = winner_16_rightDb.getSportsmen(i);
+                    int draw_l = winner_16_leftDb.getSportsmen(i);
+                    String club_r = winner_16_rightDb.getClub(i);
+                    String club_l = winner_16_leftDb.getClub(i);
+                    draw_right.setText(String.valueOf(draw_r));
+                    draw_left.setText(String.valueOf(draw_l));
+                    club_left.setText(club_l);
+                    club_right.setText(club_r);
+
+
                     element_left.setText(name_left);
                     element_right.setText(name_right);
                 }
@@ -1685,7 +1788,6 @@ public class Bracket64 implements Initializable {
         } catch (Exception e) {
             System.out.println("Произошла ошибка при записи в Excel: " + e.getMessage());
         }
-
     }
 
 

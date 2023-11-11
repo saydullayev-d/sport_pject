@@ -4,8 +4,8 @@ import java.sql.*;
 
 public class winner_32_rightDb {
 
-    public static void addWinner(int id, int winner, String name){
-        String query = "INSERT INTO winner_32_right(id,draw_num, name) VALUES(?,?,?)";
+    public static void addWinner(int id, int winner, String name, String club){
+        String query = "INSERT INTO winner_32_right(id,draw_num, name, club) VALUES(?,?,?,?)";
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
@@ -13,6 +13,7 @@ public class winner_32_rightDb {
             preparedStatement.setInt(1, id);
             preparedStatement.setInt(2, winner);
             preparedStatement.setString(3, name);
+            preparedStatement.setString(4, club);
             preparedStatement.executeUpdate();
             connection.close();
         }catch (Exception e){
@@ -80,6 +81,23 @@ public class winner_32_rightDb {
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static String getClub(int id){
+        String data = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT club FROM winner_32_right WHERE id = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()){
+                data = resultSet.getString("club");
+            }
+            return data;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return data;
     }
 
 }

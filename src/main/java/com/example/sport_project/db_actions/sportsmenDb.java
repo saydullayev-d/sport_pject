@@ -166,5 +166,22 @@ public class sportsmenDb {
             throw new RuntimeException(e);
         }
     }
+
+    public static String getClub(int draw_num, String name){
+        String club = "";
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+            String query = "SELECT club FROM sportsmen WHERE cod_draw=? AND name=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1, draw_num);
+            preparedStatement.setString(2, name);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                club = resultSet.getString("club");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return club;
+    }
 }
 
