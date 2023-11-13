@@ -1699,7 +1699,7 @@
                         <Text fx:id="left_win_64_30" layoutX="529.0" layoutY="1534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_31" layoutX="529.0" layoutY="1586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_64_32" layoutX="529.0" layoutY="1636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Button fx:id="print_btn_1" layoutX="699.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked" text="Распечатать сетку" />
+                        <Button fx:id="print_btn_1" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked" text="Распечатать сетку" />
                         <VBox layoutX="1519.0" layoutY="-3.0" prefHeight="1702.0" prefWidth="35.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="-6.0">
                            <children>
                               <Text fx:id="draw_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
@@ -2880,7 +2880,7 @@
                         <Text fx:id="left_win_32_14" layoutX="496.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_15" layoutX="496.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_16" layoutX="496.0" layoutY="811.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Button fx:id="print_btn_2" layoutX="782.0" layoutY="30.0" mnemonicParsing="false" onAction="#onPrintButtonClicked2" text="Распечатать сетку" />
+                        <Button fx:id="print_btn_2" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked2" text="Распечатать сетку" />
                         <VBox fx:id="vbox_draw_32_1" layoutX="-2.0" layoutY="-3.0" prefHeight="877.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="draw_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
@@ -3813,7 +3813,7 @@
                         <Text fx:id="left_win_16_6" layoutX="504.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_7" layoutX="504.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_8" layoutX="504.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Button fx:id="print_btn_3" layoutX="765.0" layoutY="24.0" mnemonicParsing="false" onAction="#onPrintButtonClicked3" text="Распечатать сетку" />
+                        <Button fx:id="print_btn_3" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked3" text="Распечатать сетку" />
                         <VBox fx:id="vbox_draw_16_2" layoutX="1959.0" layoutY="-3.0" prefHeight="438.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                            <children>
                               <Text fx:id="right_draw_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111" textAlignment="CENTER">
@@ -4299,7 +4299,7 @@
                          <Text fx:id="left_win_8_3" layoutX="506.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_8_4" layoutX="506.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="1614.0" layoutY="9.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="print_btn_4" layoutX="783.0" layoutY="29.0" mnemonicParsing="false" onAction="#onPrintButtonClicked4" text="Распечатать сетку" />
+                         <Button fx:id="print_btn_4" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked4" text="Распечатать сетку" />
                          <VBox fx:id="vbox_8_1" layoutX="200.0" layoutY="-3.0" prefHeight="229.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
@@ -4561,7 +4561,7 @@
                          <Text fx:id="left_win_4_1" layoutX="504.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_4_2" layoutX="504.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="1594.0" layoutY="5.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="print_btn_5" layoutX="788.0" layoutY="26.0" mnemonicParsing="false" onAction="#onPrintButtonClicked5" text="Распечать сетку" />
+                         <Button fx:id="print_btn_5" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked5" text="Распечать сетку" />
                          <VBox fx:id="vbox_4_2" layoutX="1641.0" layoutY="-3.0" prefHeight="108.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_right_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
@@ -4711,7 +4711,7 @@
                          <Text fx:id="right_win_2_1" layoutX="1428.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_2_1" layoutX="506.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="1601.0" layoutY="8.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="print_btn_6" layoutX="771.0" layoutY="19.0" mnemonicParsing="false" onAction="#onPrintButtonClicked6" text="Распечатать сетку" />
+                         <Button fx:id="print_btn_6" layoutX="700.0" layoutY="17.0" mnemonicParsing="false" onAction="#onPrintButtonClicked6" text="Распечатать сетку" />
                          <VBox fx:id="vbox_2_2" layoutX="1633.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_right_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
