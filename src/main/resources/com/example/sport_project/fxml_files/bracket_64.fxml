@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" prefHeight="1136.0" prefWidth="1644.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" prefHeight="1136.0" prefWidth="2016.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
@@ -666,7 +666,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="201.0" layoutY="-3.0" prefHeight="1713.0" prefWidth="191.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_64_1" layoutX="201.0" layoutY="-3.0" prefHeight="1713.0" prefWidth="191.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="club_64_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
                                  <VBox.margin>
@@ -2024,7 +2024,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="1629.0" layoutY="-3.0" prefHeight="1702.0" prefWidth="191.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_64_2" layoutX="1629.0" layoutY="-3.0" prefHeight="1702.0" prefWidth="191.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="club_64_2" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0">
                                  <VBox.margin>
@@ -2357,7 +2357,7 @@
          <content>
             <ScrollPane fitToWidth="true" prefWidth="989.0">
                <content>
-                  <AnchorPane prefHeight="942.0" prefWidth="1502.0" style="-fx-background-color: white;">
+                  <AnchorPane prefHeight="942.0" prefWidth="2060.0" style="-fx-background-color: white;">
                      <children>
                         <VBox fx:id="vbox3" layoutX="29.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
@@ -2571,7 +2571,7 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="398.0" layoutY="787.0" startX="-38.0" startY="7.0" />
                         <Line endX="26.5" endY="7.000007629394531" layoutX="399.0" layoutY="816.0" startX="-38.0" startY="7.0" />
                         <Line endX="-100.0" endY="30.0" layoutX="526.0" layoutY="794.0" startX="-100.0" />
-                        <VBox fx:id="vbox4" layoutX="1473.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox4" layoutX="1809.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="39.0">
                            <children>
                               <Text fx:id="right_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -2735,53 +2735,53 @@
                               </Text>
                            </children>
                         </VBox>
-                        <Line endX="110.79289245605469" endY="7.0" layoutX="1194.2071075439453" layoutY="40.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1241.0857849121094" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="17.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1395.0" layoutY="65.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1241.493881225586" AnchorPane.rightAnchor="340.2928924560547" />
-                        <Line endX="28.207107543945312" endY="7.0" layoutX="1213.0" layoutY="96.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1240.7071075439453" AnchorPane.rightAnchor="341.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="73.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1280.0" layoutY="110.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1280.0" layoutY="141.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="118.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1280.0" layoutY="161.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="192.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="169.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="212.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="243.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="220.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1280.0" layoutY="266.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="297.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="274.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1280.0" layoutY="315.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="346.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="323.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="366.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="397.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="374.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="418.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="449.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="426.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="469.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="500.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="477.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="520.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="551.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="528.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="572.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="603.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="580.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="627.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="658.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="635.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="678.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="709.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="686.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="730.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1280.7928924560547" layoutY="761.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1242.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="738.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1279.7928924560547" layoutY="781.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1241.2928924560547" AnchorPane.rightAnchor="342.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1281.7928924560547" layoutY="818.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1243.2928924560547" AnchorPane.rightAnchor="340.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1342.0" layoutY="789.0" startX="-100.0" AnchorPane.leftAnchor="1241.5" AnchorPane.rightAnchor="405.5" />
+                        <Line endX="110.79289245605469" endY="7.0" layoutX="1526.2071075439453" layoutY="40.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1573.0857849121094" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="17.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1727.0" layoutY="65.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1573.493881225586" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="28.207107543945312" endY="7.0" layoutX="1545.0" layoutY="96.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1572.7071075439453" AnchorPane.rightAnchor="377.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="73.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1612.0" layoutY="110.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1612.0" layoutY="141.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="118.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1612.0" layoutY="161.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="192.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="169.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="212.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="243.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="220.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1612.0" layoutY="266.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="297.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="274.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1612.0" layoutY="315.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.2928924560547" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="346.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="323.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="366.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="397.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="374.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="418.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="449.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="426.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="469.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="500.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="477.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="520.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="551.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="528.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="572.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="603.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="580.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="627.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="658.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="635.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="678.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="709.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="686.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="730.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1612.7928924560547" layoutY="761.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1574.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="738.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1611.7928924560547" layoutY="781.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1573.2928924560547" AnchorPane.rightAnchor="378.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="812.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1674.0" layoutY="789.0" startX="-100.0" AnchorPane.leftAnchor="1573.5" AnchorPane.rightAnchor="441.5" />
                         <Button fx:id="fight_left_32_1" layoutX="368.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_32_3" layoutX="369.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_32_5" layoutX="370.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -2814,56 +2814,56 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="465.0" layoutY="696.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="465.0" layoutY="748.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="465.0" layoutY="799.0" startX="-38.0" startY="7.0" />
-                        <Line endX="25.0" endY="5.500030517578125" layoutX="1280.0" layoutY="10.0" startX="-38.5" startY="5.500030517578125" />
-                        <Button fx:id="fight_right_32_1" layoutX="1256.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_3" layoutX="1256.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_5" layoutX="1255.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_7" layoutX="1255.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_9" layoutX="1256.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_11" layoutX="1256.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_13" layoutX="1256.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_15" layoutX="1256.0" layoutY="376.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_17" layoutX="1256.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_19" layoutX="1255.0" layoutY="479.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_21" layoutX="1255.0" layoutY="530.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_23" layoutX="1255.0" layoutY="582.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_25" layoutX="1255.0" layoutY="637.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_27" layoutX="1255.0" layoutY="688.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_29" layoutX="1255.0" layoutY="740.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_32_31" layoutX="1255.0" layoutY="791.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1213.0" layoutY="23.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1213.0" layoutY="80.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="1212.0" layoutY="127.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1212.0" layoutY="175.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="226.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="278.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="330.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="381.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1214.0" layoutY="433.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="484.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="535.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="587.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="642.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="693.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="745.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1213.0" layoutY="796.0" startX="-38.0" startY="7.0" />
+                        <Line endX="25.0" endY="5.500030517578125" layoutX="1612.0" layoutY="10.0" startX="-38.5" startY="5.500030517578125" />
+                        <Button fx:id="fight_right_32_1" layoutX="1588.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_3" layoutX="1588.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_5" layoutX="1587.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_7" layoutX="1587.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_9" layoutX="1588.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_11" layoutX="1588.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_13" layoutX="1588.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_15" layoutX="1588.0" layoutY="376.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_17" layoutX="1588.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_19" layoutX="1587.0" layoutY="479.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_21" layoutX="1587.0" layoutY="530.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_23" layoutX="1587.0" layoutY="582.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_25" layoutX="1587.0" layoutY="637.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_27" layoutX="1587.0" layoutY="688.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_29" layoutX="1587.0" layoutY="740.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_32_31" layoutX="1587.0" layoutY="791.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1545.0" layoutY="23.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1545.0" layoutY="80.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="1544.0" layoutY="127.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1544.0" layoutY="175.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="226.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="278.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="330.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="381.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1546.0" layoutY="433.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="484.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="535.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="587.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="642.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="693.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="745.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1545.0" layoutY="796.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                        <Text fx:id="right_win_32_1" layoutX="1110.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_2" layoutX="1110.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_3" layoutX="1110.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_4" layoutX="1110.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_5" layoutX="1110.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_6" layoutX="1110.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_7" layoutX="1110.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_8" layoutX="1110.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_9" layoutX="1110.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_10" layoutX="1110.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_11" layoutX="1110.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_12" layoutX="1110.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_13" layoutX="1110.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_14" layoutX="1110.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_15" layoutX="1110.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_32_16" layoutX="1110.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_1" layoutX="1442.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_2" layoutX="1442.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_3" layoutX="1442.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_4" layoutX="1442.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_5" layoutX="1442.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_6" layoutX="1442.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_7" layoutX="1442.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_8" layoutX="1442.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_9" layoutX="1442.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_10" layoutX="1442.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_11" layoutX="1442.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_12" layoutX="1442.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_13" layoutX="1442.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_14" layoutX="1442.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_15" layoutX="1442.0" layoutY="756.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_32_16" layoutX="1442.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_1" layoutX="496.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_2" layoutX="496.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_3" layoutX="496.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
@@ -2881,7 +2881,7 @@
                         <Text fx:id="left_win_32_15" layoutX="496.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_32_16" layoutX="496.0" layoutY="811.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Button fx:id="print_btn_2" layoutX="782.0" layoutY="30.0" mnemonicParsing="false" onAction="#onPrintButtonClicked2" text="Распечатать сетку" />
-                        <VBox layoutX="-2.0" layoutY="-3.0" prefHeight="877.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_draw_32_1" layoutX="-2.0" layoutY="-3.0" prefHeight="877.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="draw_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                  <VBox.margin>
@@ -3045,7 +3045,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="196.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_32_1" layoutX="196.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="club_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="sportsmen club category">
                                  <VBox.margin>
@@ -3209,7 +3209,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox layoutX="1612.0" layoutY="-3.0" prefHeight="877.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_draw_32_2" layoutX="1976.0" layoutY="-3.0" prefHeight="877.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                            <children>
                               <Text fx:id="right_draw_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                  <VBox.margin>
@@ -3373,7 +3373,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox fx:id="vbox311" layoutX="1307.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_32_2" layoutX="1641.0" layoutY="-3.0" prefHeight="877.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="right_club_32_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="sportsmen club category">
                                  <VBox.margin>
@@ -3656,7 +3656,7 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="407.0" layoutY="366.0" startX="-38.0" startY="7.0" />
                         <Line endX="26.5" endY="7.0" layoutX="408.0" layoutY="395.0" startX="-38.0" startY="7.0" />
                         <Line endX="-100.0" endY="30.0" layoutX="535.0" layoutY="373.0" startX="-100.0" />
-                        <VBox fx:id="vbox6" layoutX="1427.0" layoutY="-3.0" prefHeight="438.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox6" layoutX="1792.0" layoutY="-3.0" prefHeight="438.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="39.0">
                            <children>
                               <Text fx:id="right_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                  <VBox.margin>
@@ -3740,29 +3740,29 @@
                               </Text>
                            </children>
                         </VBox>
-                        <Line endX="110.79289245605469" endY="7.0" layoutX="1147.2071075439453" layoutY="38.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1194.0857849121094" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="15.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1348.0" layoutY="63.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1194.493881225586" AnchorPane.rightAnchor="384.2928924560547" />
-                        <Line endX="28.207107543945312" endY="7.0" layoutX="1166.0" layoutY="94.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1193.7071075439453" AnchorPane.rightAnchor="385.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="71.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1233.0" layoutY="114.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1233.0" layoutY="145.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="122.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1233.0" layoutY="165.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="196.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="173.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="217.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="248.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="225.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1233.0" layoutY="270.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="301.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="278.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.0" endY="6.999969482421875" layoutX="1233.0" layoutY="321.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.2928924560547" />
-                        <Line endX="24.207107543945312" endY="7.0" layoutX="1233.7928924560547" layoutY="352.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1195.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="329.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="372.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="25.207107543945312" endY="7.0" layoutX="1232.7928924560547" layoutY="403.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1194.2928924560547" AnchorPane.rightAnchor="386.5" />
-                        <Line endX="-100.0" endY="30.0" layoutX="1295.0" layoutY="380.0" startX="-100.0" AnchorPane.leftAnchor="1194.5" AnchorPane.rightAnchor="449.5" />
+                        <Line endX="110.79289245605469" endY="7.0" layoutX="1528.2071075439453" layoutY="38.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1575.0857849121094" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="15.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="-88.0" endY="7.0000457763671875" layoutX="1729.0" layoutY="63.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1575.493881225586" AnchorPane.rightAnchor="374.2928924560547" />
+                        <Line endX="28.207107543945312" endY="7.0" layoutX="1547.0" layoutY="94.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1574.7071075439453" AnchorPane.rightAnchor="375.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="71.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.0" endY="7.0000152587890625" layoutX="1614.0" layoutY="114.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1614.0" layoutY="145.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="122.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1614.0" layoutY="165.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="196.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="173.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="217.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="248.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="225.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1614.0" layoutY="270.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="301.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="278.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.0" endY="6.999969482421875" layoutX="1614.0" layoutY="321.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.2928924560547" />
+                        <Line endX="24.207107543945312" endY="7.0" layoutX="1614.7928924560547" layoutY="352.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1576.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="329.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="372.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="25.207107543945312" endY="7.0" layoutX="1613.7928924560547" layoutY="403.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.2928924560547" AnchorPane.rightAnchor="376.5" />
+                        <Line endX="-100.0" endY="30.0" layoutX="1676.0" layoutY="380.0" startX="-100.0" AnchorPane.leftAnchor="1575.5" AnchorPane.rightAnchor="439.5" />
                         <Button fx:id="fight_left_16_1" layoutX="376.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_16_3" layoutX="377.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                         <Button fx:id="fight_left_16_5" layoutX="378.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -3779,32 +3779,32 @@
                         <Line endX="27.5" endY="7.000007629394531" layoutX="474.0" layoutY="275.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="474.0" layoutY="327.0" startX="-38.0" startY="7.0" />
                         <Line endX="27.5" endY="7.000007629394531" layoutX="474.0" layoutY="378.0" startX="-38.0" startY="7.0" />
-                        <Line endX="25.0" endY="5.500030517578125" layoutX="1233.0" layoutY="9.0" startX="-38.5" startY="5.500030517578125" />
-                        <Button fx:id="fight_right_16_1" layoutX="1209.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_3" layoutX="1209.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_5" layoutX="1208.0" layoutY="124.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_7" layoutX="1208.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_9" layoutX="1209.0" layoutY="227.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_11" layoutX="1209.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_13" layoutX="1209.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Button fx:id="fight_right_16_15" layoutX="1209.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1166.0" layoutY="21.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.0" endY="7.000007629394531" layoutX="1166.0" layoutY="78.0" startX="-38.0" startY="7.0" />
-                        <Line endX="28.5" endY="7.000007629394531" layoutX="1165.0" layoutY="131.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1165.0" layoutY="179.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1166.0" layoutY="231.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1166.0" layoutY="282.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1166.0" layoutY="336.0" startX="-38.0" startY="7.0" />
-                        <Line endX="27.5" endY="7.000007629394531" layoutX="1166.0" layoutY="387.0" startX="-38.0" startY="7.0" />
+                        <Line endX="25.0" endY="5.500030517578125" layoutX="1614.0" layoutY="9.0" startX="-38.5" startY="5.500030517578125" />
+                        <Button fx:id="fight_right_16_1" layoutX="1590.0" layoutY="17.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_3" layoutX="1590.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_5" layoutX="1589.0" layoutY="124.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_7" layoutX="1589.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_9" layoutX="1590.0" layoutY="227.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_11" layoutX="1590.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_13" layoutX="1590.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Button fx:id="fight_right_16_15" layoutX="1590.0" layoutY="382.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1547.0" layoutY="21.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.0" endY="7.000007629394531" layoutX="1547.0" layoutY="78.0" startX="-38.0" startY="7.0" />
+                        <Line endX="28.5" endY="7.000007629394531" layoutX="1546.0" layoutY="131.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1546.0" layoutY="179.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1547.0" layoutY="231.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1547.0" layoutY="282.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1547.0" layoutY="336.0" startX="-38.0" startY="7.0" />
+                        <Line endX="27.5" endY="7.000007629394531" layoutX="1547.0" layoutY="387.0" startX="-38.0" startY="7.0" />
                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                        <Text fx:id="right_win_16_1" layoutX="1063.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_2" layoutX="1063.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_3" layoutX="1063.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_4" layoutX="1063.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_5" layoutX="1063.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_6" layoutX="1063.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_7" layoutX="1063.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                        <Text fx:id="right_win_16_8" layoutX="1063.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_1" layoutX="1444.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_2" layoutX="1444.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_3" layoutX="1444.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_4" layoutX="1444.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_5" layoutX="1444.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_6" layoutX="1444.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_7" layoutX="1444.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                        <Text fx:id="right_win_16_8" layoutX="1444.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_1" layoutX="504.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_2" layoutX="504.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_3" layoutX="504.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
@@ -3814,7 +3814,7 @@
                         <Text fx:id="left_win_16_7" layoutX="504.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Text fx:id="left_win_16_8" layoutX="504.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                         <Button fx:id="print_btn_3" layoutX="765.0" layoutY="24.0" mnemonicParsing="false" onAction="#onPrintButtonClicked3" text="Распечатать сетку" />
-                        <VBox fx:id="vbox61" layoutX="1594.0" layoutY="-3.0" prefHeight="438.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_draw_16_2" layoutX="1959.0" layoutY="-3.0" prefHeight="438.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                            <children>
                               <Text fx:id="right_draw_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111" textAlignment="CENTER">
                                  <VBox.margin>
@@ -3898,7 +3898,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox fx:id="vbox62" layoutX="1260.0" layoutY="-3.0" prefHeight="438.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_16_2" layoutX="1642.0" layoutY="-3.0" prefHeight="438.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="right_club_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="sport club category">
                                  <VBox.margin>
@@ -3982,7 +3982,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox fx:id="vbox51" layoutX="-1.0" layoutY="-3.0" prefHeight="432.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_draw_16_1" layoutX="-1.0" layoutY="-3.0" prefHeight="432.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="draw_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                  <VBox.margin>
@@ -4066,7 +4066,7 @@
                               </Text>
                            </children>
                         </VBox>
-                        <VBox fx:id="vbox52" layoutX="198.0" layoutY="-3.0" prefHeight="432.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                        <VBox fx:id="vbox_16_1" layoutX="198.0" layoutY="-3.0" prefHeight="432.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                            <children>
                               <Text fx:id="left_club_16_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="sport club caegory">
                                  <VBox.margin>
@@ -4162,7 +4162,7 @@
                 <content>
                    <AnchorPane prefWidth="954.0" style="-fx-background-color: white;">
                       <children>
-                         <VBox fx:id="vbox7" layoutX="33.0" layoutY="-3.0" prefHeight="229.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox7" layoutX="32.0" layoutY="-3.0" prefHeight="229.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="left_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4218,7 +4218,7 @@
                          <Line endX="27.5" endY="7.000007629394531" layoutX="409.0" layoutY="166.0" startX="-38.0" startY="7.0" />
                          <Line endX="26.5" endY="7.0" layoutX="410.0" layoutY="195.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="537.0" layoutY="173.0" startX="-100.0" />
-                         <VBox fx:id="vbox8" layoutX="1427.0" layoutY="-3.0" prefHeight="241.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox8" layoutX="1792.0" layoutY="-3.0" prefHeight="241.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="39.0">
                             <children>
                                <Text fx:id="right_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4262,17 +4262,17 @@
                                </Text>
                             </children>
                          </VBox>
-                         <Line endX="110.79289245605469" endY="7.0" layoutX="1146.121322631836" layoutY="43.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="421.37867736816406" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="20.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="484.0" />
-                         <Line endX="-88.0" endY="7.0000457763671875" layoutX="1346.506118774414" layoutY="68.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="419.7867736816406" />
-                         <Line endX="28.207107543945312" endY="7.0" layoutX="1165.2928924560547" layoutY="99.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="420.2071075439453" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="76.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="484.0" />
-                         <Line endX="25.0" endY="7.0000152587890625" layoutX="1231.7071075439453" layoutY="113.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="421.5857849121094" />
-                         <Line endX="25.0" endY="6.999969482421875" layoutX="1231.7071075439453" layoutY="144.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="421.5857849121094" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="121.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="484.0" />
-                         <Line endX="25.0" endY="6.999969482421875" layoutX="1231.7071075439453" layoutY="164.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="421.5857849121094" />
-                         <Line endX="25.207107543945312" endY="7.0" layoutX="1231.5" layoutY="195.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1193.0" AnchorPane.rightAnchor="421.7928924560547" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="172.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="484.0" />
+                         <Line endX="110.79289245605469" endY="7.0" layoutX="1528.121322631836" layoutY="40.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="376.37867736816406" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1676.5" layoutY="17.0" startX="-100.0" AnchorPane.leftAnchor="1576.0" AnchorPane.rightAnchor="439.0" />
+                         <Line endX="-88.0" endY="7.0000457763671875" layoutX="1728.506118774414" layoutY="65.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="374.7867736816406" />
+                         <Line endX="28.207107543945312" endY="7.0" layoutX="1547.2928924560547" layoutY="96.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="375.2071075439453" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1676.5" layoutY="73.0" startX="-100.0" AnchorPane.leftAnchor="1576.0" AnchorPane.rightAnchor="439.0" />
+                         <Line endX="25.0" endY="7.0000152587890625" layoutX="1613.7071075439453" layoutY="110.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="376.5857849121094" />
+                         <Line endX="25.0" endY="6.999969482421875" layoutX="1613.7071075439453" layoutY="141.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="376.5857849121094" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1676.5" layoutY="118.0" startX="-100.0" AnchorPane.leftAnchor="1576.0" AnchorPane.rightAnchor="439.0" />
+                         <Line endX="25.0" endY="6.999969482421875" layoutX="1613.7071075439453" layoutY="161.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="376.5857849121094" />
+                         <Line endX="25.207107543945312" endY="7.0" layoutX="1613.5" layoutY="192.0" startX="-38.0" startY="7.0" AnchorPane.leftAnchor="1575.0" AnchorPane.rightAnchor="376.7928924560547" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1676.5" layoutY="169.0" startX="-100.0" AnchorPane.leftAnchor="1576.0" AnchorPane.rightAnchor="439.0" />
                          <Button fx:id="fight_left_8_1" layoutX="378.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                          <Button fx:id="fight_left_8_3" layoutX="379.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                          <Button fx:id="fight_left_8_5" layoutX="380.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
@@ -4281,26 +4281,26 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="476.0" layoutY="75.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.5" endY="7.000007629394531" layoutX="476.0" layoutY="127.0" startX="-38.0" startY="7.0" />
                          <Line endX="27.5" endY="7.000007629394531" layoutX="476.0" layoutY="178.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="fight_right_8_1" layoutX="1209.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Button fx:id="fight_right_8_3" layoutX="1208.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Button fx:id="fight_right_8_5" layoutX="1207.0" layoutY="123.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Button fx:id="fight_right_8_7" layoutX="1207.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1165.0" layoutY="26.0" startX="-38.0" startY="7.0" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1165.0" layoutY="83.0" startX="-38.0" startY="7.0" />
-                         <Line endX="28.5" endY="7.000007629394531" layoutX="1165.0" layoutY="130.0" startX="-38.0" startY="7.0" />
-                         <Line endX="27.5" endY="7.000007629394531" layoutX="1165.0" layoutY="178.0" startX="-38.0" startY="7.0" />
+                         <Button fx:id="fight_right_8_1" layoutX="1591.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Button fx:id="fight_right_8_3" layoutX="1590.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Button fx:id="fight_right_8_5" layoutX="1589.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Button fx:id="fight_right_8_7" layoutX="1589.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1547.0" layoutY="23.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1547.0" layoutY="80.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.5" endY="7.000007629394531" layoutX="1547.0" layoutY="127.0" startX="-38.0" startY="7.0" />
+                         <Line endX="27.5" endY="7.000007629394531" layoutX="1547.0" layoutY="175.0" startX="-38.0" startY="7.0" />
                          <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                         <Text fx:id="right_win_8_1" layoutX="1062.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Text fx:id="right_win_8_2" layoutX="1062.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Text fx:id="right_win_8_3" layoutX="1062.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Text fx:id="right_win_8_4" layoutX="1062.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_8_1" layoutX="1444.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_8_2" layoutX="1444.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_8_3" layoutX="1444.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_8_4" layoutX="1444.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_8_1" layoutX="506.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_8_2" layoutX="506.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_8_3" layoutX="506.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_8_4" layoutX="506.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1232.0" layoutY="12.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1614.0" layoutY="9.0" startX="-38.0" startY="7.0" />
                          <Button fx:id="print_btn_4" layoutX="783.0" layoutY="29.0" mnemonicParsing="false" onAction="#onPrintButtonClicked4" text="Распечатать сетку" />
-                         <VBox layoutX="200.0" layoutY="-3.0" prefHeight="229.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_8_1" layoutX="200.0" layoutY="-3.0" prefHeight="229.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4344,7 +4344,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="-1.0" layoutY="-3.0" prefHeight="229.0" prefWidth="34.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_8_1" layoutX="-1.0" layoutY="-3.0" prefHeight="229.0" prefWidth="34.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="draw_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                   <VBox.margin>
@@ -4388,7 +4388,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1259.0" layoutY="-3.0" prefHeight="241.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_8_2" layoutX="1642.0" layoutY="-3.0" prefHeight="241.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_right_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4432,7 +4432,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1593.0" layoutY="-3.0" prefHeight="241.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_8_2" layoutX="1593.0" layoutY="-3.0" prefHeight="241.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                             <children>
                                <Text fx:id="right_draw_8_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                   <VBox.margin>
@@ -4488,7 +4488,7 @@
                 <content>
                    <AnchorPane prefWidth="954.0" style="-fx-background-color: white;">
                       <children>
-                         <VBox fx:id="vbox9" layoutX="33.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox9" layoutX="32.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="left_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4518,7 +4518,7 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="407.0" layoutY="57.0" startX="-38.0" startY="7.0" />
                          <Line endX="26.5" endY="7.0000152587890625" layoutX="408.0" layoutY="86.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="535.0" layoutY="64.0" startX="-100.0" />
-                         <VBox fx:id="vbox10" layoutX="1427.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox10" layoutX="1807.0" layoutY="-3.0" prefHeight="108.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="41.0">
                             <children>
                                <Text fx:id="right_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4542,27 +4542,27 @@
                                </Text>
                             </children>
                          </VBox>
-                         <Line endX="110.79289245605469" endY="7.0" layoutX="1148.121322631836" layoutY="33.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1195.0" AnchorPane.rightAnchor="419.37867736816406" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="10.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="484.0" />
-                         <Line endX="-88.0" endY="7.0000457763671875" layoutX="1344.506118774414" layoutY="58.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1191.0" AnchorPane.rightAnchor="421.7867736816406" />
-                         <Line endX="28.207107543945312" endY="7.0" layoutX="1164.2928924560547" layoutY="89.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1192.0" AnchorPane.rightAnchor="421.2071075439453" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1291.5" layoutY="66.0" startX="-100.0" AnchorPane.leftAnchor="1191.0" AnchorPane.rightAnchor="487.0" />
+                         <Line endX="110.79289245605469" endY="7.0" layoutX="1510.121322631836" layoutY="36.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1557.0" AnchorPane.rightAnchor="394.37867736816406" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1656.5" layoutY="13.0" startX="-100.0" AnchorPane.leftAnchor="1556.0" AnchorPane.rightAnchor="459.0" />
+                         <Line endX="-88.0" endY="7.0000457763671875" layoutX="1706.506118774414" layoutY="61.0" startX="-152.79901123046875" startY="7.000030517578125" AnchorPane.leftAnchor="1553.0" AnchorPane.rightAnchor="396.7867736816406" />
+                         <Line endX="28.207107543945312" endY="7.0" layoutX="1526.2928924560547" layoutY="92.0" startX="93.0" startY="7.0" AnchorPane.leftAnchor="1554.0" AnchorPane.rightAnchor="396.2071075439453" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1653.5" layoutY="69.0" startX="-100.0" AnchorPane.leftAnchor="1553.0" AnchorPane.rightAnchor="462.0" />
                          <Button fx:id="fight_left_4_1" layoutX="376.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                          <Button fx:id="fight_left_4_3" layoutX="377.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="474.0" layoutY="18.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="474.0" layoutY="69.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="fight_right_4_1" layoutX="1209.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Button fx:id="fight_right_4_3" layoutX="1208.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1169.0" layoutY="16.0" startX="-38.0" startY="7.0" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1164.0" layoutY="73.0" startX="-28.0" startY="7.0000152587890625" />
+                         <Button fx:id="fight_right_4_1" layoutX="1571.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Button fx:id="fight_right_4_3" layoutX="1570.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1531.0" layoutY="19.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1526.0" layoutY="76.0" startX="-28.0" startY="7.0000152587890625" />
                          <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                         <Text fx:id="right_win_4_1" layoutX="1064.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Text fx:id="right_win_4_2" layoutX="1067.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_4_1" layoutX="1426.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_4_2" layoutX="1429.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_4_1" layoutX="504.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_4_2" layoutX="504.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1232.0" layoutY="2.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1594.0" layoutY="5.0" startX="-38.0" startY="7.0" />
                          <Button fx:id="print_btn_5" layoutX="788.0" layoutY="26.0" mnemonicParsing="false" onAction="#onPrintButtonClicked5" text="Распечать сетку" />
-                         <VBox fx:id="vbox101" layoutX="1259.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_4_2" layoutX="1641.0" layoutY="-3.0" prefHeight="108.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_right_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4586,7 +4586,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1594.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_4_2" layoutX="1961.0" layoutY="-3.0" prefHeight="108.0" prefWidth="35.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="5.0">
                             <children>
                                <Text fx:id="right_draw_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                   <VBox.margin>
@@ -4610,7 +4610,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="199.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_4_1" layoutX="199.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4634,7 +4634,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_4_1" layoutX="-1.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="draw_4_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="111">
                                   <VBox.margin>
@@ -4670,7 +4670,7 @@
                 <content>
                    <AnchorPane prefWidth="954.0" style="-fx-background-color: white;">
                       <children>
-                         <VBox fx:id="vbox11" layoutX="33.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox11" layoutX="31.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="left_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4687,7 +4687,7 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="408.0" layoutY="5.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.0" endY="7.0" layoutX="409.0" layoutY="34.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="536.0" layoutY="12.0" startX="-100.0" />
-                         <VBox fx:id="vbox12" layoutX="1433.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox12" layoutX="1799.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="49.0">
                             <children>
                                <Text fx:id="right_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4701,18 +4701,18 @@
                                </Text>
                             </children>
                          </VBox>
-                         <Line endX="110.79289245605469" endY="7.0" layoutX="1148.121322631836" layoutY="39.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1195.0" AnchorPane.rightAnchor="393.37867736816406" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1294.5" layoutY="16.0" startX="-100.0" AnchorPane.leftAnchor="1194.0" AnchorPane.rightAnchor="458.0" />
+                         <Line endX="110.79289245605469" endY="7.0" layoutX="1516.121322631836" layoutY="39.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1563.0" AnchorPane.rightAnchor="388.37867736816406" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1662.5" layoutY="16.0" startX="-100.0" AnchorPane.leftAnchor="1562.0" AnchorPane.rightAnchor="453.0" />
                          <Button fx:id="fight_left_2_1" layoutX="377.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="475.0" layoutY="17.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="fight_right_2_1" layoutX="1210.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1165.0" layoutY="22.0" startX="-38.0" startY="7.0" />
+                         <Button fx:id="fight_right_2_1" layoutX="1578.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1533.0" layoutY="22.0" startX="-38.0" startY="7.0" />
                          <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                         <Text fx:id="right_win_2_1" layoutX="1060.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Text fx:id="right_win_2_1" layoutX="1428.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
                          <Text fx:id="left_win_2_1" layoutX="506.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1233.0" layoutY="8.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1601.0" layoutY="8.0" startX="-38.0" startY="7.0" />
                          <Button fx:id="print_btn_6" layoutX="771.0" layoutY="19.0" mnemonicParsing="false" onAction="#onPrintButtonClicked6" text="Распечатать сетку" />
-                         <VBox layoutX="1265.0" prefHeight="63.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_2_2" layoutX="1633.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_right_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4726,7 +4726,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1601.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_2_2" layoutX="1599.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                             <children>
                                <Text fx:id="right_draw_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
                                   <VBox.margin>
@@ -4740,7 +4740,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="200.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_2_1" layoutX="198.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4754,7 +4754,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_2_1" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="draw_2_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
                                   <VBox.margin>
@@ -4792,7 +4792,7 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="406.0" layoutY="12.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.0" endY="7.0" layoutX="407.0" layoutY="41.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="534.0" layoutY="19.0" startX="-100.0" />
-                         <VBox fx:id="vbox14" layoutX="1497.0" layoutY="-2.0" prefHeight="65.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox14" layoutX="1861.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="40.0">
                             <children>
                                <Text fx:id="right_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4801,16 +4801,16 @@
                                </Text>
                             </children>
                          </VBox>
-                         <Line endX="110.79289245605469" endY="7.0" layoutX="1272.121322631836" layoutY="34.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1319.0" AnchorPane.rightAnchor="260.37867736816406" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1419.5" layoutY="11.0" startX="-100.0" AnchorPane.leftAnchor="1319.0" AnchorPane.rightAnchor="324.0" />
+                         <Line endX="110.79289245605469" endY="7.0" layoutX="1632.121322631836" layoutY="38.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1679.0" AnchorPane.rightAnchor="272.37867736816406" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1779.5" layoutY="15.0" startX="-100.0" AnchorPane.leftAnchor="1679.0" AnchorPane.rightAnchor="336.0" />
                          <Line endX="28.0" endY="7.000007629394531" layoutX="473.0" layoutY="24.0" startX="-38.0" startY="7.0" />
                          <Button fx:id="fight_1_1" layoutX="797.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1292.0" layoutY="17.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1652.0" layoutY="21.0" startX="-38.0" startY="7.0" />
                          <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
                          <Text fx:id="champion" layoutX="789.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1359.0" layoutY="3.0" startX="-38.0" startY="7.0" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1718.0" layoutY="7.0" startX="-38.0" startY="7.0" />
                          <Button fx:id="print_btn_7" layoutX="765.0" layoutY="119.0" mnemonicParsing="false" onAction="#onPrintButtonClicked7" text="Распечатать сетку" />
-                         <VBox layoutX="200.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_1_1" layoutX="200.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4819,7 +4819,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_1_1" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="draw_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="123">
                                   <VBox.margin>
@@ -4828,7 +4828,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1611.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;">
+                         <VBox fx:id="vbox_draw_1_2" layoutX="1611.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
                             <children>
                                <Text fx:id="right_draw_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="123">
                                   <VBox.margin>
@@ -4837,7 +4837,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1383.0" layoutY="-3.0" prefHeight="65.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
+                         <VBox layoutX="1748.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="right_club_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>

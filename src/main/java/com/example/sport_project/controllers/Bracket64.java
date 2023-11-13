@@ -20,6 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -161,6 +162,15 @@ public class Bracket64 implements Initializable {
     @FXML
     private Text champion;
 
+
+    @FXML
+    private VBox vbox_64_1;
+    @FXML
+    private VBox vbox_64_2;
+    @FXML
+    private VBox vbox_32_1;
+    @FXML
+    private VBox vbox_32_2;
     @FXML
     private VBox vbox1;
     @FXML
@@ -189,6 +199,50 @@ public class Bracket64 implements Initializable {
     private VBox vbox13;
     @FXML
     private VBox vbox14;
+    @FXML
+    private VBox vbox_draw_32_1;
+    @FXML
+    private VBox vbox_draw_32_2;
+    @FXML
+    private VBox vbox_draw_16_1;
+    @FXML
+    private VBox vbox_draw_16_2;
+    @FXML
+    private VBox vbox_16_1;
+    @FXML
+    private VBox vbox_16_2;
+    @FXML
+    private VBox vbox_8_1;
+    @FXML
+    private VBox vbox_8_2;
+    @FXML
+    private VBox vbox_draw_8_1;
+    @FXML
+    private VBox vbox_draw_8_2;
+    @FXML
+    private VBox vbox_draw_4_1;
+    @FXML
+    private VBox vbox_draw_4_2;
+    @FXML
+    private VBox vbox_4_1;
+    @FXML
+    private VBox vbox_4_2;
+    @FXML
+    private VBox vbox_draw_2_1;
+    @FXML
+    private VBox vbox_draw_2_2;
+    @FXML
+    private VBox vbox_2_1;
+    @FXML
+    private VBox vbox_2_2;
+    @FXML
+    private VBox vbox_draw_1_1;
+    @FXML
+    private VBox vbox_draw_1_2;
+    @FXML
+    private VBox vbox_1_1;
+    @FXML
+    private VBox vbox_1_2;
 
     public static int extractLastDigit(String input) {
         Pattern pattern = Pattern.compile("\\d+$");
@@ -978,8 +1032,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 68;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 65;  // Количество строк
+                int numCols = 13;
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1035,10 +1089,10 @@ public class Bracket64 implements Initializable {
                     }
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
                         }
                     }
 
@@ -1050,14 +1104,61 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for(int i = 0; i<rowList.size(); i++){
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_64_leftDb.getSportsmen(i+1)!=0) {
                         cell3.setCellValue(winner_64_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_64_rightDb.getSportsmen(i + 1)!=0) {
                         cell4.setCellValue(winner_64_rightDb.getSportsmen(i + 1));
                     }
+                }
+
+                List<String> dataFromVBox64_1 = new ArrayList<>();
+                List<String> dataFromVBox64_2 = new ArrayList<>();
+
+                for (Node node : vbox_64_1.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox64_1.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox64_1.add("");
+                    }
+                }
+
+                for (Node node : vbox_64_2.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox64_2.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox64_2.add("");
+                    }
+                }
+
+                // Вставьте данные и стили в Excel
+                int maxRows2 = Math.max(dataFromVBox64_1.size(), dataFromVBox64_2.size());
+
+                for (int i = 0; i <= maxRows2; i++) {
+                    Row row = sheet.getRow(i);
+                    if (row == null) {
+                        row = sheet.createRow(i);
+                    }
+
+                    if (i < dataFromVBox64_1.size()) {
+                        Cell cell1 = row.createCell(2);  // Столбец 2 (индекс 1)
+                        cell1.setCellValue(dataFromVBox64_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cell1.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+
+                    if (i < dataFromVBox64_2.size()) {
+                        Cell cell25 = row.createCell(10);  // Столбец 25 (индекс 24)
+                        cell25.setCellValue(dataFromVBox64_2.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(10));
+                        }
+                    }
+
+
                 }
 
                 // Сохранение и закрытие workbook в новый файл
@@ -1097,8 +1198,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 34;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 32;  // Количество строк
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1153,10 +1254,10 @@ public class Bracket64 implements Initializable {
                     }
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
                         }
                     }
 
@@ -1168,14 +1269,97 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_32_leftDb.getSportsmen(i + 1)!=0) {
                         cell3.setCellValue(winner_32_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_32_rightDb.getSportsmen(i + 1)!=0) {
                         cell4.setCellValue(winner_32_rightDb.getSportsmen(i + 1));
                     }
+                }
+
+
+                List<String> dataFromVBox32_1 = new ArrayList<>();
+                List<String> dataFromVBox32_2 = new ArrayList<>();
+                List<String> dataFromVBox_draw32_1 = new ArrayList<>();
+                List<String> dataFromVBox_draw32_2 = new ArrayList<>();
+
+                for (Node node : vbox_32_1.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox32_1.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox32_1.add("");
+                    }
+                }
+
+                for (Node node : vbox_32_2.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox32_2.add(((Text) node).getText());
+                    }else {
+                        dataFromVBox32_2.add("");
+                    }
+                }
+
+                for (Node node : vbox_draw_32_1.getChildren()){
+                    if (node instanceof Text) {
+                        dataFromVBox_draw32_1.add(((Text) node).getText());
+                    }
+                    else {
+                        dataFromVBox_draw32_1.add("");
+                    }
+                }
+                for (Node node : vbox_draw_32_2.getChildren()){
+                    if (node instanceof Text) {
+                        dataFromVBox_draw32_2.add(((Text) node).getText());
+                    }
+                    else {
+                        dataFromVBox_draw32_2.add("");
+                    }
+                }
+
+                // Вставьте данные и стили в Excel
+                int maxRows2 = Math.max(dataFromVBox32_1.size(), dataFromVBox32_2.size());
+
+                for (int i = 0; i <= maxRows2; i++) {
+                    Row row = sheet.getRow(i);
+                    if (row == null) {
+                        row = sheet.createRow(i);
+                    }
+
+                    if (i < dataFromVBox32_1.size()) {
+                        Cell cell1 = row.createCell(2);  // Столбец 2 (индекс 1)
+                        cell1.setCellValue(dataFromVBox32_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cell1.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+
+                    if (i < dataFromVBox32_2.size()) {
+                        Cell cell25 = row.createCell(10);  // Столбец 25 (индекс 24)
+                        cell25.setCellValue(dataFromVBox32_2.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(10));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw32_1.size()){
+                        Cell cell0 = row.createCell(0);
+                        cell0.setCellValue(dataFromVBox_draw32_1.get(i));
+                        if (cellStyles.get(i).get(0) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(0));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw32_2.size()){
+                        Cell cell0 = row.createCell(12);
+                        cell0.setCellValue(dataFromVBox_draw32_2.get(i));
+                        if (cellStyles.get(i).get(12) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(12));
+                        }
+                    }
+
+
                 }
 
 
@@ -1215,8 +1399,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 18;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 16;  // Количество строк
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1237,6 +1421,10 @@ public class Bracket64 implements Initializable {
 
                 List<String> dataFromVBox1 = new ArrayList<>();
                 List<String> dataFromVBox2 = new ArrayList<>();
+                List<String> dataFromVBox_draw16_1 = new ArrayList<>();
+                List<String> dataFromVBox_draw16_2 = new ArrayList<>();
+                List<String> dataFromVbox_16_1 = new ArrayList<>();
+                List<String> dataFromVbox_16_2 = new ArrayList<>();
 
                 for (Node node : vbox5.getChildren()) {
                     if (node instanceof Text) {
@@ -1250,13 +1438,38 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
+                for (Node node : vbox_draw_16_1.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox_draw16_1.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_draw_16_2.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVBox_draw16_2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_16_1.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVbox_16_1.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_16_2.getChildren()) {
+                    if (node instanceof Text) {
+                        dataFromVbox_16_2.add(((Text) node).getText());
+                    }
+                }
+
+
                 // Получите значение left_win_64_1
                 String leftWin64_1Value = left_win_16_1.getText();
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i <= maxRows; i++) {
+                for (int i = 0; i < maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1272,10 +1485,41 @@ public class Bracket64 implements Initializable {
 
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw16_1.size()){
+                        Cell cell0 = row.createCell(0);
+                        cell0.setCellValue(dataFromVBox_draw16_1.get(i));
+                        if (cellStyles.get(i).get(0) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(0));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw16_2.size()){
+                        Cell cell0 = row.createCell(12);
+                        cell0.setCellValue(dataFromVBox_draw16_2.get(i));
+                        if (cellStyles.get(i).get(12) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(12));
+                        }
+                    }
+
+                    if (i < dataFromVbox_16_1.size()){
+                        Cell cell0 = row.createCell(2);
+                        cell0.setCellValue(dataFromVbox_16_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+                    if (i < dataFromVbox_16_2.size()){
+                        Cell cell0 = row.createCell(10);
+                        cell0.setCellValue(dataFromVbox_16_2.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(10));
                         }
                     }
 
@@ -1287,11 +1531,11 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_16_leftDb.getSportsmen(i + 1)!=0) {
                         cell3.setCellValue(winner_16_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_16_rightDb.getSportsmen(i + 1)!=0) {
                         cell4.setCellValue(winner_16_rightDb.getSportsmen(i + 1));
                     }
@@ -1335,8 +1579,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 10;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 8;  // Количество строк
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1357,6 +1601,10 @@ public class Bracket64 implements Initializable {
 
                 List<String> dataFromVBox1 = new ArrayList<>();
                 List<String> dataFromVBox2 = new ArrayList<>();
+                List<String> dataFromVBox_draw_8_1 = new ArrayList<>();
+                List<String> dataFromVBox_draw_8_2 = new ArrayList<>();
+                List<String> dataFromVBox_8_1 = new ArrayList<>();
+                List<String> dataFromVBox_8_2 = new ArrayList<>();
 
                 for (Node node : vbox7.getChildren()) {
                     if (node instanceof Text) {
@@ -1370,11 +1618,33 @@ public class Bracket64 implements Initializable {
                     }
                 }
 
+                for (Node node : vbox_draw_8_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_draw_8_1.add(((Text) node).getText());
+                    }
+                }
+                for (Node node : vbox_draw_8_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_draw_8_2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_8_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_8_1.add(((Text) node).getText());
+                    }
+                }
+                for (Node node : vbox_8_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_8_2.add(((Text) node).getText());
+                    }
+                }
+
 
                 // Вставьте данные и стили в Excel
                 int maxRows = Math.max(dataFromVBox1.size(), dataFromVBox2.size());
 
-                for (int i = 0; i <= maxRows; i++) {
+                for (int i = 0; i < maxRows; i++) {
                     Row row = sheet.getRow(i);
                     if (row == null) {
                         row = sheet.createRow(i);
@@ -1390,10 +1660,42 @@ public class Bracket64 implements Initializable {
 
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
+                        }
+                    }
+
+                    if (i < dataFromVBox_8_1.size()){
+                        Cell cellclub = row.createCell(2);
+                        cellclub.setCellValue(dataFromVBox_8_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cellclub.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+
+                    if (i < dataFromVBox_8_2.size()){
+                        Cell cellclub = row.createCell(10);
+                        cellclub.setCellValue(dataFromVBox_8_1.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cellclub.setCellStyle(cellStyles.get(i).get(10));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw_8_1.size()){
+                        Cell cellclub = row.createCell(0);
+                        cellclub.setCellValue(dataFromVBox_draw_8_1.get(i));
+                        if (cellStyles.get(i).get(0) != null) {
+                            cellclub.setCellStyle(cellStyles.get(i).get(0));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw_8_2.size()){
+                        Cell cellclub = row.createCell(12);
+                        cellclub.setCellValue(dataFromVBox_draw_8_2.get(i));
+                        if (cellStyles.get(i).get(12) != null) {
+                            cellclub.setCellStyle(cellStyles.get(i).get(12));
                         }
                     }
 
@@ -1405,11 +1707,11 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_8_leftDb.getSportsmen(i + 1)!=0) {
                         cell3.setCellValue(winner_8_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_8_rightDb.getSportsmen(i + 1)!=0){
                         cell4.setCellValue(winner_8_rightDb.getSportsmen(i + 1));
                     }
@@ -1453,8 +1755,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 6;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 4;  // Количество строк
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1475,6 +1777,10 @@ public class Bracket64 implements Initializable {
 
                 List<String> dataFromVBox1 = new ArrayList<>();
                 List<String> dataFromVBox2 = new ArrayList<>();
+                List<String> dataFromVBox_draw4_1 = new ArrayList<>();
+                List<String> dataFromVBox_draw4_2 = new ArrayList<>();
+                List<String> dataFromVBox_4_1 = new ArrayList<>();
+                List<String> dataFromVBox_4_2 = new ArrayList<>();
 
                 for (Node node : vbox9.getChildren()) {
                     if (node instanceof Text) {
@@ -1485,6 +1791,30 @@ public class Bracket64 implements Initializable {
                 for (Node node : vbox10.getChildren()) {
                     if (node instanceof Text) {
                         dataFromVBox2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_draw_4_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_draw4_1.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_draw_4_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_draw4_2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_4_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_4_2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_4_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVBox_4_1.add(((Text) node).getText());
                     }
                 }
 
@@ -1508,10 +1838,39 @@ public class Bracket64 implements Initializable {
 
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
+                        }
+                    }
+
+                    if (i < dataFromVBox_draw4_1.size()) {
+                        Cell cell0 = row.createCell(0);  // Столбец 25 (индекс 24)
+                        cell0.setCellValue(dataFromVBox_draw4_1.get(i));
+                        if (cellStyles.get(i).get(0) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(0));
+                        }
+                    }
+                    if (i < dataFromVBox_draw4_2.size()) {
+                        Cell cell0 = row.createCell(12);  // Столбец 25 (индекс 24)
+                        cell0.setCellValue(dataFromVBox_draw4_2.get(i));
+                        if (cellStyles.get(i).get(12) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(12));
+                        }
+                    }
+                    if (i < dataFromVBox_4_1.size()) {
+                        Cell cell0 = row.createCell(2);  // Столбец 25 (индекс 24)
+                        cell0.setCellValue(dataFromVBox_4_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+                    if (i < dataFromVBox_4_2.size()) {
+                        Cell cell0 = row.createCell(10);  // Столбец 25 (индекс 24)
+                        cell0.setCellValue(dataFromVBox_4_2.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(10));
                         }
                     }
 
@@ -1523,11 +1882,11 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_4_leftDb.getSportsmen(i + 1)!=0){
                         cell3.setCellValue(winner_4_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_4_rightDb.getSportsmen(i + 1)!=0){
                         cell4.setCellValue(winner_4_rightDb.getSportsmen(i + 1));
                     }
@@ -1571,8 +1930,8 @@ public class Bracket64 implements Initializable {
 
                 Sheet sheet = workbook.getSheetAt(0);
 
-                int numRows = 4;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numRows = 2;  // Количество строк
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1593,6 +1952,10 @@ public class Bracket64 implements Initializable {
 
                 List<String> dataFromVBox1 = new ArrayList<>();
                 List<String> dataFromVBox2 = new ArrayList<>();
+                List<String> dataFromVbox_2_1 = new ArrayList<>();
+                List<String> dataFromVbox_2_2 = new ArrayList<>();
+                List<String> dataFromVbox_draw2_1 = new ArrayList<>();
+                List<String> dataFromVbox_draw2_2 = new ArrayList<>();
 
                 for (Node node : vbox11.getChildren()) {
                     if (node instanceof Text) {
@@ -1603,6 +1966,27 @@ public class Bracket64 implements Initializable {
                 for (Node node : vbox12.getChildren()) {
                     if (node instanceof Text) {
                         dataFromVBox2.add(((Text) node).getText());
+                    }
+                }
+
+                for (Node node : vbox_2_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVbox_2_1.add(((Text) node).getText());
+                    }
+                }
+                for (Node node : vbox_2_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVbox_2_2.add(((Text) node).getText());
+                    }
+                }
+                for (Node node : vbox_draw_2_1.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVbox_draw2_1.add(((Text) node).getText());
+                    }
+                }
+                for (Node node : vbox_draw_2_2.getChildren()){
+                    if (node instanceof Text){
+                        dataFromVbox_draw2_2.add(((Text) node).getText());
                     }
                 }
 
@@ -1626,12 +2010,44 @@ public class Bracket64 implements Initializable {
 
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
                         }
                     }
+
+                    if (i < dataFromVbox_2_1.size()) {
+                        Cell cell2 = row.createCell(2);  // Столбец 25 (индекс 24)
+                        cell2.setCellValue(dataFromVbox_2_1.get(i));
+                        if (cellStyles.get(i).get(2) != null) {
+                            cell2.setCellStyle(cellStyles.get(i).get(2));
+                        }
+                    }
+                    if (i < dataFromVbox_2_2.size()) {
+                        Cell cell10 = row.createCell(10);  // Столбец 25 (индекс 24)
+                        cell10.setCellValue(dataFromVbox_2_2.get(i));
+                        if (cellStyles.get(i).get(10) != null) {
+                            cell10.setCellStyle(cellStyles.get(i).get(10));
+                        }
+                    }
+
+
+                    if (i < dataFromVbox_draw2_1.size()) {
+                        Cell cell0 = row.createCell(0);  // Столбец 25 (индекс 24)
+                        cell0.setCellValue(dataFromVbox_draw2_1.get(i));
+                        if (cellStyles.get(i).get(0) != null) {
+                            cell0.setCellStyle(cellStyles.get(i).get(0));
+                        }
+                    }
+                    if (i < dataFromVbox_draw2_2.size()) {
+                        Cell cell12 = row.createCell(12);  // Столбец 25 (индекс 24)
+                        cell12.setCellValue(dataFromVbox_draw2_2.get(i));
+                        if (cellStyles.get(i).get(12) != null) {
+                            cell12.setCellStyle(cellStyles.get(i).get(12));
+                        }
+                    }
+
 
 
                 }
@@ -1641,11 +2057,11 @@ public class Bracket64 implements Initializable {
                     rowList.add(row);
                 }
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(3);
+                    Cell cell3 = rowList.get(i).createCell(4);
                     if(winner_2_leftDb.getSportsmen(i + 1)!=0) {
                         cell3.setCellValue(winner_2_leftDb.getSportsmen(i + 1));
                     }
-                    Cell cell4 = rowList.get(i).createCell(22);
+                    Cell cell4 = rowList.get(i).createCell(8);
                     if(winner_2_rightDb.getSportsmen(i + 1)!=0) {
                         cell4.setCellValue(winner_2_rightDb.getSportsmen(i + 1));
                     }
@@ -1690,7 +2106,7 @@ public class Bracket64 implements Initializable {
                 Sheet sheet = workbook.getSheetAt(0);
 
                 int numRows = 2;  // Количество строк
-                int numCols = 26;  // Количество столбцов
+                int numCols = 14;  // Количество столбцов
 
                 // Создайте список для хранения стилей
                 List<List<CellStyle>> cellStyles = new ArrayList<>();
@@ -1744,10 +2160,10 @@ public class Bracket64 implements Initializable {
 
 
                     if (i < dataFromVBox2.size()) {
-                        Cell cell25 = row.createCell(24);  // Столбец 25 (индекс 24)
+                        Cell cell25 = row.createCell(11);  // Столбец 25 (индекс 24)
                         cell25.setCellValue(dataFromVBox2.get(i));
-                        if (cellStyles.get(i).get(24) != null) {
-                            cell25.setCellStyle(cellStyles.get(i).get(24));
+                        if (cellStyles.get(i).get(11) != null) {
+                            cell25.setCellStyle(cellStyles.get(i).get(11));
                         }
                     }
 
@@ -1755,11 +2171,11 @@ public class Bracket64 implements Initializable {
                 }
                 List<Row> rowList = new ArrayList<>();
 
-                Row row = sheet.getRow(1);
+                Row row = sheet.getRow(0);
                 rowList.add(row);
 
                 for (int i = 0; i < rowList.size(); i++) {
-                    Cell cell3 = rowList.get(i).createCell(13);
+                    Cell cell3 = rowList.get(i).createCell(6);
                     if(winner_1Db.getSportsmen(i + 1)!=0) {
                         cell3.setCellValue(winner_1Db.getSportsmen(i + 1));
                     }
