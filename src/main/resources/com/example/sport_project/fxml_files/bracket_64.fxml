@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" prefHeight="1714.0" prefWidth="1340.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" prefHeight="1714.0" prefWidth="1340.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
@@ -4778,7 +4778,7 @@
           <content>
              <ScrollPane fitToWidth="true" prefWidth="989.0">
                 <content>
-                   <AnchorPane prefHeight="180.0" prefWidth="1446.0" style="-fx-background-color: white;">
+                   <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="1340.0" style="-fx-background-color: white;">
                       <children>
                          <VBox fx:id="vbox13" layoutX="32.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
@@ -4792,7 +4792,7 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="406.0" layoutY="12.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.0" endY="7.0" layoutX="407.0" layoutY="41.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="534.0" layoutY="19.0" startX="-100.0" />
-                         <VBox fx:id="vbox14" layoutX="1861.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="40.0">
+                         <VBox fx:id="vbox14" layoutX="1193.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="32.0">
                             <children>
                                <Text fx:id="right_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
@@ -4801,15 +4801,14 @@
                                </Text>
                             </children>
                          </VBox>
-                         <Line endX="110.79289245605469" endY="7.0" layoutX="1632.121322631836" layoutY="38.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1679.0" AnchorPane.rightAnchor="272.37867736816406" />
-                         <Line endX="-100.0" endY="30.0" layoutX="1779.5" layoutY="15.0" startX="-100.0" AnchorPane.leftAnchor="1679.0" AnchorPane.rightAnchor="336.0" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="473.0" layoutY="24.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="fight_1_1" layoutX="797.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1652.0" layoutY="21.0" startX="-38.0" startY="7.0" />
-                         <Line endX="25.0" endY="5.500030517578125" layoutX="1420.0" layoutY="-6.0" startX="-38.5" startY="5.500030517578125" />
-                         <Text fx:id="champion" layoutX="789.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
-                         <Line endX="28.0" endY="7.000007629394531" layoutX="1718.0" layoutY="7.0" startX="-38.0" startY="7.0" />
-                         <Button fx:id="print_btn_7" layoutX="765.0" layoutY="119.0" mnemonicParsing="false" onAction="#onPrintButtonClicked7" text="Распечатать сетку" />
+                         <Line endX="110.79289245605469" endY="7.0" layoutX="965.0" layoutY="40.0" startX="47.585784912109375" startY="7.0000152587890625" AnchorPane.leftAnchor="1011.8786773681641" AnchorPane.rightAnchor="263.5" />
+                         <Line endX="-100.0" endY="30.0" layoutX="1112.0" layoutY="17.0" startX="-100.0" AnchorPane.leftAnchor="1011.5" AnchorPane.rightAnchor="327.5" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="442.0" layoutY="24.0" startX="-7.0" startY="7.0" />
+                         <Button fx:id="fight_1_1" layoutX="737.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="49.0" text="Бой" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="983.0" layoutY="23.0" startX="-7.0" startY="7.0" />
+                         <Text fx:id="champion" layoutX="729.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1" />
+                         <Line endX="28.0" endY="7.000007629394531" layoutX="1049.0" layoutY="9.0" startX="-38.0" startY="7.0" />
+                         <Button fx:id="print_btn_7" layoutX="705.0" layoutY="119.0" mnemonicParsing="false" onAction="#onPrintButtonClicked7" text="Распечатать сетку" />
                          <VBox fx:id="vbox_1_1" layoutX="200.0" layoutY="-3.0" prefHeight="66.0" prefWidth="168.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="club_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
@@ -4828,7 +4827,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox fx:id="vbox_draw_1_2" layoutX="1611.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="7.0">
+                         <VBox fx:id="vbox_draw_1_2" layoutX="1307.0" layoutY="-3.0" prefHeight="66.0" prefWidth="33.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="0.0">
                             <children>
                                <Text fx:id="right_draw_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="123">
                                   <VBox.margin>
@@ -4837,7 +4836,7 @@
                                </Text>
                             </children>
                          </VBox>
-                         <VBox layoutX="1748.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
+                         <VBox layoutX="1079.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;">
                             <children>
                                <Text fx:id="right_club_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>
