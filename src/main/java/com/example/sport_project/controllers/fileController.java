@@ -1,7 +1,10 @@
 package com.example.sport_project.controllers;
 
+import com.example.sport_project.classes_for_controllers.AgeCategory;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
+import com.example.sport_project.db_actions.ageCategoryDb;
 import com.example.sport_project.db_actions.sportsmenDb;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -71,10 +74,7 @@ public class fileController implements Initializable {
                 int reg_num = (int) sheet.getRow(i).getCell(0).getNumericCellValue();
                 int draw_num = (int) sheet.getRow(i).getCell(5).getNumericCellValue();
                 String name = sheet.getRow(i).getCell(1).getStringCellValue();
-               // String action = sheet.getRow(i).getCell(3).getStringCellValue();
                 double  dateValue = sheet.getRow(i).getCell(2).getNumericCellValue();
-//                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy");
-//                String birthDate = dateFormat.format(dateValue);
                 String gender = sheet.getRow(i).getCell(3).getStringCellValue();
                 String sport_club = sheet.getRow(i).getCell(4).getStringCellValue();
                 String weight_category = sheet.getRow(i).getCell(7).getStringCellValue();
@@ -83,7 +83,7 @@ public class fileController implements Initializable {
                 sportsmen.setDraw_num(draw_num);
                 sportsmen.setName(name);
                 sportsmen.setAct("ДА");
-                sportsmen.setAge(String.valueOf(dateValue));
+                sportsmen.setAge(String.valueOf((int) dateValue));
                 sportsmen.setGender(gender);
                 sportsmen.setSport_club(sport_club);
                 sportsmen.setWeight(weight_category);
@@ -95,10 +95,6 @@ public class fileController implements Initializable {
             throw new RuntimeException(e);
         }
         excel_table.setItems(data);
-
-
-
-
 
     }
 
@@ -121,23 +117,37 @@ public class fileController implements Initializable {
         confirm_btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                if(!data.isEmpty()){
-                    for(Sportsmen sportsmen : data){
-                        if(sportsmen.getAct().equals("ДА")){
-                            sportsmenDb.write(sportsmen.getName(),sportsmen.getDraw_num(),sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), true, sportsmen.getWeight(), sportsmen.getAge_category());
-                        } else if (sportsmen.getAct().equals("НЕТ")) {
-                            sportsmenDb.write(sportsmen.getName(),sportsmen.getDraw_num(),sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), false, sportsmen.getWeight(), sportsmen.getAge_category());
+                if(!data.isEmpty()) {
+                    for (Sportsmen sportsmen : data) {
+                        if (!(ageCategoryDb.Age().contains(new AgeCategory(sportsmen.getAge_category())))){
+                            ageCategoryDb.addAge(sportsmen.getAge_category());
+                        }
+                    if (!(sportsmenDb.getData().contains(sportsmen))) {
+
+                            Platform.runLater(() -> {
+                                if (sportsmen.getAct().equals("ДА")) {
+                                    sportsmenDb.write(sportsmen.getName(), sportsmen.getDraw_num(), sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), true, sportsmen.getWeight(), sportsmen.getAge_category());
+                                } else if (sportsmen.getAct().equals("НЕТ")) {
+                                    sportsmenDb.write(sportsmen.getName(), sportsmen.getDraw_num(), sportsmen.getAge(), sportsmen.getSport_club(), sportsmen.getGender(), false, sportsmen.getWeight(), sportsmen.getAge_category());
+                                }
+
+                            });
+
                         }
                     }
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                    alert.setTitle("Успешно");
-                    alert.setHeaderText(null);
-                    alert.setContentText("Спортсмены успешно добавлены!");
-                    alert.showAndWait();
-                    data.clear();
-                    excel_table.getItems().clear();
-                    Stage stage = (Stage) confirm_btn.getScene().getWindow();
-                    stage.close();
+                            alert.setTitle("Успешно");
+                            alert.setHeaderText(null);
+                            alert.setContentText("Спортсмены успешно добавлены!");
+                            alert.showAndWait();
+                            data.clear();
+                            excel_table.getItems().clear();
+                            Stage stage = (Stage) confirm_btn.getScene().getWindow();
+                            stage.close();
+
+
+
+
                 } else {
                     Alert alert = new Alert(Alert.AlertType.WARNING);
                     alert.setTitle("Ошибка");

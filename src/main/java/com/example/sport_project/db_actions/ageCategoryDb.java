@@ -43,6 +43,24 @@ public class ageCategoryDb {
         return data;
 
     }
+    public static ObservableList<AgeCategory> Age(){
+        ObservableList<AgeCategory> data = FXCollections.observableArrayList();
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+            String query = "SELECT  age FROM age_category";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String age = resultSet.getString("age");
+                data.add(new AgeCategory(age));
+            }
+            return data;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+        return data;
+
+    }
 
     public static void deleteAgeCategory(String age) {
         String query = "DELETE FROM age_category WHERE age = ?";

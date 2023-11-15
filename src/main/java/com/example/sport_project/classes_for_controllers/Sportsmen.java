@@ -1,4 +1,7 @@
 package com.example.sport_project.classes_for_controllers;
+import java.util.Objects;
+
+
 
 public class Sportsmen {
 
@@ -107,6 +110,35 @@ public class Sportsmen {
                 ", act='" + act + '\'' +
                 '}';
     }
+
+
+
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (obj == null || getClass() != obj.getClass()) return false;
+
+            Sportsmen other = (Sportsmen) obj;
+
+            // Сравниваем поля объектов
+            return Objects.equals(name, other.name) &&
+                    Objects.equals(sport_club, other.sport_club) &&
+                    Objects.equals(gender, other.gender) &&
+                    Objects.equals(weight, other.weight) &&
+                    Objects.equals(age_category, other.age_category) &&
+                    Objects.equals(age, other.age) &&
+                    draw_num == other.draw_num &&
+                    reg_num == other.reg_num &&
+                    Objects.equals(act, other.act);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name, sport_club, gender, weight, age_category, age, draw_num, reg_num, act);
+        }
+
+
 
 
 }
