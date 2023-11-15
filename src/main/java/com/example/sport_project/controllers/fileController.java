@@ -2,8 +2,10 @@ package com.example.sport_project.controllers;
 
 import com.example.sport_project.classes_for_controllers.AgeCategory;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
+import com.example.sport_project.classes_for_controllers.WeightCategory;
 import com.example.sport_project.db_actions.ageCategoryDb;
 import com.example.sport_project.db_actions.sportsmenDb;
+import com.example.sport_project.db_actions.weightCategoryDb;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -121,6 +123,9 @@ public class fileController implements Initializable {
                     for (Sportsmen sportsmen : data) {
                         if (!(ageCategoryDb.Age().contains(new AgeCategory(sportsmen.getAge_category())))){
                             ageCategoryDb.addAge(sportsmen.getAge_category());
+                        }
+                        if(!(weightCategoryDb.Weight().contains(new WeightCategory(sportsmen.getWeight())))){
+                            weightCategoryDb.addWeight(sportsmen.getWeight());
                         }
                     if (!(sportsmenDb.getData().contains(sportsmen))) {
 

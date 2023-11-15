@@ -44,6 +44,25 @@ public class weightCategoryDb {
         return data;
     }
 
+    public static ObservableList<WeightCategory> Weight(){
+        ObservableList<WeightCategory> data = FXCollections.observableArrayList();
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+            String query = "SELECT weight FROM weight_category";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String weight = resultSet.getString("weight");
+
+                data.add(new WeightCategory(weight));
+            }
+            return data;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return data;
+    }
+
+
     public static void update_weight(String weight_old, String weight){
         String query = "UPDATE  weight_category SET weight = ? WHERE weight = ?";
 

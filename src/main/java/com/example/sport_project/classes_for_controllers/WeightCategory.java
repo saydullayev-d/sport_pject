@@ -24,4 +24,8 @@ public class WeightCategory {
     public void setWeight(String weight) {
         this.weight = weight;
     }
+
+    public WeightCategory(String weight) {
+        this.weight = weight;
+    }
 }
