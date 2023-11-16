@@ -1,5 +1,7 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.HelloApplication;
+import com.example.sport_project.Main;
 import com.example.sport_project.classes_for_controllers.AgeCategory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,7 +16,7 @@ public class ageCategoryDb {
         String query = "INSERT INTO age_category(age) VALUES(?)";
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -26,7 +28,7 @@ public class ageCategoryDb {
 
     public static ObservableList<AgeCategory> getAge(){
         ObservableList<AgeCategory> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT id, age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -45,7 +47,7 @@ public class ageCategoryDb {
     }
     public static ObservableList<AgeCategory> Age(){
         ObservableList<AgeCategory> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT  age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -67,7 +69,7 @@ public class ageCategoryDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:src"+ HelloApplication.class.getResource("database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, age);
             preparedStatement.executeUpdate();
@@ -82,7 +84,7 @@ public class ageCategoryDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.setString(2, ageCategory_old);
@@ -96,7 +98,7 @@ public class ageCategoryDb {
 
     public static String getFirst(){
         String data = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());){
             String query = "SELECT age FROM age_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();

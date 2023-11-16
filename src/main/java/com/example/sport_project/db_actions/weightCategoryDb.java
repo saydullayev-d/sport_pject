@@ -1,5 +1,7 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.HelloApplication;
+import com.example.sport_project.Main;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +18,7 @@ public class weightCategoryDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -28,7 +30,7 @@ public class weightCategoryDb {
 
     public static ObservableList<WeightCategory> getWeight(){
         ObservableList<WeightCategory> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT id, weight FROM weight_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -46,7 +48,7 @@ public class weightCategoryDb {
 
     public static ObservableList<WeightCategory> Weight(){
         ObservableList<WeightCategory> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT weight FROM weight_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -68,7 +70,7 @@ public class weightCategoryDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, weight);
             preparedStatement.setString(2, weight_old);
@@ -86,7 +88,7 @@ public class weightCategoryDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, weight);
             preparedStatement.executeUpdate();
@@ -98,7 +100,7 @@ public class weightCategoryDb {
 
     public static String getFirst(){
         String data = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT weight FROM weight_category";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();

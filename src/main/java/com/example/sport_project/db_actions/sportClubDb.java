@@ -1,5 +1,7 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.HelloApplication;
+import com.example.sport_project.Main;
 import com.example.sport_project.classes_for_controllers.SportClub;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,7 +17,7 @@ public class sportClubDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -28,7 +30,7 @@ public class sportClubDb {
     public static ObservableList<SportClub> getSportClub(){
 
         ObservableList<SportClub> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT club_id, club FROM sportclub";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -47,7 +49,7 @@ public class sportClubDb {
     public static ObservableList<SportClub> SportClub(){
 
         ObservableList<SportClub> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT club FROM sportclub";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -69,7 +71,7 @@ public class sportClubDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.executeUpdate();
@@ -85,7 +87,7 @@ public class sportClubDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, club);
             preparedStatement.setString(2, SportClub_old);
@@ -101,7 +103,7 @@ public class sportClubDb {
 
         String data = "";
 
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT club FROM sportclub";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();

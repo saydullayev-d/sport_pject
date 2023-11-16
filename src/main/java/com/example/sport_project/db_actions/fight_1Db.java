@@ -1,5 +1,8 @@
 package com.example.sport_project.db_actions;
 
+import com.example.sport_project.HelloApplication;
+import com.example.sport_project.Main;
+
 import java.sql.*;
 
 public class fight_1Db {
@@ -8,7 +11,7 @@ public class fight_1Db {
         String query = "INSERT INTO fight_1(sportsmen1, sportsmen2) VALUES(?,?)";
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, sportsmen1);
             preparedStatement.setInt(2, sportsmen2);
@@ -22,7 +25,7 @@ public class fight_1Db {
     }
     public static int getSportsmen1(int id){
         int data = 0;
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());){
             String query = "SELECT sportsmen1 FROM fight_1 WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
@@ -38,7 +41,7 @@ public class fight_1Db {
     }
     public static int getSportsmen2(int id){
         int data = 0;
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
             String query = "SELECT sportsmen2 FROM fight_1 WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
@@ -56,7 +59,7 @@ public class fight_1Db {
     public static int getId(int sportsmen1, int sportsmen2){
         int id = 0;
         try {
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             String query = "SELECT id FROM fight_1 WHERE sportsmen1=? AND sportsmen2=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, sportsmen1);
@@ -75,7 +78,7 @@ public class fight_1Db {
         String query = "DELETE FROM fight_1";
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.executeUpdate();
 
