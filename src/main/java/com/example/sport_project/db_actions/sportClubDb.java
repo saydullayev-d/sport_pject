@@ -21,7 +21,7 @@ public class sportClubDb {
             preparedStatement.executeUpdate();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -39,7 +39,25 @@ public class sportClubDb {
             }
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    public static ObservableList<SportClub> SportClub(){
+
+        ObservableList<SportClub> data = FXCollections.observableArrayList();
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src/main/java/com/example/sport_project/database/sportsmens.db")){
+            String query = "SELECT club FROM sportclub";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String club = resultSet.getString("club");
+                data.add(new SportClub(club));
+            }
+            return data;
+        }catch (Exception e){
+            e.printStackTrace();
         }
         return data;
     }
@@ -94,7 +112,7 @@ public class sportClubDb {
 
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }

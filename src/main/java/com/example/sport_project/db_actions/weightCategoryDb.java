@@ -22,7 +22,7 @@ public class weightCategoryDb {
             preparedStatement.executeUpdate();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -39,7 +39,7 @@ public class weightCategoryDb {
             }
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }
@@ -57,7 +57,7 @@ public class weightCategoryDb {
             }
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }
@@ -109,7 +109,7 @@ public class weightCategoryDb {
 
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }

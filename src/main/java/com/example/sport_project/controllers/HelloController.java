@@ -92,11 +92,14 @@ public class HelloController implements Initializable {
 
 
 
-    public void updateData(){
-        sportTable.getItems().clear();
-        sportTable.setItems(sportsmenDb.getData());
-        sportTable.refresh();
+    public void updateData() {
+        Platform.runLater(() -> {
+            sportTable.getItems().clear();
+            sportTable.setItems(sportsmenDb.getData());
+            sportTable.refresh();
+        });
     }
+
 
 
 

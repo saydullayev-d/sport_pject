@@ -16,7 +16,7 @@ public class winner_64_rightDb {
             preparedStatement.executeUpdate();
             connection.close();
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 

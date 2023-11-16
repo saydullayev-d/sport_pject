@@ -8,6 +8,7 @@ import com.example.sport_project.db_actions.ageCategoryDb;
 import com.example.sport_project.db_actions.sportClubDb;
 import com.example.sport_project.db_actions.sportsmenDb;
 import com.example.sport_project.db_actions.weightCategoryDb;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -92,7 +93,6 @@ public class AddSportsmen implements Initializable {
                     String age_cat = age_choice.getValue();
                     String gender = genderChoice.getValue();
                     if(sportsmenDb.getNames().contains(sportsmen.getName())){
-                        System.out.println(sportsmen.getName());
                         if(action_yes.isSelected()){
                             sportsmenDb.updateSportsmen(sportsmen.getName(), name, draw_num, birthDate.toString(), sport_club, gender, true, weight_cat, age_cat);
                         }
@@ -103,7 +103,7 @@ public class AddSportsmen implements Initializable {
                     Stage stage = (Stage) confirm_btn.getScene().getWindow();
                     stage.close();
                 }catch (Exception e){
-                    System.out.println(e.getMessage());
+                    e.printStackTrace();
                 }
             }
         });
@@ -159,11 +159,16 @@ public class AddSportsmen implements Initializable {
                     String age_cat = age_choice.getValue();
                     String gender = genderChoice.getValue();
                     sportsmenDb.write(name, draw_num, birthDate.toString(), sport_club, gender, action_, weight_cat, age_cat);
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/hello-view.fxml"));
+                    Scene newscene = new Scene(loader.load());
+                    Stage newstage = new Stage();
+                    HelloController helloController = loader.getController();
+                    helloController.updateData();
                     Stage stage = (Stage) confirm_btn.getScene().getWindow();
                     stage.close();
 
                 }catch (Exception e){
-                    System.out.println(e.getMessage());
+                    e.printStackTrace();
                 }
 
             }

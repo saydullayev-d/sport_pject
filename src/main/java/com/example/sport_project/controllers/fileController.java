@@ -1,9 +1,12 @@
 package com.example.sport_project.controllers;
 
+import com.example.sport_project.HelloApplication;
 import com.example.sport_project.classes_for_controllers.AgeCategory;
+import com.example.sport_project.classes_for_controllers.SportClub;
 import com.example.sport_project.classes_for_controllers.Sportsmen;
 import com.example.sport_project.classes_for_controllers.WeightCategory;
 import com.example.sport_project.db_actions.ageCategoryDb;
+import com.example.sport_project.db_actions.sportClubDb;
 import com.example.sport_project.db_actions.sportsmenDb;
 import com.example.sport_project.db_actions.weightCategoryDb;
 import javafx.application.Platform;
@@ -11,7 +14,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -127,6 +132,9 @@ public class fileController implements Initializable {
                         if(!(weightCategoryDb.Weight().contains(new WeightCategory(sportsmen.getWeight())))){
                             weightCategoryDb.addWeight(sportsmen.getWeight());
                         }
+                        if(!(sportClubDb.SportClub().contains(new SportClub(sportsmen.getSport_club())))){
+                            sportClubDb.addSportCLub(sportsmen.getSport_club());
+                        }
                     if (!(sportsmenDb.getData().contains(sportsmen))) {
 
                             Platform.runLater(() -> {
@@ -137,18 +145,29 @@ public class fileController implements Initializable {
                                 }
 
                             });
-
-                        }
                     }
+
+                    }
+                    FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("fxml_files/hello-view.fxml"));
+                    try {
+                        Scene newscene = new Scene(loader.load());
+                        Stage newstage = new Stage();
+                        HelloController helloController = loader.getController();
+                        helloController.updateData();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                            alert.setTitle("Успешно");
-                            alert.setHeaderText(null);
-                            alert.setContentText("Спортсмены успешно добавлены!");
-                            alert.showAndWait();
-                            data.clear();
-                            excel_table.getItems().clear();
-                            Stage stage = (Stage) confirm_btn.getScene().getWindow();
-                            stage.close();
+                    alert.setTitle("Успешно");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Спортсмены успешно добавлены!");
+                    alert.showAndWait();
+                    data.clear();
+                    excel_table.getItems().clear();
+                    Stage stage = (Stage) confirm_btn.getScene().getWindow();
+                    stage.close();
+
 
 
 

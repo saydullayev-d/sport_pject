@@ -20,7 +20,7 @@ public class ageCategoryDb {
             preparedStatement.executeUpdate();
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -37,7 +37,7 @@ public class ageCategoryDb {
             }
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         return data;
@@ -55,7 +55,7 @@ public class ageCategoryDb {
             }
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         return data;
@@ -107,7 +107,7 @@ public class ageCategoryDb {
 
             return data;
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }

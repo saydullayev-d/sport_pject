@@ -22,7 +22,7 @@ public class tournament_64Db {
 
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }
@@ -40,7 +40,7 @@ public class tournament_64Db {
 
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }
@@ -61,7 +61,7 @@ public class tournament_64Db {
 
 
         }catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();
         }
         return data;
     }

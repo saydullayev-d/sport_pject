@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<TabPane fx:id="bracket_pane" prefHeight="1714.0" prefWidth="1340.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
+<TabPane fx:id="bracket_pane" prefHeight="1714.0" prefWidth="1340.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport_project.controllers.Bracket64">
     <tabs>
         <Tab fx:id="etap_64" text="1/64">
          <content>
@@ -4792,7 +4792,7 @@
                          <Line endX="28.0" endY="7.000007629394531" layoutX="406.0" layoutY="12.0" startX="-38.0" startY="7.0" />
                          <Line endX="28.0" endY="7.0" layoutX="407.0" layoutY="41.0" startX="-38.0" startY="7.0" />
                          <Line endX="-100.0" endY="30.0" layoutX="534.0" layoutY="19.0" startX="-100.0" />
-                         <VBox fx:id="vbox14" layoutX="1193.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="32.0">
+                         <VBox fx:id="vbox14" layoutX="1192.0" layoutY="-3.0" prefHeight="66.0" prefWidth="115.0" style="-fx-background-color: #4F6C77;" AnchorPane.rightAnchor="33.0">
                             <children>
                                <Text fx:id="right_1_1" fill="#eaeeef" strokeType="OUTSIDE" strokeWidth="0.0" text="Sportsmen1">
                                   <VBox.margin>

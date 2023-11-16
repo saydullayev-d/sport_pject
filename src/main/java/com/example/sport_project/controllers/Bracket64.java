@@ -530,7 +530,7 @@ public class Bracket64 implements Initializable {
                         newstage.setTitle("Результат");
                         newstage.showAndWait();
                     } catch (Exception e) {
-                        System.out.println(e);
+                        e.printStackTrace();
                     }
 
                 }
