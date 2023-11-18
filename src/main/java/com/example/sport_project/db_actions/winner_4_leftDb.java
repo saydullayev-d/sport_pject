@@ -10,7 +10,7 @@ public class winner_4_leftDb {
         String query = "INSERT INTO winner_4_left(id,draw_num, name) VALUES(?,?,?)";
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
             preparedStatement.setInt(2, winner);
@@ -24,7 +24,7 @@ public class winner_4_leftDb {
 
     public static String getByDrawNum(int draw_num){
         String data = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");){
             String query = "SELECT name FROM winner_4_left WHERE draw_num = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1,draw_num);
@@ -41,7 +41,7 @@ public class winner_4_leftDb {
 
     public static int getSportsmen(int id){
         int data = 0;
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");){
             String query = "SELECT draw_num FROM winner_4_left WHERE id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1,id);
@@ -58,7 +58,7 @@ public class winner_4_leftDb {
 
     public static String getName(int id){
         String  data = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");){
             String query = "SELECT name FROM winner_4_left WHERE id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1,id);
@@ -76,7 +76,7 @@ public class winner_4_leftDb {
         String query = "DELETE FROM winner_4_left";
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.executeUpdate();
 

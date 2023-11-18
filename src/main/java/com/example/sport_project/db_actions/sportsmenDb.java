@@ -20,7 +20,7 @@ public class sportsmenDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, cod_draw);
@@ -44,7 +44,7 @@ public class sportsmenDb {
 
     public static ArrayList<Fighter> getByWeight(String weight){
         ArrayList<Fighter> sportsmens = new ArrayList<>();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src"+ HelloApplication.class.getResource("database/sportsmens.db").getPath());){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");){
             String query = "SELECT name, cod_draw, club FROM sportsmen WHERE weight=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, weight);
@@ -64,7 +64,7 @@ public class sportsmenDb {
 
     public static String getByDrawNum(int draw_num){
         String sportsmen = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:src"+  Main.class.getResource("database/sportsmens.db").getPath());){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");){
             String query = "SELECT name FROM sportsmen WHERE cod_draw=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, draw_num);
@@ -85,7 +85,7 @@ public class sportsmenDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, cod_draw);
@@ -109,7 +109,7 @@ public class sportsmenDb {
     }
     public static ObservableList<Sportsmen> getData(){
         ObservableList<Sportsmen> data = FXCollections.observableArrayList();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db")){
             String query = "SELECT name, cod_reg, cod_draw, age, club, gender, action, weight, age_category FROM sportsmen";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -136,7 +136,7 @@ public class sportsmenDb {
     public static ArrayList<String> getNames() {
 
         ArrayList<String> data = new ArrayList<>();
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db")){
             String query = "SELECT name FROM sportsmen";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -159,7 +159,7 @@ public class sportsmenDb {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath());
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, name);
             preparedStatement.executeUpdate();
@@ -171,7 +171,7 @@ public class sportsmenDb {
 
     public static String getClub(int draw_num, String name){
         String club = "";
-        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:"+ Main.class.getResource("/database/sportsmens.db").getPath())){
+        try(Connection connection = DriverManager.getConnection("jdbc:sqlite:../resources/sportsmens.db")){
             String query = "SELECT club FROM sportsmen WHERE cod_draw=? AND name=?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, draw_num);

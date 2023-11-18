@@ -1023,7 +1023,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-64.xlsx";
+            String sourceFilePath = "../resources/files/1-64.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -1162,7 +1162,7 @@ public class Bracket64 implements Initializable {
                 }
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-64_updated.xlsx";
+                String outputFile = "../resources/file/1-64_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -1189,7 +1189,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked2(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-32.xlsx";
+            String sourceFilePath = "../resources/files/1-32.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -1364,7 +1364,7 @@ public class Bracket64 implements Initializable {
 
 
 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-32_updated.xlsx";
+                String outputFile = "../resources/file/1-32_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -1390,7 +1390,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked3(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-16.xlsx";
+            String sourceFilePath = "../resources/files/1-16.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -1543,7 +1543,7 @@ public class Bracket64 implements Initializable {
 
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-16_updated.xlsx";
+                String outputFile = "../resources/file/1-16_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -1570,7 +1570,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked4(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-8.xlsx";
+            String sourceFilePath = "../resources/files/1-8.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -1719,7 +1719,7 @@ public class Bracket64 implements Initializable {
 
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-8_updated.xlsx";
+                String outputFile = "../resources/file/1-8_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -1746,7 +1746,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked5(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-4.xlsx";
+            String sourceFilePath = "../resources/files/1-4.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -1894,7 +1894,7 @@ public class Bracket64 implements Initializable {
 
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-4_updated.xlsx";
+                String outputFile = "../resources/file/1-4_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -1921,7 +1921,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked6(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/1-2.xlsx";
+            String sourceFilePath = "../resources/files/1-2.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -2069,7 +2069,7 @@ public class Bracket64 implements Initializable {
 
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/1-2_updated.xlsx";
+                String outputFile = "../resources/file/1-2_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
@@ -2096,7 +2096,7 @@ public class Bracket64 implements Initializable {
     @FXML
     private void onPrintButtonClicked7(ActionEvent event) {
         try {
-            String sourceFilePath = "C:/Users/User/Desktop/sport_pject/src/main/resources/files/final.xlsx";
+            String sourceFilePath = "../resources/files/final.xlsx";
             File sourceFile = new File(sourceFilePath);
 
             if (sourceFile.exists()) {
@@ -2183,7 +2183,7 @@ public class Bracket64 implements Initializable {
 
 
                 // Сохранение и закрытие workbook в новый файл
-                String outputFile = "C:/Users/User/Desktop/sport_pject/src/main/resources/file/final_updated.xlsx";
+                String outputFile = "../resources/file/final_updated.xlsx";
                 try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
                     workbook.write(outputStream);
                 }
